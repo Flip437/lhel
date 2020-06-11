@@ -10,11 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 
-//= require clipboard
-//= require jquery
-//= require rails-ujs
-//= require popper
-//= require bootstrap
+
+//= require jquery.min.js
+//= require bootstrap.bundle.min.js
 //= require in-view.min.js
 //= require highlight.js
 //= require theme

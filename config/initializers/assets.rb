@@ -37,15 +37,23 @@ Rails.application.config.assets.paths << Rails.root.join("app", "assets", "image
 
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "vendor", "@fortawesome", "fontawesome-free", "css")
 
-Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "@fortawesome", "fontawesome-free", "css")
-Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "highlight.js", "styles")
+# Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "@fortawesome", "fontawesome-free", "css")
+# Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "highlight.js", "styles")
+
+Rails.application.config.assets.paths << Rails.root.join("app", "assets", "vendor", "highlight.js", "styles")
 # STYLESHEETS PATH
 
 
 # JAVASCRIPTS PATH
-Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "bootstrap", "dist", "js")
-Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "in-view", "dist")
-Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "jquery", "dist")
-Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "highlight.js", "lib")
-Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "clipboard", "dist")
+# Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "bootstrap", "dist", "js")
+# Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "in-view", "dist")
+# Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "jquery", "dist")
+# Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "highlight.js", "lib")
+# Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "clipboard", "dist")
+
+Rails.application.config.assets.paths << Rails.root.join("app", "assets", "vendor", "bootstrap", "dist", "js")
+Rails.application.config.assets.paths << Rails.root.join("app", "assets", "vendor", "in-view", "dist")
+Rails.application.config.assets.paths << Rails.root.join("app", "assets", "vendor", "jquery", "dist")
+Rails.application.config.assets.paths << Rails.root.join("app", "assets", "vendor", "highlight.js", "lib")
+Rails.application.config.assets.paths << Rails.root.join("app", "assets", "vendor", "clipboard", "dist")
 # JAVASCRIPTS PATH
