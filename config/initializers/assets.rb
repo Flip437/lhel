@@ -14,8 +14,6 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 
 
-# Rails.application.config.assets.precompile += %w( @fortawesome/fontawesome-free/css/all.min.css )
-
 
 # STYLESHEETS PATH
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "images", "backgrounds")
@@ -36,7 +34,11 @@ Rails.application.config.assets.paths << Rails.root.join("app", "assets", "image
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "images", "svg")
 
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "vendor", "@fortawesome", "fontawesome-free", "css")
+Rails.application.config.assets.paths << Rails.root.join("app", "assets", "vendor", "@fortawesome", "fontawesome-free", "js")
+Rails.application.config.assets.paths << Rails.root.join("app", "assets", "vendor", "@fortawesome", "fontawesome-free", "sprites")
+Rails.application.config.assets.paths << Rails.root.join("app", "assets", "vendor", "@fortawesome", "fontawesome-free", "svgs")
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "vendor", "@fortawesome", "fontawesome-free", "webfonts")
+
 
 # Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "@fortawesome", "fontawesome-free", "css")
 # Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "highlight.js", "styles")
