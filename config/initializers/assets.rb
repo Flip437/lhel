@@ -36,6 +36,7 @@ Rails.application.config.assets.paths << Rails.root.join("app", "assets", "image
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "images", "svg")
 
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "vendor", "@fortawesome", "fontawesome-free", "css")
+Rails.application.config.assets.paths << Rails.root.join("app", "assets", "vendor", "@fortawesome", "fontawesome-free", "webfonts")
 
 # Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "@fortawesome", "fontawesome-free", "css")
 # Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "stylesheets", "highlight.js", "styles")
