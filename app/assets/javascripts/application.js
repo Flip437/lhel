@@ -10,7 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 
-
+//= gulpfile.js
 //= require jquery.min.js
 //= require bootstrap.bundle.min.js
 //= require in-view.min.js
