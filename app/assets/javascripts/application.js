@@ -17,3 +17,8 @@
 //= require highlight.js
 //= require theme
 //= require_tree .
+
+
+$(document).ready(function(){
+    AOS.init();
+});
