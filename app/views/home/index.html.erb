@@ -1,512 +1,295 @@
-<body>
+<main>
+    <!-- Slider start -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://www.mposs.fr/wp-content/uploads/2016/02/slide-salaries2.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Une titre ici</h5>
+                    <p>Une info ici</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://www.mposs.fr/wp-content/uploads/2015/12/slide4.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Une titre ici</h5>
+                    <p>Une info ici</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://www.mposs.fr/wp-content/uploads/2015/12/slide5.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Une titre ici</h5>
+                    <p>Une info ici</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- Slider end -->
 
-    <header class="header-transparent" id="header-main">
-        <!-- Search -->
-        <div id="search-main" class="navbar-search">
-            <div class="container">
-                <!-- Search form -->
-                <form class="navbar-search-form" role="form">
-                    <div class="form-group">
-                        <div class="input-group input-group-transparent">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-search"></i></span>
+    <!-- Offers Cards start -->
+    <section id="sct_page_examples" class="slice">
+        <div class="container">
+            <div class="fluid-paragraph text-center mt-5">
+                <p><strong class="text-primary">La MPOSS</strong> est maintenant la mutuelle communale de la Mairie de Carbonne. N’hésitez pas à nous contacter pour une étude personnalisée
+                    Nous avons créé une nouvelle offre adaptée aux collectivités, découvrez les garanties GROUPEO !</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div data-animate-hover="1" data-toggle="hidden">
+                        <div class="card bg-gradient-primary shadow-primary border-primary animate-this">
+                            <div class="py-5 text-center">
+                                <%= image_tag("computer.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
                             </div>
-                            <input type="text" class="form-control" placeholder="Type and hit enter ...">
+                            <div class="px-4 pb-5 text-center">
+                                <a href="./pages/pages-landing.html" class="btn btn-sm btn-white btn-circle">Etudiants</a>
+                                <p class="text-white mt-4">Ma mutuelle à moins de 13 €/mois avec le PASS MUTUELLE ETUDIANTS : 100 € offerts par la région Midi-Pyrénées</p>
+                            </div>
                         </div>
                     </div>
-                </form>
-                <div class="navbar-search-suggestions">
-                    <h6>Search Suggestions</h6>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a class="list-link" href="#">
-                                        <i class="fas fa-search"></i>
-                                        <span>macbook pro</span> in Laptops
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="list-link" href="#">
-                                        <i class="fas fa-search"></i>
-                                        <span>iphone 8</span> in Smartphones
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="list-link" href="#">
-                                        <i class="fas fa-search"></i>
-                                        <span>macbook pro</span> in Laptops
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="list-link" href="#">
-                                        <i class="fas fa-search"></i>
-                                        <span>beats pro solo 3</span> in Headphones
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="list-link" href="#">
-                                        <i class="fas fa-search"></i>
-                                        <span>smasung galaxy 10</span> in Phones
-                                    </a>
-                                </li>
-                            </ul>
+                </div>
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div data-animate-hover="1" data-toggle="hidden">
+                        <div class="card shadow animate-this">
+                            <div class="py-5 text-center">
+                                <%= image_tag("person.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
+                            </div>
+                            <div class="px-4 pb-5 text-center">
+                                <a href="./pages/pages-secondary.html" class="btn btn-sm btn-dark btn-circle">Individuel</a>
+                                <p class="mt-4">Célibataires ou en couples, découvrez nos garanties santé adaptées à votre situation.
+                                    <br>A partir de 26 €/mois</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div data-animate-hover="1" data-toggle="hidden">
+                        <div class="card shadow animate-this">
+                            <div class="py-5 text-center">
+                                <%= image_tag("persons.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
+                            </div>
+                            <div class="px-4 pb-5 text-center">
+                                <a href="./pages/pages-account.html" class="btn btn-sm btn-dark btn-circle">Familles</a>
+                                <p class="mt-4">Nos offres santé et prévoyance s’adaptent aux besoins de toutes les familles, petites ou grandes.
+                                    <br>A partir de 68 €/mois.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div data-animate-hover="1" data-toggle="hidden">
+                        <div class="card shadow animate-this">
+                            <div class="py-5 text-center">
+                                <%= image_tag("security.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
+                            </div>
+                            <div class="px-4 pb-5 text-center">
+                                <a href="./pages/pages-shop.html" class="btn btn-sm btn-dark btn-circle">Sénior (60 and et +)</a>
+                                <p class="mt-4">La sagesse prend tout son sens avec nos contrats “spécial séniors à la retraite”.
+                                    <br><br>A partir de 74 €/mois.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Search -->
+    </section>
+    <!-- Offers Cards end -->
 
-        <!-- Topbar -->
-        <div id="navbar-top-main" class="navbar-top  navbar-dark bg-dark border-bottom">
-            <div class="container">
-                <div class="navbar-nav align-items-center">
-                    <div class="ml-auto">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/support.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/support.html">Réseaux Sociaux</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/login.html"><i class="fas fa-user-circle"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+    <!-- AddIns Cards start -->
+    <section class="slice slice-lg">
+        <div class="container no-padding">
+            <div class="mb-md text-center">
+                <h3 class="heading h3">Tones of features</h3>
+                <div class="fluid-paragraph text-center mt-4">
+                    <p class="lead lh-180">You get all Bootstrap components fully customized. Besides, you receive another numerous plugins out of the box and ready to use.</p>
                 </div>
             </div>
-        </div>
-        <!-- Topbar -->
 
-        <!-- Main navbar -->
-        <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-dark bg-dark" id="navbar-main">
-            <div class="container">
-                <a class="navbar-brand mr-lg-5" href="./index.html">
-                    <%= image_tag("white.png", height: '50', alt: "white") %>
-                </a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbar-main-collapse">
-                    <ul class="navbar-nav align-items-lg-center">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./index.html">acceuil</a>
-                        </li>
-                        <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
-                            <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">particuliers</a>
-                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
-                                <div class="list-group">
-                                    <a href="./pages/pages-landing.html" class="list-group-item list-group-item-action">
-                                        <div class="media d-flex align-items-center">
-                                            <%= image_tag("computer.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                            <div class="media-body ml-3">
-                                                <h6 class="mb-1">Etudiants</h6>
-                                                <p class="mb-0">Lien vers la page complémentaire santé étudiante</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="./pages/pages-secondary.html" class="list-group-item list-group-item-action">
-                                        <div class="media d-flex align-items-center">
-                                            <%= image_tag("person.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                            <div class="media-body ml-3">
-                                                <h6 class="mb-1">Indivuduel</h6>
-                                                <p class="mb-0">Lien vers la page complémentaire santé individuel</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="./pages/pages-account.html" class="list-group-item list-group-item-action">
-                                        <div class="media d-flex align-items-center">
-                                            <%= image_tag("persons.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                            <div class="media-body ml-3">
-                                                <h6 class="mb-1">Famile</h6>
-                                                <p class="mb-0">Lien vers la page complémentaire santé Famille</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="./pages/pages-shop.html" class="list-group-item list-group-item-action">
-                                        <div class="media d-flex align-items-center">
-                                            <%= image_tag("security.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                            <div class="media-body ml-3">
-                                                <h6 class="mb-1">Séniors (60 ans et +)</h6>
-                                                <p class="mb-0">Lien vers la page complémentaire santé séniors</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
-                            <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">professionnels</a>
-                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
-                                <div class="list-group">
-                                    <a href="./pages/pages-landing.html" class="list-group-item list-group-item-action">
-                                        <div class="media d-flex align-items-center">
-                                            <%= image_tag("browser-window.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                            <div class="media-body ml-3">
-                                                <h6 class="mb-1">Landing Pages</h6>
-                                                <p class="mb-0">A great point to start from.</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="./pages/pages-secondary.html" class="list-group-item list-group-item-action">
-                                        <div class="media d-flex align-items-center">
-                                            <%= image_tag("ios-photos.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                            <div class="media-body ml-3">
-                                                <h6 class="mb-1">Secondary Pages</h6>
-                                                <p class="mb-0">Build your website with these demos.</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="./pages/pages-account.html" class="list-group-item list-group-item-action">
-                                        <div class="media d-flex align-items-center">
-                                            <%= image_tag("maintenance.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                            <div class="media-body ml-3">
-                                                <h6 class="mb-1">Account Pages</h6>
-                                                <p class="mb-0">Account management made easy.</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="./pages/pages-shop.html" class="list-group-item list-group-item-action">
-                                        <div class="media d-flex align-items-center">
-                                            <%= image_tag("in-progress.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                            <div class="media-body ml-3">
-                                                <h6 class="mb-1">Shop Pages</h6>
-                                                <p class="mb-0">Explore the full ecommerce website flow.</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./docs/alerts.html" role="button">Contactez-nous</a>
-                        </li>
-                    </ul>
-
-                    <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./docs/introduction.html" target="_blank">Docs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./docs/changelog.html" target="_blank">Changelog</a>
-                        </li>
-                        <li class="nav-item mr-0">
-                            <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="nav-link d-lg-none">Purchase now</a>
-                            <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="btn btn-sm btn-white btn-circle btn-icon d-none d-lg-inline-flex">
-                                <span class="btn-inner--icon"><i class="fas fa-shopping-cart"></i></span>
-                                <span class="btn-inner--text">Purchase now</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </nav>
-        <!-- Main navbar -->
-    </header>
-
-    <main>
-        <!-- Navbar background start -->
-        <div class="navbarback bg-gradient-primary">
-
-        </div>
-        <!-- Navbar background end -->
-
-        <!-- Slider start -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="https://www.mposs.fr/wp-content/uploads/2016/02/slide-salaries2.jpg" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Une titre ici</h5>
-                        <p>Une info ici</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="https://www.mposs.fr/wp-content/uploads/2015/12/slide4.jpg" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Une titre ici</h5>
-                        <p>Une info ici</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="https://www.mposs.fr/wp-content/uploads/2015/12/slide5.jpg" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Une titre ici</h5>
-                        <p>Une info ici</p>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        <!-- Slider end -->
-
-        <!-- Offers Cards start -->
-        <section id="sct_page_examples" class="slice">
-            <div class="container">
-                <div class="fluid-paragraph text-center mt-5">
-                    <p><strong class="text-primary">La MPOSS</strong> est maintenant la mutuelle communale de la Mairie de Carbonne. N’hésitez pas à nous contacter pour une étude personnalisée
-                        Nous avons créé une nouvelle offre adaptée aux collectivités, découvrez les garanties GROUPEO !</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 mb-5 mb-lg-0">
-                        <div data-animate-hover="1" data-toggle="hidden">
-                            <div class="card bg-gradient-primary shadow-primary border-primary animate-this">
-                                <div class="py-5 text-center">
-                                    <%= image_tag("computer.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
-                                </div>
-                                <div class="px-4 pb-5 text-center">
-                                    <a href="./pages/pages-landing.html" class="btn btn-sm btn-white btn-circle">Etudiants</a>
-                                    <p class="text-white mt-4">Ma mutuelle à moins de 13 €/mois avec le PASS MUTUELLE ETUDIANTS : 100 € offerts par la région Midi-Pyrénées</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-5 mb-lg-0">
-                        <div data-animate-hover="1" data-toggle="hidden">
-                            <div class="card shadow animate-this">
-                                <div class="py-5 text-center">
-                                    <%= image_tag("person.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
-                                </div>
-                                <div class="px-4 pb-5 text-center">
-                                    <a href="./pages/pages-secondary.html" class="btn btn-sm btn-dark btn-circle">Individuel</a>
-                                    <p class="mt-4">Célibataires ou en couples, découvrez nos garanties santé adaptées à votre situation.
-                                        <br>A partir de 26 €/mois</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-5 mb-lg-0">
-                        <div data-animate-hover="1" data-toggle="hidden">
-                            <div class="card shadow animate-this">
-                                <div class="py-5 text-center">
-                                    <%= image_tag("persons.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
-                                </div>
-                                <div class="px-4 pb-5 text-center">
-                                    <a href="./pages/pages-account.html" class="btn btn-sm btn-dark btn-circle">Familles</a>
-                                    <p class="mt-4">Nos offres santé et prévoyance s’adaptent aux besoins de toutes les familles, petites ou grandes.
-                                        <br>A partir de 68 €/mois.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-5 mb-lg-0">
-                        <div data-animate-hover="1" data-toggle="hidden">
-                            <div class="card shadow animate-this">
-                                <div class="py-5 text-center">
-                                    <%= image_tag("security.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
-                                </div>
-                                <div class="px-4 pb-5 text-center">
-                                    <a href="./pages/pages-shop.html" class="btn btn-sm btn-dark btn-circle">Sénior (60 and et +)</a>
-                                    <p class="mt-4">La sagesse prend tout son sens avec nos contrats “spécial séniors à la retraite”.
-                                        <br><br>A partir de 74 €/mois.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Offers Cards end -->
-
-        <!-- AddIns Cards start -->
-        <section class="slice slice-lg">
-            <div class="container no-padding">
-                <div class="mb-md text-center">
-                    <h3 class="heading h3">Tones of features</h3>
-                    <div class="fluid-paragraph text-center mt-4">
-                        <p class="lead lh-180">You get all Bootstrap components fully customized. Besides, you receive another numerous plugins out of the box and ready to use.</p>
-                    </div>
-                </div>
-
-                <div class="card-deck">        
-                    <div data-aos="flip-left" class="card box-shadow-3--hover">
-                            <%= image_tag("img-12.jpg", width: '100', alt: "Image placeholder", class: "card-img-top") %>
-                            <div class="px-2">
-                                <div class="card-body">
-                                    <div class="border-bottom pb-3 mb-4">
-                                        <h5 class="heading h5">Contrats Entreprises à partir de 13,50 €/mois par salarié</h5>
-                                    </div>
-                                    <p>Contrats santé collectifs dans le cadre de la mise en place d’une mutuelle généralisée pour tous les salariés au 1er janvier 2016 : des offres qui vous correspondent.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer px-0 py-0 border-0 overflow-hidden">
-                                <a href="#" class="btn btn-block btn-primary rounded-0">Complémentaires salariés</a>
-                            </div>
-                
-                    </div>               
-                    <div data-aos="flip-down" class="card box-shadow-3--hover">
-                        <%= image_tag("img-9.jpg", width: '100', alt: "Image placeholder", class: "card-img-top") %>
+            <div class="card-deck">        
+                <div data-aos="flip-left" class="card box-shadow-3--hover">
+                        <%= image_tag("img-12.jpg", width: '100', alt: "Image placeholder", class: "card-img-top") %>
                         <div class="px-2">
                             <div class="card-body">
                                 <div class="border-bottom pb-3 mb-4">
-                                    <h5 class="heading h5">Surcomplémentaire santé à partir de 13 €/mois</h5>
+                                    <h5 class="heading h5">Contrats Entreprises à partir de 13,50 €/mois par salarié</h5>
                                 </div>
-                                <p>Des offres santé pour compléter votre contrat collectif ou individuel, et diminuer voire supprimer votre reste à charge.</p>
+                                <p>Contrats santé collectifs dans le cadre de la mise en place d’une mutuelle généralisée pour tous les salariés au 1er janvier 2016 : des offres qui vous correspondent.</p>
                             </div>
                         </div>
-                        <br>
                         <div class="card-footer px-0 py-0 border-0 overflow-hidden">
-                            <a href="#" class="btn btn-block btn-primary rounded-0">Toutes les offres</a>
+                            <a href="#" class="btn btn-block btn-primary rounded-0">Complémentaires salariés</a>
                         </div>
-                    </div>
-                    <div data-aos="flip-right" class="card box-shadow-3--hover">
-                        <%= image_tag("img-8.jpg", width: '100', alt: "Image placeholder", class: "card-img-top") %>
-                        <div class="px-2">
-                            <div class="card-body">
-                                <div class="border-bottom pb-3 mb-4">
-                                    <h5 class="heading h5">Contrats prévoyance. Capital décès à partir de 5,70 €/an</h5>
-                                </div>
-                                <p>Une garantie pour se protéger en cas d’incapacité de travail et transmettre un capital à ses proches en cas de décès.</p>
-                            </div>
-                        </div>
-                        <br><br>
-                        <div class="card-footer px-0 py-0 border-0 overflow-hidden">
-                            <a href="#" class="btn btn-block btn-primary rounded-0">En savoir plus</a>
-                        </div>
-                    </div>                     
-                </div>
-            </div>
-        </section>
-        <!-- AddIns Cards end -->
-
-        <!-- Values section start -->
-        <section class="slice slice-xl bg-gradient-primary has-floating-items" id="sct_call_to_action">
-            <a href="#sct_call_to_action" class="tongue tongue-up tongue-secondary scroll-me"><i class="fas fa-angle-up"></i></a>
-            <div class="container text-center">
-                <div class="mb-md row">
-                    <div class="col-12">
-                        <h1 class="text-white strong-600">MPOSS EN QUELQUES MOTS</h1>
-                        <div class="row justify-content-center mt-4">
-                            <div class="col-lg-8">
-                                <p class="lead text-white">“Avec ma mutuelle la vie est solidaire”</p>
-                                <div class="btn-container mt-5">
-                                    <a href="./docs/plugins.html" target="_blank" class="btn btn-warning btn-circle btn-translate--hover px-4">Nous conaitre</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div data-aos="zoom-in-right">
-                            <div class="card shadow border-0 mb-4">
-                                <div class="card-body py-5">
-                                    <div class="py-5 text-center">
-                                        <%= image_tag("sound.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <div class="w-100 text-center">
-                                            <h5 class="font-weight-bold">ÉCOUTE</h5>
-                                        </div>
-                                    </div>
-                                    <p class="mt-4">Des conseillers à votre écoute, facilement joignables, disponibles et réactifs</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div data-aos="fade-down-right">
-                            <div class="card shadow border-0 mb-4 zoomIn">
-                                <div class="card-body py-5">
-                                    <div class="py-5 text-center">
-                                        <%= image_tag("ui.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
-                                    </div>
-                                    <div class="d-flex align-items-start">
-                                        <div class="w-100 text-center">
-                                            <h5 class="font-weight-bold">RESPONSABLE</h5>
-                                        </div>
-                                    </div>
-                                    <p class="mt-4">Des contrats “solidaires et responsables” qui respectent certains plafonnements de prise en charge</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div data-aos="fade-up-left">
-                            <div class="card shadow border-0 mb-4">
-                                <div class="card-body py-5">
-                                    <div class="py-5 text-center">
-                                        <%= image_tag("signs.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
-                                    </div>
-                                    <div class="d-flex align-items-start">
-                                        <div class="w-100 text-center">
-                                            <h5 class="font-weight-bold">PROXIMITÉ</h5>
-                                        </div>
-                                    </div>
-                                    <p class="mt-4">Au plus près de votre santé pour en maîtriser les coûts à votre avantage</p>
-                                    <br>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div data-aos="zoom-in-left">
-                            <div class="card shadow border-0 mb-4">
-                                <div class="card-body py-5">
-                                    <div class="py-5 text-center">
-                                        <%= image_tag("medical.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
-                                    </div>
-                                    <div class="d-flex align-items-start">
-                                        <div class="w-100 text-center">
-                                            <h5 class="font-weight-bold">SOLIDAIRE</h5>
-                                        </div>
-                                    </div>
-                                    <p class="mt-4">Accompagnement spécifique et maintien de la couverture pour tout adhérent en difficulté</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             
-        </section>
-        <!-- Values section end -->
-
-        <!-- Sass command section start -->
-        <section class="slice slice-lg pt-md-xl bg-secondary">
-            <div class="container">
-                <div class="mb-md text-center">
-                    <h3 class="h3">Customize with confidence</h3>
-                    <div class="fluid-paragraph text-center mt-4">
-                        <p class="lead lh-180">Customization has never been easier. Purpose has all the right tools in order to make your website building process a breeze.</p>
+                </div>               
+                <div data-aos="flip-down" class="card box-shadow-3--hover">
+                    <%= image_tag("img-9.jpg", width: '100', alt: "Image placeholder", class: "card-img-top") %>
+                    <div class="px-2">
+                        <div class="card-body">
+                            <div class="border-bottom pb-3 mb-4">
+                                <h5 class="heading h5">Surcomplémentaire santé à partir de 13 €/mois</h5>
+                            </div>
+                            <p>Des offres santé pour compléter votre contrat collectif ou individuel, et diminuer voire supprimer votre reste à charge.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card-footer px-0 py-0 border-0 overflow-hidden">
+                        <a href="#" class="btn btn-block btn-primary rounded-0">Toutes les offres</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h6 class="text-primary mb-3">Customize your website using Sass</h6>
-                        <div class="frame-browser shadow-lg">
-                            <div class="frame-header d-flex align-items-center floatfix">
-                                <div class="col-6">
-                                    <span class="dot bg-red"></span>
-                                    <span class="dot bg-orange"></span>
-                                    <span class="dot bg-blue"></span>
-                                </div>
-                                <div class="col-6 text-right">
-                                    <small class="text-muted">SCSS</small>
-                                </div>
+                <div data-aos="flip-right" class="card box-shadow-3--hover">
+                    <%= image_tag("img-8.jpg", width: '100', alt: "Image placeholder", class: "card-img-top") %>
+                    <div class="px-2">
+                        <div class="card-body">
+                            <div class="border-bottom pb-3 mb-4">
+                                <h5 class="heading h5">Contrats prévoyance. Capital décès à partir de 5,70 €/an</h5>
                             </div>
-                            <div class="frame-body">
+                            <p>Une garantie pour se protéger en cas d’incapacité de travail et transmettre un capital à ses proches en cas de décès.</p>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="card-footer px-0 py-0 border-0 overflow-hidden">
+                        <a href="#" class="btn btn-block btn-primary rounded-0">En savoir plus</a>
+                    </div>
+                </div>                     
+            </div>
+        </div>
+    </section>
+    <!-- AddIns Cards end -->
+
+    <!-- Values section start -->
+    <section class="slice slice-xl bg-gradient-primary has-floating-items" id="sct_call_to_action">
+        <a href="#sct_call_to_action" class="tongue tongue-up tongue-secondary scroll-me"><i class="fas fa-angle-up"></i></a>
+        <div class="container text-center">
+            <div class="mb-md row">
+                <div class="col-12">
+                    <h1 class="text-white strong-600">MPOSS EN QUELQUES MOTS</h1>
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-lg-8">
+                            <p class="lead text-white">“Avec ma mutuelle la vie est solidaire”</p>
+                            <div class="btn-container mt-5">
+                                <a href="./docs/plugins.html" target="_blank" class="btn btn-warning btn-circle btn-translate--hover px-4">Nous conaitre</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <div data-aos="zoom-in-right">
+                        <div class="card shadow border-0 mb-4">
+                            <div class="card-body py-5">
+                                <div class="py-5 text-center">
+                                    <%= image_tag("sound.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="w-100 text-center">
+                                        <h5 class="font-weight-bold">ÉCOUTE</h5>
+                                    </div>
+                                </div>
+                                <p class="mt-4">Des conseillers à votre écoute, facilement joignables, disponibles et réactifs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div data-aos="fade-down-right">
+                        <div class="card shadow border-0 mb-4 zoomIn">
+                            <div class="card-body py-5">
+                                <div class="py-5 text-center">
+                                    <%= image_tag("ui.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
+                                </div>
+                                <div class="d-flex align-items-start">
+                                    <div class="w-100 text-center">
+                                        <h5 class="font-weight-bold">RESPONSABLE</h5>
+                                    </div>
+                                </div>
+                                <p class="mt-4">Des contrats “solidaires et responsables” qui respectent certains plafonnements de prise en charge</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div data-aos="fade-up-left">
+                        <div class="card shadow border-0 mb-4">
+                            <div class="card-body py-5">
+                                <div class="py-5 text-center">
+                                    <%= image_tag("signs.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
+                                </div>
+                                <div class="d-flex align-items-start">
+                                    <div class="w-100 text-center">
+                                        <h5 class="font-weight-bold">PROXIMITÉ</h5>
+                                    </div>
+                                </div>
+                                <p class="mt-4">Au plus près de votre santé pour en maîtriser les coûts à votre avantage</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div data-aos="zoom-in-left">
+                        <div class="card shadow border-0 mb-4">
+                            <div class="card-body py-5">
+                                <div class="py-5 text-center">
+                                    <%= image_tag("medical.svg", width: '100', alt: "Image placeholder", class: "img-saturate") %>
+                                </div>
+                                <div class="d-flex align-items-start">
+                                    <div class="w-100 text-center">
+                                        <h5 class="font-weight-bold">SOLIDAIRE</h5>
+                                    </div>
+                                </div>
+                                <p class="mt-4">Accompagnement spécifique et maintien de la couverture pour tout adhérent en difficulté</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+    <!-- Values section end -->
+
+    <!-- Sass command section start -->
+    <section class="slice slice-lg pt-md-xl bg-secondary">
+        <div class="container">
+            <div class="mb-md text-center">
+                <h3 class="h3">Customize with confidence</h3>
+                <div class="fluid-paragraph text-center mt-4">
+                    <p class="lead lh-180">Customization has never been easier. Purpose has all the right tools in order to make your website building process a breeze.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h6 class="text-primary mb-3">Customize your website using Sass</h6>
+                    <div class="frame-browser shadow-lg">
+                        <div class="frame-header d-flex align-items-center floatfix">
+                            <div class="col-6">
+                                <span class="dot bg-red"></span>
+                                <span class="dot bg-orange"></span>
+                                <span class="dot bg-blue"></span>
+                            </div>
+                            <div class="col-6 text-right">
+                                <small class="text-muted">SCSS</small>
+                            </div>
+                        </div>
+                        <div class="frame-body">
 <pre class="highlight css">
-    <code>
+<code>
 /* Insert your brand's colors and the theme will adapt */
 
 $primary:       #510FA8;
@@ -515,31 +298,31 @@ $success:       $green;
 $info:          $teal;
 $warning:       $orange;
 $danger:        $red;
-    </code>
+</code>
 </pre>
-                            </div>
-                        </div>
-                        <div class="mt-5">
-                            <p>After changing the Sass variables, simply rung the <code>gulp</code> command from your terminal and you're done. <a href="./docs/gulp.html" target="_blank">Learn more here</a>
-                            </p>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <h6 class="text-primary mb-3">Make use of the pre-defined helper classes</h6>
-                        <div class="frame-browser shadow-lg">
-                            <div class="frame-header d-flex align-items-center floatfix">
-                                <div class="col-6">
-                                    <span class="dot bg-red"></span>
-                                    <span class="dot bg-orange"></span>
-                                    <span class="dot bg-blue"></span>
-                                </div>
-                                <div class="col-6 text-right">
-                                    <small class="text-muted">HTML</small>
-                                </div>
+                    <div class="mt-5">
+                        <p>After changing the Sass variables, simply rung the <code>gulp</code> command from your terminal and you're done. <a href="./docs/gulp.html" target="_blank">Learn more here</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h6 class="text-primary mb-3">Make use of the pre-defined helper classes</h6>
+                    <div class="frame-browser shadow-lg">
+                        <div class="frame-header d-flex align-items-center floatfix">
+                            <div class="col-6">
+                                <span class="dot bg-red"></span>
+                                <span class="dot bg-orange"></span>
+                                <span class="dot bg-blue"></span>
                             </div>
-                            <div class="frame-body">
+                            <div class="col-6 text-right">
+                                <small class="text-muted">HTML</small>
+                            </div>
+                        </div>
+                        <div class="frame-body">
 <pre class="highlight html">
-    <code>
+<code>
 /* Add a shadow effect with just one CSS class */
 &lt;div class="card shadow"&gt;
 ...
@@ -549,186 +332,106 @@ $danger:        $red;
 &lt;a href="#" class="btn btn-primary btn-translate--hover"&gt;
 ...
 &lt;/a&gt;
-    </code>
+</code>
 </pre>
-                            </div>
-                            </div>
-                            <div class="mt-5">
-                                <p>Check out all the pre-defined modifier classes and see how they can help you. <a href="./docs/customization.html" target="_blank">Learn more here</a>
-                                </p>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Sass command section end -->
-
-        <!-- Features section start -->
-        <section class="slice slice-lg" id="sct_features">
-            <a href="#sct_features" class="tongue tongue-up tongue-secondary scroll-me"><i class="fas fa-angle-up"></i></a>
-            <div class="container">
-                <div class="mb-md text-center">
-                    <h3 class="h3">Really useful features</h3>
-                    <div class="fluid-paragraph text-center mt-4">
-                        <p class="lead lh-180">You get all Bootstrap components fully customized. Besides, you receive another numerous plugins out of the box and ready to use.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 mb-5">
-                        <div class="d-flex align-items-start">
-                            <div class="icon icon-lg icon-shape icon-teal rounded-circle">
-                                <i class="fab fa-twitter"></i>
-                            </div>
-                            <div class="icon-text pl-4">
-                                <h5>Latest Bootstrap Framework</h5>
-                                <p class="mb-0">We build responsive, mobile-first themes with the world s most popular front-end component library</p>
-                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="d-flex align-items-start">
-                            <div class="icon icon-lg icon-shape icon-teal rounded-circle">
-                                <i class="fab fa-sass"></i>
-                            </div>
-                            <div class="icon-text pl-4">
-                                <h5>Built with Sass <small>(included)</small></h5>
-                                <p class="mb-0">Change one variable and the theme adapts. Colors, fonts, sizes ... you name it.</p>
-                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="d-flex align-items-start">
-                            <div class="icon icon-lg icon-shape icon-teal rounded-circle">
-                                <i class="fab fa-sass"></i>
-                            </div>
-                            <div class="icon-text pl-4">
-                                <h5>700+ Components</h5>
-                                <p class="mb-0">Nicely customized components that can be reused anytime and anywhere in your project.</p>
-                            </div>
+                        <div class="mt-5">
+                            <p>Check out all the pre-defined modifier classes and see how they can help you. <a href="./docs/customization.html" target="_blank">Learn more here</a>
+                            </p>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 mb-5">
-                        <div class="d-flex align-items-start">
-                            <div class="icon icon-lg icon-shape icon-teal rounded-circle">
-                                <i class="fas fa-tint"></i>
-                            </div>
-                            <div class="icon-text pl-4">
-                                <h5 class="font-weight-bold">Extended color palette</h5>
-                                <p class="mb-0">A beautiful color palette that can be easily modified with our nicely coded Sass files.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="d-flex align-items-start">
-                            <div class="icon icon-lg icon-shape icon-teal rounded-circle">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <div class="icon-text pl-4">
-                                <h5 class="font-weight-bold">15+ Integrated Plugins</h5>
-                                <p class="mb-0">Get even more functionality with the ready to use plugins we have integrated in this theme for you.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="d-flex align-items-start">
-                            <div class="icon icon-lg icon-shape icon-teal rounded-circle">
-                                <i class="fas fa-font"></i>
-                            </div>
-                            <div class="icon-text pl-4">
-                                <h5 class="font-weight-bold">Font and SVG icons</h5>
-                                <p class="mb-0">One nice collection of icons so you can add a more intuitive and playful touch to your website.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Features section start -->
-
-        <!-- Pushing footer section start -->
-        <br><br><br><br><br><br><br><br><br><br>
-        <!-- Pushing footer section end -->
-    </main>
-
-    <footer class="footer footer-dark bg-gradient-primary footer-rotate">
-        <div class="container">
-            <div class="row pt-md">
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <a href="./index.html">
-                        <%= image_tag("white.png", height: '70', alt: "Footer logo") %>
-                    </a>
-                    <p class="text-sm">A unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.</p>
-                </div>
-                <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
-                    <h6 class="heading mb-3">Account</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="./pages/account-profile.html">Profile</a>
-                        </li>
-                        <li><a href="./pages/account-settings.html">Settings</a>
-                        </li>
-                        <li><a href="./pages/account-billing.html">Billing</a>
-                        </li>
-                        <li><a href="./pages/account-notifications.html">Notifications</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
-                    <h6 class="heading mb-3">About</h6>
-                    <ul class="list-unstyled text-small">
-                        <li><a href="#">Services</a>
-                        </li>
-                        <li><a href="#">Contact</a>
-                        </li>
-                        <li><a href="#">Careers</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-sm-4 mb-5 mb-lg-0">
-                    <h6 class="heading mb-3">Company</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Terms</a>
-                        </li>
-                        <li><a href="#">Privacy</a>
-                        </li>
-                        <li><a href="#">Support</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-md-between py-4 mt-4 delimiter-top">
-                <div class="col-md-6">
-                    <div class="copyright text-sm font-weight-bold text-center text-md-left">
-                        &copy; 2018 <a href="https://webpixels.io/" class="font-weight-bold" target="_blank">Webpixels</a>. All rights reserved.
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://dribbble.com/webpixels" target="_blank">
-                                <i class="fab fa-dribbble"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="https://instagram.com/webpixelsofficial" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/webpixels" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://facebook.com/webpixels" target="_blank">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
+    <!-- Sass command section end -->
 
-</body>
+    <!-- Features section start -->
+    <section class="slice slice-lg" id="sct_features">
+        <a href="#sct_features" class="tongue tongue-up tongue-secondary scroll-me"><i class="fas fa-angle-up"></i></a>
+        <div class="container">
+            <div class="mb-md text-center">
+                <h3 class="h3">Really useful features</h3>
+                <div class="fluid-paragraph text-center mt-4">
+                    <p class="lead lh-180">You get all Bootstrap components fully customized. Besides, you receive another numerous plugins out of the box and ready to use.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="d-flex align-items-start">
+                        <div class="icon icon-lg icon-shape icon-teal rounded-circle">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="icon-text pl-4">
+                            <h5>Latest Bootstrap Framework</h5>
+                            <p class="mb-0">We build responsive, mobile-first themes with the world s most popular front-end component library</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="d-flex align-items-start">
+                        <div class="icon icon-lg icon-shape icon-teal rounded-circle">
+                            <i class="fab fa-sass"></i>
+                        </div>
+                        <div class="icon-text pl-4">
+                            <h5>Built with Sass <small>(included)</small></h5>
+                            <p class="mb-0">Change one variable and the theme adapts. Colors, fonts, sizes ... you name it.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="d-flex align-items-start">
+                        <div class="icon icon-lg icon-shape icon-teal rounded-circle">
+                            <i class="fab fa-sass"></i>
+                        </div>
+                        <div class="icon-text pl-4">
+                            <h5>700+ Components</h5>
+                            <p class="mb-0">Nicely customized components that can be reused anytime and anywhere in your project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="d-flex align-items-start">
+                        <div class="icon icon-lg icon-shape icon-teal rounded-circle">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="icon-text pl-4">
+                            <h5 class="font-weight-bold">Extended color palette</h5>
+                            <p class="mb-0">A beautiful color palette that can be easily modified with our nicely coded Sass files.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="d-flex align-items-start">
+                        <div class="icon icon-lg icon-shape icon-teal rounded-circle">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="icon-text pl-4">
+                            <h5 class="font-weight-bold">15+ Integrated Plugins</h5>
+                            <p class="mb-0">Get even more functionality with the ready to use plugins we have integrated in this theme for you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="d-flex align-items-start">
+                        <div class="icon icon-lg icon-shape icon-teal rounded-circle">
+                            <i class="fas fa-font"></i>
+                        </div>
+                        <div class="icon-text pl-4">
+                            <h5 class="font-weight-bold">Font and SVG icons</h5>
+                            <p class="mb-0">One nice collection of icons so you can add a more intuitive and playful touch to your website.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features section start -->
+
+    <!-- Pushing footer section start -->
+    <br><br><br><br><br><br><br><br><br><br>
+    <!-- Pushing footer section end -->
+</main>
+<% content_for :footer_class, 'footer footer-dark bg-gradient-primary footer-rotate' %>

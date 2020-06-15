@@ -28,6 +28,21 @@
   </head>
 
   <body>
+  
+    <header class="header-transparent" id="header-main">
+      <%= render "navbar/navbar" %>
+    </header>
+
+    <!-- Navbar background start -->
+      <div class="navbarback bg-gradient-primary">
+      </div>
+    <!-- Navbar background end -->
+
     <%= yield %>
+
+    <footer class="<%= content_for :footer_class %>">
+      <%= render "footer/footer" %>
+    </footer>
+
   </body>
 </html>
