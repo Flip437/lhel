@@ -1,0 +1,69 @@
+<!-- Purpose-website-ui-kit-v1.1.3/pages/careers-single.html -->
+<main>
+
+    <!-- Spotlight -->
+    <section class="slice slice-xl pb-200 bg-secondary">
+        <div class="container pt-lg">
+            <div class="row row-grid justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="h2 mb-4">Mutuelle Senior</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slice slice-lg bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow mt--200">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Pourquoi souscrire une mutuelle senior ?</h4>
+                            <p>Souvent, la retraite évoque un sentiment de liberté retrouvée, de repos, de loisirs, de bien être … mais aussi et généralement un fait avéré que nous avançons dans l’âge et que la courbe des besoins en santé augmente, et se contenter des remboursements de la Sécurité Sociale pour subvenir aux besoins n’est plus suffisant.</p>
+                            <p>En effet, les prises en charge sont trop faibles par rapport aux frais engagés et une complémentaire santé senior peut vous épargner ou réduire de nombreux soucis en terme financier. Elle prendra le relai et permettra de jouir de remboursements plus importants, notamment sur les dépassements d’honoraires ou les frais dentaires et d’optiques.</p> 
+                            <p>En France, des statistiques montrent que les seniors dépensent des sommes assez importantes dans la santé, entre 900 et 1600 euros par an.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Quelle mutuelle senior choisir pour répondre au mieux à vos besoins ?</h4>
+                            <p>Toutes les mutuelles seniors ne sont pas identiques et ne se valent pas. A partir de 55 ans, il est généralement conseillé de faire le bilan sur ses besoins et d’identifier les offres proposées par les assurances santé afin de les comparer. Une fois ce « seuil » d’âge dépassé, certaines mutuelles peuvent refuser des nouveaux contrats jugeant trop risqué. Il est important d’identifier le risque aujourd’hui, pour vous protéger demain.</p>
+                            <p>Afin de choisir au mieux votre mutuelle santé senior, basez-vous sur la qualité de la prise en charge des soins dentaires, optiques et surtout d’hospitalisation, car ce sont les plus graves et les plus couteux. Donc Il est important pour bien choisir son contrat, de comprendre les garanties, pas toujours évidentes. A l’aide de votre conseiller expert, trouvez la meilleure couverture pour protéger et prévenir des accidents.</p> 
+                            <p>Il nous semble tout de même important de parler plus en détails de la garantie hospitalisation, dans laquelle le remboursement 200% est fortement recommandé. Toutefois, pour jouir de cette protection au mieux, il faut tenir compte de la réglementation de 2015 qui interdit aux complémentaires santé dites « responsables » de prendre en charge à plus de 200% les honoraires des médecins, des chirurgiens et anesthésistes, non adhérents au Contrat d’Accès aux Soins. Ils représentent environ un tiers des médecins pratiquant des dépassements d’honoraires. Pour bénéficier de meilleures garanties, en consultant n’importe quels médecins, vous devez vous orienter vers un contrat « non responsable ».</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Résumé de quelques aspects sur la mutuelle senior</h4>
+                            <p>Un petit récapitulatif des points importants quand vous choisirez votre complémentaire santé senior. La première partie dite « indispensable » parle des <%= link_to 'frais d’hospitalisation', root_path %> qui qui font monter la note généralement et les appareillages optiques, auditifs ou prothèses dentaires qui sont mal remboursés par la sécurité sociale. </p>
+                            <p>La deuxième partie « le plus ou intéressantes » fait référence au chirurgie réfractive des yeux, soins de pédicures et vaccins « exotiques » non pris en charge par l’assurance maladie. Mais aussi à la <%= link_to 'médecine douce', root_path %>, à l’assistance en cas de maladie grave, à l’accès à des réseaux de soins en optique et dentaires (rendez-vous plus rapide, moins cher et remboursements plus élevés).</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="slice slice-lg">
+
+        <span class="tongue tongue-top tongue-primary"><i class="fas fa-angle-up"></i></span>
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-8 text-center">
+                    <h3 class="font-weight-400">Demandez votre devis pour votre mutelle <span class="font-weight-700">seniors</span></h3>
+                    <div class="mt-5">
+                        <%= link_to root_path, target:"blank", class:'btn btn-primary btn-circle btn-translate--hover px-4' do %>
+                            Demandez votre devis
+                            <span class="badge badge-pill badge-danger text-sm">à partir de 50€</span>
+                        <%end%>
+                        <%= link_to "Contactez-nous", root_path, class:"btn btn-link" %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>
