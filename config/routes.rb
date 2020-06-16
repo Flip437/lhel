@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
 
   get 'contrats/senior'
-  get 'contrats/auto'
-  get 'contrats/moto'
+  get 'contrats/familiale'
+  get 'contrats/etudiants'
+  get 'contrats/medecinedouce'
+  get 'contrats/dentaire'
+  get 'contrats/optique'
+  get 'contrats/mutuelle'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'home#index'
 
