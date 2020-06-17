@@ -1,82 +1,3 @@
-<!-- Search -->
-<div id="search-main" class="navbar-search">
-    <div class="container">
-        <!-- Search form -->
-        <form class="navbar-search-form" role="form">
-            <div class="form-group">
-                <div class="input-group input-group-transparent">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fas fa-search"></i></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Type and hit enter ...">
-                </div>
-            </div>
-        </form>
-        <div class="navbar-search-suggestions">
-            <h6>Search Suggestions</h6>
-            <div class="row">
-                <div class="col-sm-6">
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a class="list-link" href="#">
-                                <i class="fas fa-search"></i>
-                                <span>macbook pro</span> in Laptops
-                            </a>
-                        </li>
-                        <li>
-                            <a class="list-link" href="#">
-                                <i class="fas fa-search"></i>
-                                <span>iphone 8</span> in Smartphones
-                            </a>
-                        </li>
-                        <li>
-                            <a class="list-link" href="#">
-                                <i class="fas fa-search"></i>
-                                <span>macbook pro</span> in Laptops
-                            </a>
-                        </li>
-                        <li>
-                            <a class="list-link" href="#">
-                                <i class="fas fa-search"></i>
-                                <span>beats pro solo 3</span> in Headphones
-                            </a>
-                        </li>
-                        <li>
-                            <a class="list-link" href="#">
-                                <i class="fas fa-search"></i>
-                                <span>smasung galaxy 10</span> in Phones
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Search -->
-
-<!-- Topbar -->
-<div id="navbar-top-main" class="navbar-top  navbar-dark bg-dark border-bottom">
-    <div class="container">
-        <div class="navbar-nav align-items-center">
-            <div class="ml-auto">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/support.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/support.html">Réseaux Sociaux</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/login.html"><i class="fas fa-user-circle"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Topbar -->
-
 <!-- Main navbar -->
 <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-dark bg-dark" id="navbar-main">
     <div class="container">
@@ -88,120 +9,198 @@
 
         <div class="collapse navbar-collapse" id="navbar-main-collapse">
             <ul class="navbar-nav align-items-lg-center">
-                <li class="nav-item active">
-                    <%= link_to "accueil", root_path, class:"nav-link" %>
-                </li>
-                <li class="nav-item active">
-                    <%= link_to 'Séniors', contrats_senior_path, class:"nav-link" %> 
-                </li>
+
                 <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
-                    <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">particuliers</a>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
-                        <div class="list-group">
-                            <a href="./pages/pages-landing.html" class="list-group-item list-group-item-action">
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("computer.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Etudiants</h6>
-                                        <p class="mb-0">Lien vers la page complémentaire santé étudiante</p>
+                    <%= link_to contrats_mutuelle_path, class:"btn btn-primary btn-animated btn-animated-x" do %>
+                        <span class="btn-inner--visible">Mutuel Santé</span>
+                        <span class="btn-inner--hidden"><i class="fas fa-arrow-down"></i></span>
+                    <% end %>
+                    <div class="dropdown-menu dropdown-menu-xl dropdown-menu-arrow py-0">
+                        <div class="row">
+                            <div class="col list-group">
+                                <!-- PAR PROFILS -->
+                                <div class="list-group-item list-group-item-action bg-light"%>
+                                    <div class="media d-flex align-items-center">
+                                        <div class="media-body ml-3">
+                                            <h6 class="mb-1">Par profils</h6>
+                                        </div>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="./pages/pages-secondary.html" class="list-group-item list-group-item-action">
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("person.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Indivuduel</h6>
-                                        <p class="mb-0">Lien vers la page complémentaire santé individuel</p>
+                                <!-- ETUDIANTS -->
+                                <%= link_to contrats_etudiants_path, class:"list-group-item list-group-item-action bg-light" do %>
+                                    <div class="media d-flex align-items-center">
+                                        <%= image_tag("computer.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                        <div class="media-body ml-3">
+                                            <h6 class="mb-1">Etudiants</h6>
+                                            <p class="mb-0"></p>
+                                        </div>
+                                    </div>
+                                <% end %>
+                                <!-- INDIVIDUEL -->
+                                <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action bg-light" do %>
+                                    <div class="media d-flex align-items-center">
+                                        <%= image_tag("person.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                        <div class="media-body ml-3">
+                                            <h6 class="mb-1">Individuel</h6>
+                                            <p class="mb-0"></p>
+                                        </div>
+                                    </div>
+                                <% end %>
+                                <!-- FAMILIALE -->
+                                <%= link_to contrats_familiale_path, class:"list-group-item list-group-item-action bg-light" do %>
+                                    <div class="media d-flex align-items-center">
+                                        <%= image_tag("persons.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                        <div class="media-body ml-3">
+                                            <h6 class="mb-1">Familiale</h6>
+                                            <p class="mb-0"></p>
+                                        </div>
+                                    </div>
+                                <% end %>
+                                <!-- SENIORS -->
+                                <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action bg-light" do %>
+                                    <div class="media d-flex align-items-center">
+                                        <%= image_tag("security.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                        <div class="media-body ml-3">
+                                            <h6 class="mb-1">Séniors (60 ans et +)</h6>
+                                            <p class="mb-0"></p>
+                                        </div>
+                                    </div>
+                                <% end %>
+                            </div>
+                            <div class="col list-group">
+                                <!-- PAR SOINS -->
+                                <div class="list-group-item list-group-item-action"%>
+                                    <div class="media d-flex align-items-center">
+                                        <div class="media-body ml-3">
+                                            <h6 class="mb-1">Par soins</h6>
+                                        </div>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="./pages/pages-account.html" class="list-group-item list-group-item-action">
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("persons.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Famile</h6>
-                                        <p class="mb-0">Lien vers la page complémentaire santé Famille</p>
+                                <!-- DENTAIRES -->
+                                <%= link_to contrats_dentaire_path, class:"list-group-item list-group-item-action" do %>
+                                    <div class="media d-flex align-items-center">
+                                        <%= image_tag("dentist.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                        <div class="media-body ml-3">
+                                            <h6 class="mb-1">Soins dentaires</h6>
+                                            <p class="mb-0"></p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="./pages/pages-shop.html" class="list-group-item list-group-item-action">
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("security.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Séniors (60 ans et +)</h6>
-                                        <p class="mb-0">Lien vers la page complémentaire santé séniors</p>
+                                <% end %>
+                                <!-- OPTIQUES -->
+                                <%= link_to contrats_optique_path, class:"list-group-item list-group-item-action" do %>
+                                    <div class="media d-flex align-items-center">
+                                        <%= image_tag("sunglasses.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                        <div class="media-body ml-3">
+                                            <h6 class="mb-1">Soins optiques</h6>
+                                            <p class="mb-0"></p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                <% end %>
+                                <!-- AUDITIFS -->
+                                <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
+                                    <div class="media d-flex align-items-center">
+                                        <%= image_tag("ear.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                        <div class="media-body ml-3">
+                                            <h6 class="mb-1">Soins auditifs</h6>
+                                            <p class="mb-0"></p>
+                                        </div>
+                                    </div>
+                                <% end %>
+                                <!-- COURANTS ET HOSPITALIERS -->
+                                <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
+                                    <div class="media d-flex align-items-center">
+                                        <%= image_tag("doctor.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                        <div class="media-body ml-3">
+                                            <h6 class="mb-1">Soins courants et hospitaliers</h6>
+                                            <p class="mb-0"></p>
+                                        </div>
+                                    </div>
+                                <% end %>
+                                <!-- MEDECINES DOUCES -->
+                                <%= link_to contrats_medecinedouce_path, class:"list-group-item list-group-item-action" do %>
+                                    <div class="media d-flex align-items-center">
+                                        <%= image_tag("joint.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                        <div class="media-body ml-3">
+                                            <h6 class="mb-1">Médecine douces</h6>
+                                            <p class="mb-0"></p>
+                                        </div>
+                                    </div>
+                                <% end %>
+                            </div>
                         </div>
                     </div>
                 </li>
+
                 <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
-                    <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">professionnels</a>
+                    <%= link_to root_path, class:"btn btn-primary btn-animated btn-animated-x" do %>
+                        <span class="btn-inner--visible">Assurance Prévoyance</span>
+                        <span class="btn-inner--hidden"><i class="fas fa-arrow-down"></i></span>
+                    <% end %>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
                         <div class="list-group">
-                            <a href="./pages/pages-landing.html" class="list-group-item list-group-item-action">
+                            <%= link_to root_path, class:"list-group-item list-group-item-action" do %>
                                 <div class="media d-flex align-items-center">
-                                    <%= image_tag("browser-window.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <%= image_tag("death.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
                                     <div class="media-body ml-3">
-                                        <h6 class="mb-1">Landing Pages</h6>
-                                        <p class="mb-0">A great point to start from.</p>
+                                        <h6 class="mb-1">Assurance décès</h6>
+                                        <p class="mb-0">Terminus, tout le monde descend</p>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="./pages/pages-secondary.html" class="list-group-item list-group-item-action">
+                            <% end %>
+                            <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
                                 <div class="media d-flex align-items-center">
-                                    <%= image_tag("ios-photos.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <%= image_tag("funeral.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
                                     <div class="media-body ml-3">
-                                        <h6 class="mb-1">Secondary Pages</h6>
-                                        <p class="mb-0">Build your website with these demos.</p>
+                                        <h6 class="mb-1">Assurance obsèque</h6>
+                                        <p class="mb-0">Pour un long voyage, mieux vos avoir de la place aux genoux</p>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="./pages/pages-account.html" class="list-group-item list-group-item-action">
+                            <% end %>
+                            <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
                                 <div class="media d-flex align-items-center">
-                                    <%= image_tag("maintenance.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <%= image_tag("healthcare.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
                                     <div class="media-body ml-3">
-                                        <h6 class="mb-1">Account Pages</h6>
-                                        <p class="mb-0">Account management made easy.</p>
+                                        <h6 class="mb-1">Assurance vie</h6>
+                                        <p class="mb-0">Pour les dur de la feuille</p>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="./pages/pages-shop.html" class="list-group-item list-group-item-action">
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("in-progress.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Shop Pages</h6>
-                                        <p class="mb-0">Explore the full ecommerce website flow.</p>
-                                    </div>
-                                </div>
-                            </a>
+                            <% end %>
                         </div>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./docs/alerts.html" role="button">Contactez-nous</a>
-                </li>
-            </ul>
 
-            <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./docs/introduction.html" target="_blank">Docs</a>
+                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                    <%= link_to root_path, class:"btn btn-primary btn-animated btn-animated-x" do %>
+                        <span class="btn-inner--visible">Professionnels</span>
+                        <span class="btn-inner--hidden"><i class="fas fa-arrow-down"></i></span>
+                    <% end %>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
+                        <div class="list-group">
+                            <%= link_to root_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("craftsman.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Artisants indépendants</h6>
+                                        <p class="mb-0">Tout seul</p>
+                                    </div>
+                                </div>
+                            <% end %>
+                            <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("man.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Professions libérales</h6>
+                                        <p class="mb-0">Blablablabla</p>
+                                    </div>
+                                </div>
+                            <% end %>
+                        </div>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./docs/changelog.html" target="_blank">Changelog</a>
-                </li>
-                <li class="nav-item mr-0">
-                    <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="nav-link d-lg-none">Purchase now</a>
-                    <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="btn btn-sm btn-white btn-circle btn-icon d-none d-lg-inline-flex">
-                        <span class="btn-inner--icon"><i class="fas fa-shopping-cart"></i></span>
-                        <span class="btn-inner--text">Purchase now</span>
-                    </a>
-                </li>
+                
             </ul>
-
         </div>
+
     </div>
 </nav>
 <!-- Main navbar -->

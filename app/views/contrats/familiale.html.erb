@@ -1,0 +1,87 @@
+<!-- Purpose-website-ui-kit-v1.1.3/pages/careers-single.html -->
+<main>
+
+    <!-- Spotlight -->
+    <section class="slice slice-xl pb-200 bg-secondary">
+        <div class="container pt-lg">
+            <div class="row row-grid justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="h2 mb-4">Mutuelle Familiale</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slice slice-lg bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow mt--200">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Pourquoi souscrire une mutuelle familiale ?</h4>
+                            <p>Une mutuelle santé famille, est une complémentaire santé contrairement à ce que nous pouvons penser qui s’adresse aussi bien aux couples avec que sans enfants.</p>
+                            <p>Une assurance santé famille est assez complexe à choisir, car chaque membre a ses propres besoins… un adolescent aura peut-être besoin d’un appareil dentaire, une consultation chez le petit dernier, une paire de lunettes pour la maman ou le papa. Ces nombreux exemples montrent que chaque profil doit être analysé pour trouver la meilleure couverture santé possible.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Comment choisir sa complémentaire santé famille ?</h4>
+                            <p>En premier, il est essentiel de définir les besoins de chacun en termes de santé, pour cela il faut bien prendre son temps. Cela aura pour objectif de bien définir les garanties santés adaptées à chacun des membres de sa famille.</p>
+                            <p>Frais dentaires ou d’optiques, frais d’hospitalisation, frais de séjours liés a la maternité, orthodontie, <%= link_to 'mutuelle sans carence', root_path %> sont des point qu’il ne faut surtout pas épargner. C’est pourquoi, certaines mutuelles sont plus avantageuses que d’autres sur la situation familiale car tout simplement plus adapté aux besoins.</p> 
+                            <p>Un petit récapitulatif des points à ne pas négliger lorsque vous choisirez votre mutuelle au niveau des garanties :</p>
+                            <ul>
+                                <li>Frais d’orthodontie et orthophonie pour les enfants à partir de 10ans</li>
+                                <li>Consultations avec dépassements d’honoraires, très importants surtout quand on a des enfants</li>
+                                <li>Services d’assistance enfants malade</li>
+                                <li>Remboursements plus importants au fil du temps pour récompenser la fidélité de l’assuré</li>
+                            <ul>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">A qui s’adresse la mutuelle famille ?</h4>
+                            <p>Malheureusement, parfois un des parents ne peut inscrire son ou ses enfants à un contrat collectif, car il est auto-entrepreneur, sans emploi ou en recherche d’emploi voire même fonctionnaire. C’est à ce moment-là, que la mutuelle famille devient importante car elle permet de prendre le relai sur tous les frais de santé.</p> 
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Les règlementations</h4>
+                            <p>Les contrats mutuelle famille sont soumis à la même réglementation que les autres contrats. Ces derniers doivent être solidaires et responsable vis à vis des assurés, aucune sélection médicale à l’entrée, couverture de certains actes de prévention et garanties viagères. </p>
+                            <p>Il est important de dire que vos enfants sont assurés jusqu’à 16 ans ou 25 ans pour ceux qui poursuivent leurs études ou qui sont en contrat d’apprentissage. Pour les enfants handicapés, les mutuelles couvrent à n’importe quel âge.</p> 
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Le 100% santé sera-t-il disponible pour les familles ?</h4>
+                            <p>La reforme <%= link_to '100% santé adoptée', root_path %> en 2018 à pour but de donner accès à tous les Français à des soins de qualité dans les domaines de l’optique, du dentaire et de l’audiologie. </p>
+                            <p>Il est donc par conséquent normal que les familles soient éligibles à ce plan qui concerne l’assurance maladie ainsi que les mutuelles.</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="slice slice-lg">
+
+        <span class="tongue tongue-top tongue-primary"><i class="fas fa-angle-up"></i></span>
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-8 text-center">
+                    <h3 class="font-weight-400">Demandez votre devis pour votre mutelle <span class="font-weight-700">seniors</span></h3>
+                    <div class="mt-5">
+                        <%= link_to root_path, target:"blank", class:'btn btn-primary btn-circle btn-translate--hover px-4' do %>
+                            Demandez votre devis
+                            <span class="badge badge-pill badge-danger text-sm">à partir de 50€</span>
+                        <%end%>
+                        <%= link_to "Contactez-nous", root_path, class:"btn btn-link" %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>

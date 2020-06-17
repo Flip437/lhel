@@ -1,10 +1,24 @@
 class ContratsController < ApplicationController
+
+  def mutuelle
+  end
+
   def senior
   end
 
-  def auto
+  def familiale
   end
 
-  def moto
+  def etudiants
   end
+
+  def medecinedouce
+  end
+
+  def dentaire
+  end
+
+  def optique
+  end
+
 end

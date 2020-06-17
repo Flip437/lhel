@@ -1,0 +1,69 @@
+<!-- Purpose-website-ui-kit-v1.1.3/pages/careers-single.html -->
+<main>
+
+    <!-- Spotlight -->
+    <section class="slice slice-xl pb-200 bg-secondary">
+        <div class="container pt-lg">
+            <div class="row row-grid justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="h2 mb-4">Les Médecines douces</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slice slice-lg bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow mt--200">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <p>Aujourd’hui, les médecines douces sont de plus en plus reconnues car elles aident beaucoup de personnes à se sentir mieux, selon une dernière étude, 40% des français auraient recours à la médecine douce.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Qu’appelle-t-on les médecines douces ?</h4>
+                            <p>L’OMS définit les médecines douces comme la combinaison de la médecine traditionnelle et de la médecine complémentaire.</p>
+                            <p>La médecine traditionnelle regroupe les connaissances, compétences et pratiques qui repose sur les théories, croyances et expériences propres à différentes cultures, généralement explicables ou pas. Le but étant de préserver la santé, de l’améliorer ou de traiter des maladies physiques ou mentales.</p>
+                            <p>La médecine complémentaire ou alternative est un ensemble de pratiques de santé qui ne font pas partie de la médecine traditionnelle et conventionnelle et qui ne sont admis totalement dans le système de santé qui prédomine.</p>
+                            <p>L’OMS recense à travers le monde plus de 400 pratiques, les plus reconnues étant la chiropractie, acupuncture, ostéopathie, homéopathie, sophrologie, naturopathie… Elle souhaite intégrer mieux cette médecine dans le système de santé conventionnel à travers un encadrement et une règlementation mieux délimitée.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">La mutuelle en Médecines douces</h4>
+                            <p>Les deux seules thérapies reconnues par l’assurance maladie sont l’homéopathie et l’acupuncture, remboursé sur le système généraliste.</p>
+                            <p>C’est pour cette raison que les mutuelles santé prennent en charge de plus en plus ce type de thérapie car la demande est croissante.</p> 
+                            <p>Généralement, les assurances santé qui remboursent la médecine douce proposent des prises en charge intéressantes, sous forme de forfaits et d’actes médicaux. Un grand nombre proposent ainsi un forfait « médecines douces » qui permet d’être remboursé de ses consultations sans faire monter trop les cotisations.</p>
+                            <p>Généralement, les assurances santé qui remboursent la médecine douce proposent des prises en charge intéressantes, sous forme de forfaits et d’actes médicaux. Un grand nombre proposent ainsi un forfait « médecines douces » qui permet d’être remboursé de ses consultations sans faire monter trop les cotisations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="slice slice-lg">
+
+        <span class="tongue tongue-top tongue-primary"><i class="fas fa-angle-up"></i></span>
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-8 text-center">
+                    <h3 class="font-weight-400">Demandez votre devis pour votre mutelle <span class="font-weight-700">seniors</span></h3>
+                    <div class="mt-5">
+                        <%= link_to root_path, target:"blank", class:'btn btn-primary btn-circle btn-translate--hover px-4' do %>
+                            Demandez votre devis
+                            <span class="badge badge-pill badge-danger text-sm">à partir de 50€</span>
+                        <%end%>
+                        <%= link_to "Contactez-nous", root_path, class:"btn btn-link" %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>

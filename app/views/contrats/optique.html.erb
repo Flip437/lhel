@@ -1,0 +1,89 @@
+<!-- Purpose-website-ui-kit-v1.1.3/pages/careers-single.html -->
+<main>
+
+    <!-- Spotlight -->
+    <section class="slice slice-xl pb-200 bg-secondary">
+        <div class="container pt-lg">
+            <div class="row row-grid justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="h2 mb-4">Mutuelle optique</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slice slice-lg bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow mt--200">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <p>L’optique est l’une des dépenses santé les plus importantes, de l’ophtalmologue aux métiers de la lunetterie, chaque passage coute cher. Mais la vue est l’un des sens que l’on utilise le plus dans notre quotidien, et si les problèmes apparaissent aux yeux cela devient vite dérangeant voir périlleux pour les tâches de tous les jours.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">L’Assurance maladie dans le monde de l’optique </h4>
+                            <p>La vue nous sert pour toutes nos taches du quotidien, regarder la télé, conduire la voiture, nettoyer la cuisine… et cela peut devenir vite dérangeant quand un dysfonctionnement arrive.</p>
+                            <p>En général, un rendez-vous chez l’ophtalmologue s’impose pour faire un bilan qui peut être aboutira sur la finalité de porter une paire de lunettes ou des lentilles. Dans ce cas, une bonne <%= link_to 'mutuelle santé', root_path %> sera de rigueur pour couvrir vos soins.</p>
+                            <p>En cas de soucis, une consultation une fois par an est fortement conseillée et remboursée par votre complémentaire santé sauf si le praticien est de secteur 2. Un exemple, un praticien de secteur 2 pratiquera des honoraires plus élevées, et la sécurité sociale ne rembourse que 15,10 euros contre 20 euros pour un praticien de secteur 1.</p>
+                            <p>Le remboursement des lunettes, des verres et des lentilles se fait sur une base de 60% du tarif conventionnel de l’Assurance maladie, variant souvent avec l’âge (18 ans).</p>
+                            <p>Malheureusement, le taux de la convention de l’assurance maladie est faible, voire quasi-inexistant.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Des besoins toujours plus importants et des soins optiques plus chers</h4>
+                            <p>Des besoins plus importants, aujourd’hui il est compliqué de ne pas porter des lunettes ou des lentilles avec la multiplication des écrans dans notre quotidien au travail mais aussi à la maison avec la télévision, l’ordinateur, le smartphone...</p>
+                            <p>Comme nos besoins, les soins ont proportionnellement augmenté avec l’évolution de l’industrie optique : lentilles souples, montures discrètes et légères, verres anti-reflets, verres progressifs...</p>
+                            <p>Le résultat de la modernité se traduit par des prix beaucoup plus haut.</p>
+                            <p>C’est alors que la mutuelle optique devient une nécessité pour profiter de ces innovations dans les besoins de notre quotidien qui sont grandissant.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Comment choisir sa mutuelle optique ?</h4>
+                            <p>Une mutuelle optique se choisit sur les taux de remboursements les plus adaptés à vos besoins au meilleur tarif.</p>
+                            <p>Pour connaître ses besoins et donc adapter ses garanties, un bilan chez l’ophtalmologue est nécessaire. Il tiendra compte de tous éléments nécessaires afin de dresser le meilleur diagnostique possible.</p>
+                            <p>Une fois le bilan réalisé, il sera facile pour nous d’identifier la mutuelle optique qui vous conviendra le mieux sur le large portefeuille de partenaires.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Les remboursements des lunettes par les mutuelles</h4>
+                            <p>Comme la mutuelle dentaire, l’optique à 3 modèles de remboursements :</p>
+                            <ul>
+                                <li>Remboursement forfaitaire : vous disposez d’une somme maximum allouée pour vos soins dentaires (plafond dentaire), si ce plafond est dépassé le reste est à votre charge.</li>
+                                <li>Remboursement en pourcentage : fixé en pourcentage sur la base du tarif conventionnel de l’Assurance maladie. Si une mutuelle vous propose un taux à 400%, elle vous remboursera jusqu’à 4 fois le montant de la part prise en charge par la Sécurité sociale. </li>
+                                <li>Remboursement total de certains verres et montures avec le 100% santé</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="slice slice-lg">
+
+        <span class="tongue tongue-top tongue-primary"><i class="fas fa-angle-up"></i></span>
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-8 text-center">
+                    <h3 class="font-weight-400">Demandez votre devis pour votre mutelle <span class="font-weight-700">seniors</span></h3>
+                    <div class="mt-5">
+                        <%= link_to root_path, target:"blank", class:'btn btn-primary btn-circle btn-translate--hover px-4' do %>
+                            Demandez votre devis
+                            <span class="badge badge-pill badge-danger text-sm">à partir de 50€</span>
+                        <%end%>
+                        <%= link_to "Contactez-nous", root_path, class:"btn btn-link" %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>
