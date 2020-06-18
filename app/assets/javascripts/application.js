@@ -33,7 +33,8 @@ $(document).ready(function(){
     
     $("#test").trigger("mouseleave");
     
-    $("#test").css("transform", "rotateY("+180+"deg)");
+    $(".test").css("transform", "rotateY("+180+"deg)");
+    $(".test").css("transform", "rotateY("+180+"deg)");
   
 
 
