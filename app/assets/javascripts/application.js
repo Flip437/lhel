@@ -20,4 +20,24 @@
 
 $(document).ready(function(){
     AOS.init();
+
+    $("#test").mouseenter(function(){
+        $(this).addClass("hovered");
+    });
+    
+    $("#test").mouseleave(function(){
+        $(this).removeClass("hovered");
+    });
+    
+    $("#test").trigger("mouseenter");
+    
+    $("#test").trigger("mouseleave");
+    
+    $("#test").css("transform", "rotateY("+180+"deg)");
+  
+
+
 });
+
+
+
