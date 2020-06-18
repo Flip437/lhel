@@ -19,8 +19,7 @@
     <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800" %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
+    
     <!-- On scroll library -->
     <%= stylesheet_link_tag "https://unpkg.com/aos@next/dist/aos.css" %>
     <%= javascript_include_tag "https://unpkg.com/aos@next/dist/aos.js" %>
@@ -34,8 +33,8 @@
     </header>
 
     <!-- Navbar background start -->
-      <div class="navbarback bg-gradient-primary">
-      </div>
+    <!--  <div class="navbarback bg-gradient-primary"> -->
+    <!--  </div> -->
     <!-- Navbar background end -->
 
     <%= yield %>
@@ -43,6 +42,8 @@
     <footer class="<%= content_for :footer_class %>">
       <%= render "footer/footer" %>
     </footer>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
   </body>
 </html>
