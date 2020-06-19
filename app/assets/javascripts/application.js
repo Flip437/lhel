@@ -15,6 +15,7 @@
 //= require bootstrap.bundle.min.js
 //= require in-view.min.js
 //= require highlight.js
+
 //= require theme
 //= require_tree .
 
@@ -40,3 +41,12 @@ $(document).ready(function(){
 
 });
 
+$('header').on("mouseover",function(){ 
+    $('header').removeClass("header-transparent");
+    $('header').addClass("header-visible");
+});
+
+$('header').on("mouseout",function(){ 
+    $('header').removeClass("header-visible");
+    $('header').addClass("header-transparent");
+});
