@@ -15,7 +15,7 @@
 }
 .header-visible .navbar-top:not(.navbar-collapsed)
 {
-    background-color: variable(--dark) important!
+    background-color: variable(--dark) !important
 }
 @media (max-width: 1199.98px)
 {
