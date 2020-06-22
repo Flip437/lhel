@@ -17,6 +17,64 @@
                     <% end %>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
                         <div class="list-group">
+                            <%= link_to contrats_mutuelle_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("medical.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Mutuelle Santé</h6>
+                                        <p class="mb-0"></p>
+                                    </div>
+                                </div>
+                            <% end %>
+                            <%= link_to root_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("privacy.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Assurance Prévoyance</h6>
+                                        <p class="mb-0"></p>
+                                    </div>
+                                </div>
+                            <% end %>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                    <%= link_to( contrats_mutuelle_path, class: "nav-links btn btn-primary btn-animated btn-animated-x", role: "button", data: { toggle: "dropdown" }, "aria-haspopup": "true", "aria-expanded": "false" ) do %>   
+                        <span class="btn-inner--visible">Professionnels</span>
+                        <span class="btn-inner--hidden"><i class="fas fa-arrow-down"></i></span>
+                    <% end %>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
+                        <div class="list-group">
+                            <%= link_to contrats_complementaire_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("man.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Complémentaire Santé</h6>
+                                        <p class="mb-0"></p>
+                                    </div>
+                                </div>
+                            <% end %>
+                            <%= link_to root_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("privacy.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Prévoyance</h6>
+                                        <p class="mb-0"></p>
+                                    </div>
+                                </div>
+                            <% end %>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                    <%= link_to( contrats_mutuelle_path, class: "nav-links btn btn-primary btn-animated btn-animated-x", role: "button", data: { toggle: "dropdown" }, "aria-haspopup": "true", "aria-expanded": "false" ) do %>   
+                        <span class="btn-inner--visible">Liste des pages statics (à virer)</span>
+                        <span class="btn-inner--hidden"><i class="fas fa-arrow-down"></i></span>
+                    <% end %>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
+                        <div class="list-group">
                             <!-- ETUDIANTS -->
                             <%= link_to contrats_etudiants_path, class:"list-group-item list-group-item-action" do %>
                                 <div class="media d-flex align-items-center">
@@ -99,47 +157,8 @@
                             <% end %>
                         </div>
                     </div>
-                </li>
+                </li>        
 
-                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
-                    <%= link_to( contrats_mutuelle_path, class: "nav-links btn btn-primary btn-animated btn-animated-x", role: "button", data: { toggle: "dropdown" }, "aria-haspopup": "true", "aria-expanded": "false" ) do %>   
-                        <span class="btn-inner--visible">Professionnels</span>
-                        <span class="btn-inner--hidden"><i class="fas fa-arrow-down"></i></span>
-                    <% end %>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
-                        <div class="list-group">
-                            <%= link_to root_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("death.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Assurance décès</h6>
-                                        <p class="mb-0">Terminus, tout le monde descend</p>
-                                    </div>
-                                </div>
-                            <% end %>
-                            <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("funeral.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Assurance obsèque</h6>
-                                        <p class="mb-0">Pour un long voyage, mieux vos avoir de la place aux genoux</p>
-                                    </div>
-                                </div>
-                            <% end %>
-                            <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("healthcare.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Assurance vie</h6>
-                                        <p class="mb-0">Pour les dur de la feuille</p>
-                                    </div>
-                                </div>
-                            <% end %>
-                        </div>
-                    </div>
-                </li>
-                
-                
             </ul>
         </div>
 
