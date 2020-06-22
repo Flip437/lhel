@@ -57,6 +57,46 @@
                                     </div>
                                 </div>
                             <% end %>
+                            <!-- RÉSILIATION -->
+                            <%= link_to contrats_resiliation_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("do-not-disturb.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Résilitaion</h6>
+                                        <p class="mb-0"></p>
+                                    </div>
+                                </div>
+                            <% end %>
+                            <!-- RÉSILIATION -->
+                            <%= link_to contrats_surcomplementaire_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("double-tick.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Surcomplémentaire</h6>
+                                        <p class="mb-0"></p>
+                                    </div>
+                                </div>
+                            <% end %>
+                            <!-- DEVIS -->
+                            <%= link_to contrats_devis_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("form.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Devis</h6>
+                                        <p class="mb-0"></p>
+                                    </div>
+                                </div>
+                            <% end %>
+                            <!-- COMPLEMENAIRE -->
+                            <%= link_to contrats_complementaire_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("medical.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Complémentaire Santé</h6>
+                                        <p class="mb-0"></p>
+                                    </div>
+                                </div>
+                            <% end %>
                         </div>
                     </div>
                 </li>

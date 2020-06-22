@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   get 'contrats/dentaire'
   get 'contrats/optique'
   get 'contrats/mutuelle'
+  get 'contrats/resiliation'
+  get 'contrats/surcomplementaire'
+  get 'contrats/devis'
+  get 'contrats/complementaire'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'home#index'
 
