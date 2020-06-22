@@ -11,129 +11,99 @@
             <ul class="navbar-nav align-items-lg-center">
 
                 <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
-                    <%= link_to contrats_mutuelle_path, class:"btn btn-primary btn-animated btn-animated-x" do %>
-                        <span class="btn-inner--visible">Mutuel Santé</span>
+                    <%= link_to( contrats_mutuelle_path, class: "nav-links btn btn-primary btn-animated btn-animated-x", role: "button", data: { toggle: "dropdown" }, "aria-haspopup": "true", "aria-expanded": "false" ) do %>   
+                        <span class="btn-inner--visible">Particuliers</span>
                         <span class="btn-inner--hidden"><i class="fas fa-arrow-down"></i></span>
                     <% end %>
-                    <div class="dropdown-menu dropdown-menu-xl dropdown-menu-arrow py-0">
-                        <div class="row">
-                            <div class="col list-group">
-                                <!-- PAR PROFILS -->
-                                <div class="list-group-item list-group-item-action bg-light"%>
-                                    <div class="media d-flex align-items-center">
-                                        <div class="media-body ml-3">
-                                            <h6 class="mb-1">Par profils</h6>
-                                        </div>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
+                        <div class="list-group">
+                            <!-- ETUDIANTS -->
+                            <%= link_to contrats_etudiants_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("computer.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Etudiants</h6>
+                                        <p class="mb-0"></p>
                                     </div>
                                 </div>
-                                <!-- ETUDIANTS -->
-                                <%= link_to contrats_etudiants_path, class:"list-group-item list-group-item-action bg-light" do %>
-                                    <div class="media d-flex align-items-center">
-                                        <%= image_tag("computer.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                        <div class="media-body ml-3">
-                                            <h6 class="mb-1">Etudiants</h6>
-                                            <p class="mb-0"></p>
-                                        </div>
-                                    </div>
-                                <% end %>
-                                <!-- INDIVIDUEL -->
-                                <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action bg-light" do %>
-                                    <div class="media d-flex align-items-center">
-                                        <%= image_tag("person.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                        <div class="media-body ml-3">
-                                            <h6 class="mb-1">Individuel</h6>
-                                            <p class="mb-0"></p>
-                                        </div>
-                                    </div>
-                                <% end %>
-                                <!-- FAMILIALE -->
-                                <%= link_to contrats_familiale_path, class:"list-group-item list-group-item-action bg-light" do %>
-                                    <div class="media d-flex align-items-center">
-                                        <%= image_tag("persons.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                        <div class="media-body ml-3">
-                                            <h6 class="mb-1">Familiale</h6>
-                                            <p class="mb-0"></p>
-                                        </div>
-                                    </div>
-                                <% end %>
-                                <!-- SENIORS -->
-                                <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action bg-light" do %>
-                                    <div class="media d-flex align-items-center">
-                                        <%= image_tag("security.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                        <div class="media-body ml-3">
-                                            <h6 class="mb-1">Séniors (60 ans et +)</h6>
-                                            <p class="mb-0"></p>
-                                        </div>
-                                    </div>
-                                <% end %>
-                            </div>
-                            <div class="col list-group">
-                                <!-- PAR SOINS -->
-                                <div class="list-group-item list-group-item-action"%>
-                                    <div class="media d-flex align-items-center">
-                                        <div class="media-body ml-3">
-                                            <h6 class="mb-1">Par soins</h6>
-                                        </div>
+                            <% end %>
+                            <!-- INDIVIDUEL -->
+                            <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("person.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Individuel</h6>
+                                        <p class="mb-0"></p>
                                     </div>
                                 </div>
-                                <!-- DENTAIRES -->
-                                <%= link_to contrats_dentaire_path, class:"list-group-item list-group-item-action" do %>
-                                    <div class="media d-flex align-items-center">
-                                        <%= image_tag("dentist.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                        <div class="media-body ml-3">
-                                            <h6 class="mb-1">Soins dentaires</h6>
-                                            <p class="mb-0"></p>
-                                        </div>
+                            <% end %>
+                            <!-- FAMILIALE -->
+                            <%= link_to contrats_familiale_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("persons.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Familiale</h6>
+                                        <p class="mb-0"></p>
                                     </div>
-                                <% end %>
-                                <!-- OPTIQUES -->
-                                <%= link_to contrats_optique_path, class:"list-group-item list-group-item-action" do %>
-                                    <div class="media d-flex align-items-center">
-                                        <%= image_tag("sunglasses.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                        <div class="media-body ml-3">
-                                            <h6 class="mb-1">Soins optiques</h6>
-                                            <p class="mb-0"></p>
-                                        </div>
+                                </div>
+                            <% end %>
+                            <!-- SENIORS -->
+                            <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("security.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Séniors (60 ans et +)</h6>
+                                        <p class="mb-0"></p>
                                     </div>
-                                <% end %>
-                                <!-- AUDITIFS -->
-                                <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
-                                    <div class="media d-flex align-items-center">
-                                        <%= image_tag("ear.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                        <div class="media-body ml-3">
-                                            <h6 class="mb-1">Soins auditifs</h6>
-                                            <p class="mb-0"></p>
-                                        </div>
+                                </div>
+                            <% end %>
+                            <!-- RÉSILIATION -->
+                            <%= link_to contrats_resiliation_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("do-not-disturb.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Résilitaion</h6>
+                                        <p class="mb-0"></p>
                                     </div>
-                                <% end %>
-                                <!-- COURANTS ET HOSPITALIERS -->
-                                <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
-                                    <div class="media d-flex align-items-center">
-                                        <%= image_tag("doctor.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                        <div class="media-body ml-3">
-                                            <h6 class="mb-1">Soins courants et hospitaliers</h6>
-                                            <p class="mb-0"></p>
-                                        </div>
+                                </div>
+                            <% end %>
+                            <!-- RÉSILIATION -->
+                            <%= link_to contrats_surcomplementaire_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("double-tick.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Surcomplémentaire</h6>
+                                        <p class="mb-0"></p>
                                     </div>
-                                <% end %>
-                                <!-- MEDECINES DOUCES -->
-                                <%= link_to contrats_medecinedouce_path, class:"list-group-item list-group-item-action" do %>
-                                    <div class="media d-flex align-items-center">
-                                        <%= image_tag("joint.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                        <div class="media-body ml-3">
-                                            <h6 class="mb-1">Médecine douces</h6>
-                                            <p class="mb-0"></p>
-                                        </div>
+                                </div>
+                            <% end %>
+                            <!-- DEVIS -->
+                            <%= link_to contrats_devis_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("form.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Devis</h6>
+                                        <p class="mb-0"></p>
                                     </div>
-                                <% end %>
-                            </div>
+                                </div>
+                            <% end %>
+                            <!-- COMPLEMENAIRE -->
+                            <%= link_to contrats_complementaire_path, class:"list-group-item list-group-item-action" do %>
+                                <div class="media d-flex align-items-center">
+                                    <%= image_tag("medical.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
+                                    <div class="media-body ml-3">
+                                        <h6 class="mb-1">Complémentaire Santé</h6>
+                                        <p class="mb-0"></p>
+                                    </div>
+                                </div>
+                            <% end %>
                         </div>
                     </div>
                 </li>
 
                 <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
-                    <%= link_to root_path, class:"btn btn-primary btn-animated btn-animated-x" do %>
-                        <span class="btn-inner--visible">Assurance Prévoyance</span>
+                    <%= link_to( contrats_mutuelle_path, class: "nav-links btn btn-primary btn-animated btn-animated-x", role: "button", data: { toggle: "dropdown" }, "aria-haspopup": "true", "aria-expanded": "false" ) do %>   
+                        <span class="btn-inner--visible">Professionnels</span>
                         <span class="btn-inner--hidden"><i class="fas fa-arrow-down"></i></span>
                     <% end %>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
@@ -168,35 +138,7 @@
                         </div>
                     </div>
                 </li>
-
-                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
-                    <%= link_to root_path, class:"btn btn-primary btn-animated btn-animated-x" do %>
-                        <span class="btn-inner--visible">Professionnels</span>
-                        <span class="btn-inner--hidden"><i class="fas fa-arrow-down"></i></span>
-                    <% end %>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
-                        <div class="list-group">
-                            <%= link_to root_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("craftsman.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Artisants indépendants</h6>
-                                        <p class="mb-0">Tout seul</p>
-                                    </div>
-                                </div>
-                            <% end %>
-                            <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("man.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Professions libérales</h6>
-                                        <p class="mb-0">Blablablabla</p>
-                                    </div>
-                                </div>
-                            <% end %>
-                        </div>
-                    </div>
-                </li>
+                
                 
             </ul>
         </div>

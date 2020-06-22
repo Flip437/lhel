@@ -21,4 +21,16 @@ class ContratsController < ApplicationController
   def optique
   end
 
+  def resiliation
+  end
+
+  def surcomplementaire
+  end
+
+  def devis
+  end
+
+  def complementaire
+  end
+  
 end
