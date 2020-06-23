@@ -9,7 +9,6 @@
 
         <div class="collapse navbar-collapse" id="navbar-main-collapse">
             <ul class="navbar-nav align-items-lg-center">
-
                 <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
                     <%= link_to( contrats_mutuelle_path, class: "nav-links btn btn-primary btn-animated btn-animated-x", role: "button", data: { toggle: "dropdown" }, "aria-haspopup": "true", "aria-expanded": "false" ) do %>   
                         <span class="btn-inner--visible">Particuliers</span>
@@ -35,6 +34,7 @@
                                     </div>
                                 </div>
                             <% end %>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -160,12 +160,9 @@
                 </li>
                 
                 <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
-                <%= link_to "Blog", blog_index_path, class: "nav-links btn btn-primary" %>
-            </li>  
-
+                    <%= link_to "Blog", blog_index_path, class: "nav-links btn btn-primary" %>
+                </li>
             </ul>
         </div>
-
-    </div>
 </nav>
 <!-- Main navbar -->
