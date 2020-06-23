@@ -15,6 +15,7 @@
 //= require bootstrap.bundle.min.js
 //= require in-view.min.js
 //= require highlight.js
+//= require autosize.min
 
 //= require theme
 //= require_tree .
