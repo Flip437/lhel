@@ -16,6 +16,7 @@
 //= require in-view.min.js
 //= require highlight.js
 //= require autosize.min
+//= require script.js
 
 //= require theme
 //= require_tree .
@@ -33,22 +34,3 @@ $('header').on("mouseout",function(){
     $('header').removeClass("header-visible");
     $('header').addClass("header-transparent");
 });
-
-
-
-
-$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
-    if (!$(this).next().hasClass('show')) {
-      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-    }
-    var $subMenu = $(this).next(".dropdown-menu");
-    $subMenu.toggleClass('show');
-  
-  
-    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-      $('.dropdown-submenu .show').removeClass("show");
-    });
-  
-  
-    return false;
-  });
