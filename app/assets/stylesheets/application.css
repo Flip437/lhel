@@ -18,6 +18,9 @@
  *= require atom-one-dark.css
  *= flipovercard
  *= require visibleheader 
+ *= require style
+ *= require listgroup
+ *= require navlinkdrop
  
  *= require theme
 
