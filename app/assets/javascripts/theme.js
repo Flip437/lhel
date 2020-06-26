@@ -293,16 +293,11 @@ var Datepicker = (function() {
 var Dropdown = (function() {
 
 	// Variables
-
 	var $dropdown = $('.dropdown');
 
-
 	// Methods
-
 	function hideDropdown($this) {
-
 		// Add additional .hide class for animated dropdown menus in order to apply some css behind
-
 		if ($this.hasClass('dropdown-animate')) {
 			var $dropdownMenu = $this.find('.dropdown-menu');
 
@@ -314,9 +309,7 @@ var Dropdown = (function() {
 		}
 	}
 
-
 	// Events
-
 	if ($dropdown.length) {
     	$dropdown.on({
     		'hide.bs.dropdown': function() {

@@ -17,6 +17,7 @@
  *= require all.min.css
  *= require atom-one-dark.css
  *= flipovercard
+ *= home
  *= require visibleheader 
  *= require style
  *= require listgroup
@@ -25,3 +26,8 @@
  *= require theme
 
  */
+
+ .navbarback {
+    width: 100%;
+    height: 75px;
+}
