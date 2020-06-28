@@ -73,10 +73,11 @@
             </div>
             <div class="row row-grid">
                 <div class="col-lg-4">
+                <%= link_to blog_article_path do %>
                     <div class="card shadow-sm shadow--hover">
                         <%= image_tag("img-1-800x600.jpg", alt: "Image placeholder", class:"card-img-top") %>
                         <div class="card-body py-5 text-center">
-                            <a href="#" class="h5 lh-150">Choose the best solution for your business</a>
+                            <h5 class="lh-150">Choose the best solution for your business</h5>
                             <h6 class="text-muted mt-4 mb-0">25 April, 2018</h6>
                         </div>
                         <div class="card-footer">
@@ -103,12 +104,14 @@
                             </div>
                         </div>
                     </div>
+                <% end %>
                 </div>
                 <div class="col-lg-4">
+                <%= link_to blog_article_path do %>
                     <div class="card shadow-sm shadow--hover">
                         <%= image_tag("img-2-800x600.jpg", alt: "Image placeholder", class:"card-img-top") %>
                         <div class="card-body py-5 text-center">
-                            <a href="#" class="h5 lh-150">How to find the right design for your specific product</a>
+                            <h5 class="lh-150">How to find the right design for your specific product</h5>
                             <h6 class="text-muted mt-4 mb-0">25 April, 2018</h6>
                         </div>
                         <div class="card-footer">
@@ -135,12 +138,14 @@
                             </div>
                         </div>
                     </div>
+                <% end %>
                 </div>
                 <div class="col-lg-4">
+                <%= link_to blog_article_path do %>
                     <div class="card shadow-sm shadow--hover">
                         <%= image_tag("img-3-800x600.jpg", alt: "Image placeholder", class:"card-img-top") %>
                         <div class="card-body py-5 text-center">
-                            <a href="#" class="h5 lh-150">How to win buyers and influence sales with marketing</a>
+                            <h5 class="lh-150">How to win buyers and influence sales with marketing</h5>
                             <h6 class="text-muted mt-4 mb-0">25 April, 2018</h6>
                         </div>
                         <div class="card-footer">
@@ -167,6 +172,7 @@
                             </div>
                         </div>
                     </div>
+                <% end %>
                 </div>
             </div>
         </div>
