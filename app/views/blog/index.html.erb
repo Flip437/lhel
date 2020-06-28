@@ -1,23 +1,18 @@
 
 <main>
 
-    <section class="spotlight bg-cover bg-size--cover" data-spotlight="fullscreen" style="background-image: url(<%= asset_path 'img-1-1920x800.jpg' %>);">
+    <section class="spotlight bg-cover bg-size--cover flip-banner" data-spotlight="fullscreen">
         <div class="spotlight-holder">
             <span class="mask bg-gradient-primary opacity-6"></span>
             <div class="container py-md d-flex align-items-center pt-lg">
                 <div class="col pt-md pt-lg-0">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-md-7 col-lg-7 text-center">
-                            <h1 class="text-white lh-150 mb-4">Keep your face always toward the sunshine - and shadows will fall behind you.</h1>
+                            <h1 class="text-white lh-150 mb-4">Restez informés et suivez les actualités</h1>
                             <ul class="list-inline">
-                                <li class="list-inline-item text-white">August 21, 2018</li>
-                                <li class="list-inline-item text-white">Written by Destiny Erykah</li>
+                                <li class="list-inline-item text-white">Restez informés</li>
+                                <li class="list-inline-item text-white"></li>
                             </ul>
-                            <span class="clearfix"></span>
-                            <a href="#" class="btn btn-white btn-circle btn-icon mt-4">
-                                <span class="btn-inner--text">Continue reading</span>
-                                <span class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -58,7 +53,7 @@
                     <div class="card shadow-sm shadow--hover">
                         <%= image_tag("img-2-800x600.jpg", alt: "Image placeholder", class:"card-img-top") %>
                         <div class="card-body py-5 text-center">
-                            <a href="#" class="h5 lh-150">How to find the right design for your specific product</a>
+                            <%= link_to 'How to find the right design for your specific product', blog_article_path, class:"h5 lh-150" %>
                             <h6 class="text-muted mt-4 mb-0">25 April, 2018</h6>
                         </div>
                         <div class="card-footer">
@@ -84,7 +79,7 @@
                     <div class="card shadow-sm shadow--hover">
                         <%= image_tag("img-3-800x600.jpg", alt: "Image placeholder", class:"card-img-top") %>
                         <div class="card-body py-5 text-center">
-                            <a href="#" class="h5 lh-150">How to win buyers and influence sales with marketing</a>
+                            <%= link_to 'How to win buyers and influence sales with marketing', blog_article_path, class:"h5 lh-150" %>
                             <h6 class="text-muted mt-4 mb-0">25 April, 2018</h6>
                         </div>
                         <div class="card-footer">
@@ -112,7 +107,7 @@
                     <div class="card shadow-sm shadow--hover">
                         <%= image_tag("img-4-800x600.jpg", alt: "Image placeholder", class:"card-img-top") %>
                         <div class="card-body py-5 text-center">
-                            <a href="#" class="h5 lh-150">Choose the best solution for your business</a>
+                            <%= link_to 'Choose the best solution for your business', blog_article_path, class:"h5 lh-150" %>
                             <h6 class="text-muted mt-4 mb-0">25 April, 2018</h6>
                         </div>
                         <div class="card-footer">
@@ -138,7 +133,7 @@
                     <div class="card shadow-sm shadow--hover">
                         <%= image_tag("img-5-800x600.jpg", alt: "Image placeholder", class:"card-img-top") %>
                         <div class="card-body py-5 text-center">
-                            <a href="#" class="h5 lh-150">How to find the right design for your specific product</a>
+                            <%= link_to 'How to find the right design for your specific product', blog_article_path, class:"h5 lh-150" %>
                             <h6 class="text-muted mt-4 mb-0">25 April, 2018</h6>
                         </div>
                         <div class="card-footer">
@@ -164,7 +159,7 @@
                     <div class="card shadow-sm shadow--hover">
                         <%= image_tag("img-6-800x600.jpg", alt: "Image placeholder", class:"card-img-top") %>
                         <div class="card-body py-5 text-center">
-                            <a href="#" class="h5 lh-150">How to win buyers and influence sales with marketing</a>
+                            <%= link_to 'How to win buyers and influence sales with marketing', blog_article_path, class:"h5 lh-150" %>
                             <h6 class="text-muted mt-4 mb-0">25 April, 2018</h6>
                         </div>
                         <div class="card-footer">
@@ -192,7 +187,7 @@
                     <div class="card shadow-sm shadow--hover">
                         <%= image_tag("img-1-800x600.jpg", alt: "Image placeholder", class:"card-img-top") %>
                         <div class="card-body py-5 text-center">
-                            <a href="#" class="h5 lh-150">Choose the best solution for your business</a>
+                            <%= link_to 'How to win buyers and influence sales with marketing', blog_article_path, class:"h5 lh-150" %>
                             <h6 class="text-muted mt-4 mb-0">25 April, 2018</h6>
                         </div>
                         <div class="card-footer">
@@ -218,7 +213,7 @@
                     <div class="card shadow-sm shadow--hover">
                         <%= image_tag("img-1-800x600.jpg", alt: "Image placeholder", class:"card-img-top") %>
                         <div class="card-body py-5 text-center">
-                            <a href="#" class="h5 lh-150">How to find the right design for your specific product</a>
+                            <%= link_to 'How to win buyers and influence sales with marketing', blog_article_path, class:"h5 lh-150" %>
                             <h6 class="text-muted mt-4 mb-0">25 April, 2018</h6>
                         </div>
                         <div class="card-footer">
@@ -244,7 +239,7 @@
                     <div class="card shadow-sm shadow--hover">
                         <%= image_tag("img-3-800x600.jpg", alt: "Image placeholder", class:"card-img-top") %>
                         <div class="card-body py-5 text-center">
-                            <a href="#" class="h5 lh-150">How to win buyers and influence sales with marketing</a>
+                            <%= link_to 'How to win buyers and influence sales with marketing', blog_article_path, class:"h5 lh-150" %>
                             <h6 class="text-muted mt-4 mb-0">25 April, 2018</h6>
                         </div>
                         <div class="card-footer">
