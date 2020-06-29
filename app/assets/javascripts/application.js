@@ -18,6 +18,13 @@
 //= require autosize.min
 //= require script.js
 
+// FORMULAIRE
+//= require sticky-kit.min.js 
+//= require select2.min.js
+//= require bootstrap-tagsinput.min.js
+//= require bootstrap-datepicker.min.js
+// FORMUAIRE
+
 //= require theme
 //= require_tree .
 

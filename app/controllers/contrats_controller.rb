@@ -32,5 +32,8 @@ class ContratsController < ApplicationController
 
   def complementaire
   end
+
+  def formulaire
+  end
   
 end
