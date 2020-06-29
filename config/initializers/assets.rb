@@ -28,6 +28,7 @@ Rails.application.config.assets.paths << Rails.root.join("app", "assets", "image
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "images", "icons", "dusk", "svg")
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "images", "icons", "flags")
 
+Rails.application.config.assets.paths << Rails.root.join("app", "assets", "images", "prv")
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "images", "prv", "pages")
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "images", "prv", "partners")
 
@@ -51,6 +52,7 @@ Rails.application.config.assets.paths << Rails.root.join("vendor", "in-view", "d
 Rails.application.config.assets.paths << Rails.root.join("vendor", "jquery", "dist")
 Rails.application.config.assets.paths << Rails.root.join("vendor", "highlight.js", "lib")
 Rails.application.config.assets.paths << Rails.root.join("vendor", "clipboard", "dist")
+Rails.application.config.assets.paths << Rails.root.join("vendor", "autosize", "dist")
 # JAVASCRIPTS PATH
 # # ======================================================================================================================================================================
 # -------------------------------- USE THOSE LINES IF VENDOR IS IN LHEL/VENDOR -------------------------------------------------------------------------------------------

@@ -1,148 +1,119 @@
 <!-- Main navbar -->
 <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-dark bg-dark" id="navbar-main">
-    <div class="container">
-        <%= link_to image_tag("white.png", height: '50', alt: "white"), root_path, class: 'navbar-brand mr-lg-5' %>
+	<div class="container">
+		<%= link_to image_tag("white.png", height: '50', alt: "white"), root_path, class: 'navbar-brand mr-lg-5' %>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbar-main-collapse">
+			<ul class="navbar-nav flip-dropdown-menu">
 
-        <div class="collapse navbar-collapse" id="navbar-main-collapse">
-            <ul class="navbar-nav align-items-lg-center">
+				<li class="nav-item dropdown flip-border">
+					<div class="nav-link dropdown-toggle btn btn-primary" href="#" data-toggle="dropdown">Particuliers</div>
+					<ul class="flip-submenu dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
 
-                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
-                    <%= link_to( contrats_mutuelle_path, class: "nav-links btn btn-primary btn-animated btn-animated-x", role: "button", data: { toggle: "dropdown" }, "aria-haspopup": "true", "aria-expanded": "false" ) do %>   
-                        <span class="btn-inner--visible">Particuliers</span>
-                        <span class="btn-inner--hidden"><i class="fas fa-arrow-down"></i></span>
-                    <% end %>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
-                        <div class="list-group">
-                            <!-- ETUDIANTS -->
-                            <%= link_to contrats_etudiants_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("computer.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Etudiants</h6>
-                                        <p class="mb-0"></p>
-                                    </div>
-                                </div>
-                            <% end %>
-                            <!-- INDIVIDUEL -->
-                            <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("person.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Individuel</h6>
-                                        <p class="mb-0"></p>
-                                    </div>
-                                </div>
-                            <% end %>
-                            <!-- FAMILIALE -->
-                            <%= link_to contrats_familiale_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("persons.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Familiale</h6>
-                                        <p class="mb-0"></p>
-                                    </div>
-                                </div>
-                            <% end %>
-                            <!-- SENIORS -->
-                            <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("security.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Séniors (60 ans et +)</h6>
-                                        <p class="mb-0"></p>
-                                    </div>
-                                </div>
-                            <% end %>
-                            <!-- RÉSILIATION -->
-                            <%= link_to contrats_resiliation_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("do-not-disturb.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Résilitaion</h6>
-                                        <p class="mb-0"></p>
-                                    </div>
-                                </div>
-                            <% end %>
-                            <!-- RÉSILIATION -->
-                            <%= link_to contrats_surcomplementaire_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("double-tick.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Surcomplémentaire</h6>
-                                        <p class="mb-0"></p>
-                                    </div>
-                                </div>
-                            <% end %>
-                            <!-- DEVIS -->
-                            <%= link_to contrats_devis_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("form.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Devis</h6>
-                                        <p class="mb-0"></p>
-                                    </div>
-                                </div>
-                            <% end %>
-                            <!-- COMPLEMENAIRE -->
-                            <%= link_to contrats_complementaire_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("medical.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Complémentaire Santé</h6>
-                                        <p class="mb-0"></p>
-                                    </div>
-                                </div>
-                            <% end %>
-                        </div>
-                    </div>
-                </li>
+						<!-- LIST ITEM MUTEULLE SANTE START-->
+						<li>
+							<%= link_to contrats_mutuelle_path, class:"dropdown-item list-group-item" do %>
+								<div class="media d-flex align-items-center">
+									<%= image_tag("medical.svg", width: '50', alt: "Image placeholder", class: "img-saturate", style:"max-height: none;") %>
+									<div class="media-body ml-3">
+										<h6 class="mb-1">Mutuelle Santé</h6>
+										<p class="mb-0"></p>
+									</div>
+								</div>
+							<% end %>						
+							
+							<ul class="submenu dropdown-menu">
+								<li><a class="dropdown-item" href=""> Individuelle</a></li>
+								<li><a class="dropdown-item" href=""> Sénior</a></li>
+								<li><a class="dropdown-item" href=""> Fémiliale</a></li>
+								<li><a class="dropdown-item" href=""> Blabla</a></li>
+							</ul>
+						</li>
+						<!-- LIST ITEM MUTEULLE SANTE END-->
 
-                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
-                    <%= link_to( contrats_mutuelle_path, class: "nav-links btn btn-primary btn-animated btn-animated-x", role: "button", data: { toggle: "dropdown" }, "aria-haspopup": "true", "aria-expanded": "false" ) do %>   
-                        <span class="btn-inner--visible">Professionnels</span>
-                        <span class="btn-inner--hidden"><i class="fas fa-arrow-down"></i></span>
-                    <% end %>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
-                        <div class="list-group">
-                            <%= link_to root_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("death.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Assurance décès</h6>
-                                        <p class="mb-0">Terminus, tout le monde descend</p>
-                                    </div>
-                                </div>
-                            <% end %>
-                            <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("funeral.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Assurance obsèque</h6>
-                                        <p class="mb-0">Pour un long voyage, mieux vos avoir de la place aux genoux</p>
-                                    </div>
-                                </div>
-                            <% end %>
-                            <%= link_to contrats_senior_path, class:"list-group-item list-group-item-action" do %>
-                                <div class="media d-flex align-items-center">
-                                    <%= image_tag("healthcare.svg", width: '50', alt: "Image placeholder", class: "img-saturate") %>
-                                    <div class="media-body ml-3">
-                                        <h6 class="mb-1">Assurance vie</h6>
-                                        <p class="mb-0">Pour les dur de la feuille</p>
-                                    </div>
-                                </div>
-                            <% end %>
-                        </div>
-                    </div>
-                </li>
-                
-                
-            </ul>
-        </div>
+						<!-- LIST ITEM ASSURANCE PREVOYANCE START-->
+						<li>
+							<%= link_to contrats_mutuelle_path, class:"dropdown-item list-group-item" do %>
+								<div class="media d-flex align-items-center">
+									<%= image_tag("privacy.svg", width: '50', alt: "Image placeholder", class: "img-saturate", style:"max-height: none;") %>
+									<div class="media-body ml-3">
+										<h6 class="mb-1">Assurance Prévoyance</h6>
+										<p class="mb-0"></p>
+									</div>
+								</div>
+							<% end %>						
+							
+							<ul class="submenu dropdown-menu">
+								<li><a class="dropdown-item" href=""> Individuelle</a></li>
+								<li><a class="dropdown-item" href=""> Sénior</a></li>
+								<li><a class="dropdown-item" href=""> Fémiliale</a></li>
+								<li><a class="dropdown-item" href=""> Blabla</a></li>
+							</ul>
+						</li>
+						<!-- LIST ITEM ASSURANCE PREVOYANCE END-->
 
-    </div>
+					</ul>
+				</li>
+
+				<li class="nav-item dropdown flip-border">
+					<div class="nav-link dropdown-toggle btn btn-primary" href="#" data-toggle="dropdown">Professionnels</div>
+					<ul class="flip-submenu dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
+
+						<!-- LIST ITEM MUTEULLE SANTE START-->
+						<li>
+							<%= link_to contrats_mutuelle_path, class:"dropdown-item list-group-item" do %>
+								<div class="media d-flex align-items-center">
+									<%= image_tag("craftsman.svg", width: '50', alt: "Image placeholder", class: "img-saturate", style:"max-height: none;") %>
+									<div class="media-body ml-3">
+										<h6 class="mb-1">Complémentaire Santé</h6>
+										<p class="mb-0"></p>
+									</div>
+								</div>
+							<% end %>						
+							
+							<ul class="submenu dropdown-menu">
+								<li><a class="dropdown-item" href=""> Individuelle</a></li>
+								<li><a class="dropdown-item" href=""> Sénior</a></li>
+								<li><a class="dropdown-item" href=""> Fémiliale</a></li>
+								<li><a class="dropdown-item" href=""> Blabla</a></li>
+							</ul>
+						</li>
+						<!-- LIST ITEM MUTEULLE SANTE END-->
+
+						<!-- LIST ITEM ASSURANCE PREVOYANCE START-->
+						<li>
+							<%= link_to contrats_mutuelle_path, class:"dropdown-item list-group-item" do %>
+								<div class="media d-flex align-items-center">
+									<%= image_tag("healthcare.svg", width: '50', alt: "Image placeholder", class: "img-saturate", style:"max-height: none;") %>
+									<div class="media-body ml-3">
+										<h6 class="mb-1">Prévoyance</h6>
+										<p class="mb-0"></p>
+									</div>
+								</div>
+							<% end %>						
+							
+							<ul class="submenu dropdown-menu">
+								<li><a class="dropdown-item" href=""> Individuelle</a></li>
+								<li><a class="dropdown-item" href=""> Sénior</a></li>
+								<li><a class="dropdown-item" href=""> Fémiliale</a></li>
+								<li><a class="dropdown-item" href=""> Blabla</a></li>
+							</ul>
+						</li>
+						<!-- LIST ITEM ASSURANCE PREVOYANCE END-->
+
+					</ul>
+				</li>
+
+				<li class="nav-item dropdown flip-border">
+					<%= link_to 'Blog', blog_index_path, class:"nav-link btn btn-primary" %>
+				</li>
+
+			</ul>
+
+		</div> <!-- navbar-collapse.// -->
+	</div>
 </nav>
-<!-- Main navbar -->
