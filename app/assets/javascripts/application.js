@@ -24,6 +24,7 @@
 //= require bootstrap-tagsinput.min.js
 //= require bootstrap-datepicker.min.js
 //= require nouislider.min.js
+//= require stepper
 // FORMUAIRE
 
 //= require theme
