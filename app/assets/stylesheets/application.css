@@ -16,15 +16,16 @@
 
  *= require all.min.css
  *= require atom-one-dark.css
- *= flipovercard
- *= home
  *= require visibleheader 
  *= require style
  *= require listgroup
  *= require navlinkdrop
- 
- *= require theme
 
+ * FORMULAIRE
+ *= require select2.min
+ * FORUMAIRE
+
+ *= require theme
  */
 
  .navbarback {

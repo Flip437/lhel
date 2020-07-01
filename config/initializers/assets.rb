@@ -43,6 +43,8 @@ Rails.application.config.assets.paths << Rails.root.join("vendor", "@fortawesome
 Rails.application.config.assets.paths << Rails.root.join("vendor", "@fortawesome", "fontawesome-free", "webfonts")
 
 Rails.application.config.assets.paths << Rails.root.join("vendor", "highlight.js", "styles")
+
+Rails.application.config.assets.paths << Rails.root.join("vendor", "select2", "dist", "css")
 # STYLESHEETS PATH
 
 
@@ -53,6 +55,12 @@ Rails.application.config.assets.paths << Rails.root.join("vendor", "jquery", "di
 Rails.application.config.assets.paths << Rails.root.join("vendor", "highlight.js", "lib")
 Rails.application.config.assets.paths << Rails.root.join("vendor", "clipboard", "dist")
 Rails.application.config.assets.paths << Rails.root.join("vendor", "autosize", "dist")
+
+Rails.application.config.assets.paths << Rails.root.join("vendor", "sticky-kit", "dist")
+Rails.application.config.assets.paths << Rails.root.join("vendor", "select2", "dist", "js")
+Rails.application.config.assets.paths << Rails.root.join("vendor", "bootstrap-tagsinput", "dist")
+Rails.application.config.assets.paths << Rails.root.join("vendor", "bootstrap-datepicker", "dist", "js")
+Rails.application.config.assets.paths << Rails.root.join("vendor", "nouislider", "distribute")
 # JAVASCRIPTS PATH
 # # ======================================================================================================================================================================
 # -------------------------------- USE THOSE LINES IF VENDOR IS IN LHEL/VENDOR -------------------------------------------------------------------------------------------
