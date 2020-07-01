@@ -17,31 +17,89 @@
 
 
 <!-- MultiStep Form -->
-<div class="container-fluid" id="grad1">
+<div class="container-fluid bg-gradient-warning" id="grad1">
     <div class="row justify-content-center mt-0">
         <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
             <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-                <h2><strong>Sign Up Your User Account</strong></h2>
-                <p>Fill all form field to go to next step</p>
+                <h2><strong>Formulaire de demande</strong></h2>
+                <p>Suivez les étapes 1 à 1</p>
                 <div class="row">
                     <div class="col-md-12 mx-0">
                         <form id="msform">
                             <!-- progressbar -->
                             <ul id="progressbar">
-                                <li class="active" id="account"><strong>Account</strong></li>
-                                <li id="personal"><strong>Personal</strong></li>
-                                <li id="payment"><strong>Payment</strong></li>
-                                <li id="confirm"><strong>Finish</strong></li>
+                                <li class="active fas fa-user-circle" id="account"><strong>Coordonnées</strong></li>
+                                <li class="fas fa-cog" id="personal"><strong>Informations</strong></li>
+                                <li class="fas fa-credit-card" id="payment"><strong>Besoins</strong></li>
+                                <li class="fas fa-bell" id="confirm"><strong>Terminé</strong></li>
                             </ul> <!-- fieldsets -->
                             <fieldset>
-                                <div class="form-card">
-                                    <h2 class="fs-title">Account Information</h2>
-                                    <input type="email" name="email" placeholder="Email Id" />
-                                    <input type="text" name="uname" placeholder="UserName" />
-                                    <input type="password" name="pwd" placeholder="Password" />
-                                    <input type="password" name="cpwd" placeholder="Confirm Password" />
+                                <div class="form-card mx-3">
+                                    <!-- COORDONNEES -->
+                                    <div class="page-inner-header mb-4">
+                                        <h5 class="mb-1">Vos coordonnées</h5>
+                                        <p class="text-muted mb-0"></p>
+                                    </div>
+                                        <div class="custom-control custom-radio mb-3">
+                                            <input type="radio" name="custom-radio-1" class="custom-control-input" id="customRadio1" checked="">
+                                            <label class="custom-control-label" for="customRadio1">Madame</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-3">
+                                            <input type="radio" name="custom-radio-1"  class="custom-control-input" id="customRadio2">
+                                            <label class="custom-control-label" for="customRadio2">Monsieur</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-3">
+                                            <input type="radio" name="custom-radio-1"  class="custom-control-input" id="customRadio3">
+                                            <label class="custom-control-label" for="customRadio3">Autre</label>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-control-label">Prénom</label>
+                                                <input class="form-control" type="text" placeholder="Saisissez votre prénom">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-control-label">Nom</label>
+                                                <input class="form-control" type="text" placeholder="Et votre nom">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-control-label">Date anniversaire</label>
+                                                <input type="text" class="form-control" data-toggle="date" placeholder="Selectionnez votre date anniversaire">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-control-label">Ville</label>
+                                                <input type="text" class="form-control" placeholder="Votre ville">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-control-label">Email</label>
+                                                <input class="form-control" type="email" placeholder="nomprénom@exemple.com">
+                                                <small class="form-text text-muted mt-2">Nous vous contacterons à cette adresse pour la suite du traitement de votre dossier. Merci de vérifier l'exactitude de votre adresse</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-control-label">Téléphone</label>
+                                                <input class="form-control" type="text" placeholder="+33 6 36 65 65 65">
+                                                <small class="form-text text-muted mt-2">Nous vous contacterons sur ce numéro de téléphone pour la suite du traitement de votre dossier. Merci de vérifier l'exactitude de votre numéro</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- COORDONNEES -->
                                 </div>
-                                <input type="button" name="next" class="next action-button" value="Next Step" />
+                                <br><br>
+                                <input type="button" name="next" class="next action-button btn btn-primary btn-circle btn-translate--hover px-4" value="Next Step" />
                             </fieldset>
                             <fieldset>
                                 <div class="form-card">

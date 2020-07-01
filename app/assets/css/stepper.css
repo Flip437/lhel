@@ -7,17 +7,26 @@ html {
     height: 100%
 }
 
+strong {
+    font-family : 'Nunito', sans-serif;
+}
+
+/*
 #grad1 {
     background-color: #9C27B0;
     background-image: linear-gradient(120deg, #FF4081, #81D4FA)
 }
+*/
 
+/*
 #msform {
     text-align: center;
     position: relative;
     margin-top: 20px
 }
+*/
 
+/*
 #msform fieldset .form-card {
     background: white;
     border: 0 none;
@@ -29,6 +38,7 @@ html {
     margin: 0 3% 20px 3%;
     position: relative
 }
+*/
 
 #msform fieldset {
     background: white;
@@ -45,11 +55,14 @@ html {
     display: none
 }
 
+
 #msform fieldset .form-card {
     text-align: left;
     color: #9E9E9E
 }
 
+
+/*
 #msform input,
 #msform textarea {
     padding: 0px 8px 4px 8px;
@@ -76,7 +89,9 @@ html {
     border-bottom: 2px solid skyblue;
     outline-width: 0
 }
+*/
 
+/*
 #msform .action-button {
     width: 100px;
     background: skyblue;
@@ -93,6 +108,7 @@ html {
 #msform .action-button:focus {
     box-shadow: 0 0 0 2px white, 0 0 0 3px skyblue
 }
+*/
 
 #msform .action-button-previous {
     width: 100px;
@@ -150,30 +166,30 @@ select.list-dt:focus {
 
 #progressbar li {
     list-style-type: none;
-    font-size: 12px;
+    /*font-size: 12px;*/
     width: 25%;
     float: left;
     position: relative
 }
 
 #progressbar #account:before {
-    font-family: FontAwesome;
-    content: "\f023"
+    /*font-family: FontAwesome;
+    content: "\f023"*/
 }
 
 #progressbar #personal:before {
-    font-family: FontAwesome;
-    content: "\f007"
+    /*font-family: FontAwesome;
+    content: "\f007"*/
 }
 
 #progressbar #payment:before {
-    font-family: FontAwesome;
-    content: "\f09d"
+    /*font-family: FontAwesome;
+    content: "\f09d"*/
 }
 
 #progressbar #confirm:before {
-    font-family: FontAwesome;
-    content: "\f00c"
+    /*font-family: FontAwesome;
+    content: "\f00c"*/
 }
 
 #progressbar li:before {
