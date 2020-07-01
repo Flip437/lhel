@@ -1,4 +1,4 @@
-* {
+ul {
     margin: 0;
     padding: 0
 }
@@ -173,25 +173,27 @@ select.list-dt:focus {
     position: relative
 }
 
+/*
 #progressbar #account:before {
-    /*font-family: FontAwesome;
-    content: "\f023"*/
+    font-family: FontAwesome;
+    content: "\f023"
 }
 
 #progressbar #personal:before {
-    /*font-family: FontAwesome;
-    content: "\f007"*/
+    font-family: FontAwesome;
+    content: "\f007"
 }
 
 #progressbar #payment:before {
-    /*font-family: FontAwesome;
-    content: "\f09d"*/
+    font-family: FontAwesome;
+    content: "\f09d"
 }
 
 #progressbar #confirm:before {
-    /*font-family: FontAwesome;
-    content: "\f00c"*/
+    font-family: FontAwesome;
+    content: "\f00c"
 }
+*/
 
 #progressbar li:before {
     width: 50px;
