@@ -15,161 +15,259 @@
         </div>
     </section>
 
+    <!-- MULTISTEP FORM START-->
+    <div class="container-fluid bg-gradient-warning" id="grad1">
+        <div class="row justify-content-center mt-0">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
+                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                    <h2><strong>Formulaire de demande</strong></h2>
+                    <p>Suivez les étapes 1 à 1</p>
+                    <div class="row">
+                        <div class="col-md-12 mx-0">
+                            <form id="msform">
+                            
+                                <!-- progressbar -->
+                                <ul id="progressbar">
+                                    <li class="active fas fa-user-circle" id="account"><strong>Coordonnées</strong></li>
+                                    <li class="fas fa-cog" id="personal"><strong>Informations</strong></li>
+                                    <li class="far fa-sliders-h" id="payment"><strong>Besoins</strong></li>
+                                    <li class="fas fa-check-circle" id="confirm"><strong>Terminé</strong></li>
+                                </ul>
 
-<!-- MultiStep Form -->
-<div class="container-fluid bg-gradient-warning" id="grad1">
-    <div class="row justify-content-center mt-0">
-        <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
-            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-                <h2><strong>Formulaire de demande</strong></h2>
-                <p>Suivez les étapes 1 à 1</p>
-                <div class="row">
-                    <div class="col-md-12 mx-0">
-                        <form id="msform">
-                            <!-- progressbar -->
-                            <ul id="progressbar">
-                                <li class="active fas fa-user-circle" id="account"><strong>Coordonnées</strong></li>
-                                <li class="fas fa-cog" id="personal"><strong>Informations</strong></li>
-                                <li class="fas fa-credit-card" id="payment"><strong>Besoins</strong></li>
-                                <li class="fas fa-bell" id="confirm"><strong>Terminé</strong></li>
-                            </ul> <!-- fieldsets -->
-                            <fieldset>
-                                <div class="form-card mx-3">
+                                <!-- FIELDSETS -->
+                                <fieldset>
                                     <!-- COORDONNEES -->
-                                    <div class="page-inner-header mb-4">
-                                        <h5 class="mb-1">Vos coordonnées</h5>
-                                        <p class="text-muted mb-0"></p>
+                                    <div class="form-card mx-3">
+                                        <div class="page-inner-header mb-4">
+                                            <h2 class="fs-title">Vos Coordonnées</h2>
+                                            <p class="text-muted mb-0"></p>
+                                        </div>
+                                        <div class="row mx-1">
+                                            <div class="col-md-4 custom-control custom-radio mb-3">
+                                                <input type="radio" name="custom-radio-1" class="custom-control-input" id="customRadio1" checked="">
+                                                <label class="custom-control-label" for="customRadio1">Madame</label>
+                                            </div>
+                                            <div class="col-md-4 custom-control custom-radio mb-3">
+                                                <input type="radio" name="custom-radio-1"  class="custom-control-input" id="customRadio2">
+                                                <label class="custom-control-label" for="customRadio2">Monsieur</label>
+                                            </div>
+                                            <div class="col-md-4 custom-control custom-radio mb-3">
+                                                <input type="radio" name="custom-radio-1"  class="custom-control-input" id="customRadio3">
+                                                <label class="custom-control-label" for="customRadio3">Autre</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Prénom</label>
+                                                    <input class="form-control" type="text" placeholder="Saisissez votre prénom">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Nom</label>
+                                                    <input class="form-control" type="text" placeholder="Et votre nom">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Date anniversaire</label>
+                                                    <input type="text" class="form-control" data-toggle="date" placeholder="Selectionnez votre date anniversaire">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Ville</label>
+                                                    <input type="text" class="form-control" placeholder="Votre ville">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Email</label>
+                                                    <input class="form-control" type="email" placeholder="nomprénom@exemple.com">
+                                                    <small class="form-text text-muted mt-2">Nous vous contacterons à cette adresse pour la suite du traitement de votre dossier. Merci de vérifier l'exactitude de votre adresse</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Téléphone</label>
+                                                    <input class="form-control" type="text" placeholder="+33 6 36 65 65 65">
+                                                    <small class="form-text text-muted mt-2">Nous vous contacterons sur ce numéro de téléphone pour la suite du traitement de votre dossier. Merci de vérifier l'exactitude de votre numéro</small>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                        <div class="custom-control custom-radio mb-3">
-                                            <input type="radio" name="custom-radio-1" class="custom-control-input" id="customRadio1" checked="">
-                                            <label class="custom-control-label" for="customRadio1">Madame</label>
-                                        </div>
-                                        <div class="custom-control custom-radio mb-3">
-                                            <input type="radio" name="custom-radio-1"  class="custom-control-input" id="customRadio2">
-                                            <label class="custom-control-label" for="customRadio2">Monsieur</label>
-                                        </div>
-                                        <div class="custom-control custom-radio mb-3">
-                                            <input type="radio" name="custom-radio-1"  class="custom-control-input" id="customRadio3">
-                                            <label class="custom-control-label" for="customRadio3">Autre</label>
-                                        </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="form-control-label">Prénom</label>
-                                                <input class="form-control" type="text" placeholder="Saisissez votre prénom">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="form-control-label">Nom</label>
-                                                <input class="form-control" type="text" placeholder="Et votre nom">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-center">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="form-control-label">Date anniversaire</label>
-                                                <input type="text" class="form-control" data-toggle="date" placeholder="Selectionnez votre date anniversaire">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="form-control-label">Ville</label>
-                                                <input type="text" class="form-control" placeholder="Votre ville">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="form-control-label">Email</label>
-                                                <input class="form-control" type="email" placeholder="nomprénom@exemple.com">
-                                                <small class="form-text text-muted mt-2">Nous vous contacterons à cette adresse pour la suite du traitement de votre dossier. Merci de vérifier l'exactitude de votre adresse</small>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="form-control-label">Téléphone</label>
-                                                <input class="form-control" type="text" placeholder="+33 6 36 65 65 65">
-                                                <small class="form-text text-muted mt-2">Nous vous contacterons sur ce numéro de téléphone pour la suite du traitement de votre dossier. Merci de vérifier l'exactitude de votre numéro</small>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <br><br>
+                                    <input type="button" name="next" class="next action-button btn btn-success btn-circle btn-translate--hover px-4" value="Suivant" />
                                     <!-- COORDONNEES -->
-                                </div>
-                                <br><br>
-                                <input type="button" name="next" class="next action-button btn btn-primary btn-circle btn-translate--hover px-4" value="Next Step" />
-                            </fieldset>
-                            <fieldset>
-                                <div class="form-card">
-                                    <h2 class="fs-title">Personal Information</h2>
-                                    <input type="text" name="fname" placeholder="First Name" />
-                                    <input type="text" name="lname" placeholder="Last Name" />
-                                    <input type="text" name="phno" placeholder="Contact No." />
-                                    <input type="text" name="phno_2" placeholder="Alternate Contact No." />
-                                </div>
-                                <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                                <input type="button" name="next" class="next action-button" value="Next Step" />
-                            </fieldset>
-                            <fieldset>
-                                <div class="form-card">
-                                    <h2 class="fs-title">Payment Information</h2>
-                                    <div class="radio-group">
-                                        <div class='radio' data-value="credit"><img src="https://i.imgur.com/XzOzVHZ.jpg" width="200px" height="100px"></div>
-                                        <div class='radio' data-value="paypal"><img src="https://i.imgur.com/jXjwZlj.jpg" width="200px" height="100px"></div> <br>
-                                    </div>
-                                    <label class="pay">Card Holder Name*</label>
-                                    <input type="text" name="holdername" placeholder="" />
-                                    <div class="row">
-                                        <div class="col-9"> <label class="pay">Card Number*</label> <input type="text" name="cardno" placeholder="" /> </div>
-                                        <div class="col-3"> <label class="pay">CVC*</label> <input type="password" name="cvcpwd" placeholder="***" /> </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-3"> <label class="pay">Expiry Date*</label> </div>
-                                        <div class="col-9"> <select class="list-dt" id="month" name="expmonth">
-                                                <option selected>Month</option>
-                                                <option>January</option>
-                                                <option>February</option>
-                                                <option>March</option>
-                                                <option>April</option>
-                                                <option>May</option>
-                                                <option>June</option>
-                                                <option>July</option>
-                                                <option>August</option>
-                                                <option>September</option>
-                                                <option>October</option>
-                                                <option>November</option>
-                                                <option>December</option>
-                                            </select> <select class="list-dt" id="year" name="expyear">
-                                                <option selected>Year</option>
-                                            </select> </div>
-                                    </div>
-                                </div> <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="make_payment" class="next action-button" value="Confirm" />
-                            </fieldset>
-                            <fieldset>
-                                <div class="form-card">
-                                    <h2 class="fs-title text-center">Success !</h2> <br><br>
-                                    <div class="row justify-content-center">
-                                        <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"> </div>
-                                    </div> <br><br>
-                                    <div class="row justify-content-center">
-                                        <div class="col-7 text-center">
-                                            <h5>You Have Successfully Signed Up</h5>
+                                </fieldset>
+
+                                <fieldset>
+                                    <!-- INFORMATIONS SUR LE CONTRAT -->
+                                    <div class="form-card mx-3">
+                                        <div class="page-inner-header mb-4">
+                                            <h2 class="fs-title">Informations personnelles</h2>
+                                            <p class="text-muted mb-0">Dites nous en plus sur votre situation et vos envies</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Régime sociale</label>
+                                                    <select class="form-control form-control-sm">
+                                                        <option>Salarié</option>
+                                                        <option>Sans emploi</option>
+                                                        <option>Autre, vous pouvez préciser votre situation dans le paragraphe en bas de page</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Quand souhaitez-vous que votre contrat débute ?</label>
+                                                    <input type="text" class="form-control" data-toggle="date" placeholder="Selectionnez la date">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Qui souhaitez-vous assurer ?</label>
+                                                    <div class="custom-control custom-radio mb-3">
+                                                        <input type="radio" name="custom-radio-2" class="custom-control-input" id="customRadio4" checked="">
+                                                        <label class="custom-control-label" for="customRadio4">Vous</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio mb-3">
+                                                        <input type="radio" name="custom-radio-2"  class="custom-control-input" id="customRadio5">
+                                                        <label class="custom-control-label" for="customRadio5">Vous et votre conjoint</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio mb-3">
+                                                        <input type="radio" name="custom-radio-2"  class="custom-control-input" id="customRadio6">
+                                                        <label class="custom-control-label" for="customRadio6">Vous et votre famille</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio mb-3">
+                                                        <input type="radio" name="custom-radio-2"  class="custom-control-input" id="customRadio7">
+                                                        <label class="custom-control-label" for="customRadio7">Vous et vos enfants</label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </fieldset>
-                        </form>
+                                    <input type="button" name="previous" class="previous action-button-previous btn btn-warning btn-circle btn-translate--hover px-4" value="Précédent" />
+                                    <input type="button" name="next" class="next action-button btn btn-success btn-circle btn-translate--hover px-4" value="Suivant" />
+                                    <!-- INFORMATIONS SUR LE CONTRAT -->
+                                </fieldset>
+                                
+                                <fieldset>
+                                    <!-- INFORMATIONS SUR LES OPTIONS -->
+                                    <div class="form-card mx-3">
+                                        <div class="page-inner-header mb-4">
+                                            <h3 class="mb-1">Vos besoins</h3>
+                                            <p class="text-muted mb-0">Quel niveau de remboursement souhaitez-vous ?</p>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-lg-9">
+                                                <!-- Default input slider -->
+                                                <div class="input-slider-container mb-5">
+                                                    <label class="form-control-label">Soins courants: médecine générale, pharmacie, radios ...</label>
+                                                    <div id="input-slider" class="input-slider" data-range-value-min="1" data-range-value-max="10"></div>
+                                                    <!-- Input slider values -->
+                                                    <div class="row mt-3">
+                                                        <div class="col-6">
+                                                            <span id="input-slider-value" class="range-slider-value" data-range-value-low="2"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Red input slider -->
+                                                <div class="input-slider-container mb-5">
+                                                    <label class="form-control-label">Dentaire: dentiste, prothèse, sans (j'arrive pas à relire ce que tu as écris là ^^), etc ...</label>
+                                                    <div id="input-slider-red" class="input-slider input-slider--red" data-range-value-min="1" data-range-value-max="10"></div>
+                                                    <!-- Input slider values -->
+                                                    <div class="row mt-3">
+                                                        <div class="col-6">
+                                                            <span id="input-slider-red-value" class="range-slider-value" data-range-value-low="2"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Yellow input slider -->
+                                                <div class="input-slider-container mb-5">
+                                                    <label class="form-control-label">Optique: lentilles, lunettes, chirugie ofta, refractaire, etc ...</label>
+                                                    <div id="input-slider-yellow" class="input-slider input-slider--yellow" data-range-value-min="1" data-range-value-max="10"></div>
+                                                    <!-- Input slider values -->
+                                                    <div class="row mt-3">
+                                                        <div class="col-6">
+                                                            <span id="input-slider-yellow-value" class="range-slider-value" data-range-value-low="2"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Yellow input slider -->
+                                                <div class="input-slider-container mb-5">
+                                                    <label class="form-control-label">Hospitalisation: frais de séjour, frais de transport, chirurgie, etc ...</label>
+                                                    <div id="input-slider-cyan" class="input-slider input-slider--cyan" data-range-value-min="1" data-range-value-max="10"></div>
+                                                    <!-- Input slider values -->
+                                                    <div class="row mt-3">
+                                                        <div class="col-6">
+                                                            <span id="input-slider-cyan-value" class="range-slider-value" data-range-value-low="2"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pt-5 delimiter-top">
+                                            <div class="page-inner-header mb-4">
+                                                <h3 class="mb-1">Informations complémentaires</h3>
+                                                <p class="text-muted mb-0">Vous pouvez ajouter un paragrpahe ci-dessous pour nous donner des informations que vous trouvez pertinentes.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <div class="form-group">
+                                                            <label class="form-control-label">Informations</label>
+                                                            <textarea class="form-control" placeholder="Écrivez votre paragraphe ici" rows="3"></textarea>
+                                                            <small class="form-text text-muted mt-2"></small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="button" name="previous" class="previous action-button-previous btn btn-warning btn-circle btn-translate--hover px-4" value="Précédent" />
+                                    <input type="button" name="make_payment" class="next action-button btn btn-success btn-circle btn-translate--hover px-4" value="Valider" />
+                                <!-- INFORMATIONS SUR LES OPTIONS -->
+                                </fieldset>
+
+                                <fieldset>
+                                <!-- REMERCIEMENTS -->
+                                    <div class="form-card">
+                                        <h2 class="fs-title text-center">Merci !</h2> <br><br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-3">
+                                                <%= image_tag("approval", alt: "Image placeholder", class:"fit-image") %>   
+                                            </div>
+                                        </div> <br><br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-7 text-center">
+                                                <h5>Nous avons toutes les informations nécessaires, nous vous répondrons rapidement :)</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- REMERCIEMENTS -->
+                                </fieldset>
+
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-
-
-
+    <!-- MULTISTEP FORM END-->
 
 </main>
