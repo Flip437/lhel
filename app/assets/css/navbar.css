@@ -18,3 +18,35 @@
     height: 178px;
     background-color: #DBEBF6;
 }
+
+.under-navbarback {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+}
+
+
+
+.flip-slogant {
+    color: var(--primary);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+  
+@include media-breakpoint-up(sm) {
+.flip-slogant {
+    font-size: 1.2rem;
+}
+}
+
+@include media-breakpoint-up(md) {
+.flip-slogant {
+    font-size: 1.4rem;
+}
+}
+
+@include media-breakpoint-up(lg) {
+.flip-slogant {
+    font-size: 1.6rem;
+}
+}
