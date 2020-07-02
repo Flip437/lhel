@@ -1,10 +1,10 @@
 .flip-banner {
-    background-image: url(/assets/backgrounds/img-1-1920x800-01f27f7760e7f781f40e58bad110ae60cf62212717cef53c052958ed853651bf.jpg);
+    /*background-image: url(/assets/backgrounds/img-1-1920x800-01f27f7760e7f781f40e58bad110ae60cf62212717cef53c052958ed853651bf.jpg);*/
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #464646;
+    background: linear-gradient(#AACEE9, #DBEBF6);
     height: 750px;
 }
 
@@ -13,6 +13,6 @@
     .flip-banner {
       /* The file size of this background image is 93% smaller
          to improve page load speed on mobile internet connections */
-      background-image: url(/assets/backgrounds/img-1-1920x800-01f27f7760e7f781f40e58bad110ae60cf62212717cef53c052958ed853651bf.jpg);
+      /*background-image: url(/assets/backgrounds/img-1-1920x800-01f27f7760e7f781f40e58bad110ae60cf62212717cef53c052958ed853651bf.jpg);*/
     }
   }
