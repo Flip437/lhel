@@ -26,10 +26,12 @@
  *= require select2.min
  *= require stepper
  * FORUMAIRE
-
-
- *= require navbar
+ 
  *= require colors
  *= require home
+
+ *= require navbar
+
+
  */
 
