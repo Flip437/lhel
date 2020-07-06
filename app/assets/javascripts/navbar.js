@@ -13,7 +13,7 @@ var NavbarSticky = (function() {
 			$("h2").removeClass('flip-slogant-top');
 			$("h2").addClass('flip-slogant-sticky');
 			$(".navbar-nav .nav-item .nav-link").css("color", "var(--secondary)");
-			$(".navbar-nav .nav-item .nav-link").css("text-decoration", "none");
+			$(".navbar-nav").removeClass('border-top border-bottom border-white');
 			$('#logo_space').show();
 			$('#logo_white').hide();
 			
@@ -21,7 +21,7 @@ var NavbarSticky = (function() {
 			$("h2").removeClass('flip-slogant-sticky');
 			$("h2").addClass('flip-slogant-top');
 			$(".navbar-nav .nav-item .nav-link").css("color", "white");
-			$(".navbar-nav .nav-item .nav-link").css("text-decoration", "underline overline white");
+			$(".navbar-nav").addClass('border-top border-bottom border-white');
 			$('#logo_space').hide();
 			$('#logo_white').show();
 		}
