@@ -30,15 +30,3 @@
 
 //= require theme
 //= require_tree .
-
-
-
-$('header').on("mouseover",function(){ 
-    $('header').removeClass("header-transparent");
-    $('header').addClass("header-visible");
-});
-
-$('header').on("mouseout",function(){ 
-    $('header').removeClass("header-visible");
-    $('header').addClass("header-transparent");
-});
