@@ -1,23 +1,19 @@
 <section class="spotlight bg-cover bg-size--cover flip-banner" data-spotlight="fullscreen">
-        <div class="spotlight-holder" style="height: 949px;">
-            
-            <div class="container py-md d-flex align-items-center pt-lg">
-                <div class="col pt-md pt-lg-0">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-7 col-lg-7 text-center">
-                            <h1 class="text-white lh-150 mb-4">Obtenez la mutuelle qui vous correspond au meilleur prix.</h1>
-                            <ul class="list-inline">
-                                <li class="list-inline-item text-white">LHEL</li>
-                                <li class="list-inline-item text-white"></li>
-                            </ul>
-                            <span class="clearfix"></span>
-                            <a href="#" class="btn btn-white btn-circle btn-icon mt-4">
-                                <span class="btn-inner--text">Demandez votre devis</span>
-                                <span class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
-                            </a>
-                        </div>
+
+        <div class="container py-md d-flex align-items-center pt-lg-xl">
+
+                <div class="row align-items-center justify-content-center h-100 mt-5 pt-5">
+                    <div class="col-md-6 col-lg-6 text-left">
+                        <h1 class="text-white lh-150 mb-4"><b>Les meilleures mutuelles et prevoyance pour votre projet santé</b></h1>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 text-right flip-circle-button">
+                        <%= link_to contrats_formulaire_path do %>
+                            <%= image_tag("circle-btn.png", alt: "Image placeholder", height:'400') %>
+                        <% end %>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            
+        </div>            
+     
+</section>
