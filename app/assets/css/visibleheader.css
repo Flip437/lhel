@@ -1,0 +1,41 @@
+.header-visible
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+}
+.header-visible .navbar-top
+{
+    padding-right: 1rem; 
+    padding-left: 1rem;
+
+    border: 0;
+}
+.header-visible .navbar-top:not(.navbar-collapsed)
+{
+    background-color: variable(--dark) !important
+}
+@media (max-width: 1199.98px)
+{
+    .header-visible .navbar-top .container
+    {
+        padding-right: 0; 
+        padding-left: 0;
+    }
+}
+.header-visible .navbar:not(.sticky):not(.navbar-collapsed)
+{
+    border: 0;
+    background-color: variable(--dark) !important;
+    box-shadow: none;
+}
+.header-visible .border-bottom.navbar-dark
+{
+    border-color: rgba(255, 255, 255, .08) !important;
+}
+.header-visible .border-bottom.navbar-light
+{
+    border-color: rgba(0, 0, 0, .02) !important;
+}
