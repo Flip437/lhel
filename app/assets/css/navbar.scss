@@ -52,11 +52,14 @@
     text-decoration: underline;
     color: var(--secondary);
 }
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
+    color: var(--secondary);
+}
 /* ***********************CSS FOR NAV-LINK IN HEADER*********************** */
 
 
 
-/* ***********************CSS FOR NAV-LINK IN HEADER*********************** */
+/* ***********************CSS FOR NAVBRAND LOGO *********************** */
 .navbar-brand {
     background:no-repeat url(asset-path('logo_white.png'));
     background-size: contain;
@@ -79,7 +82,7 @@
     height: 100px;
     width: 200px;
 }
-/* ***********************CSS FOR NAV-LINK IN HEADER*********************** */
+/* ***********************CSS FOR NAVBRAND LOGO *********************** */
 
 @media only screen and (max-width:768px) {
     .navbar-brand {
@@ -96,6 +99,13 @@
   }
 
   
+
+.navbar-toggler{
+    background-color: var(--secondary);
+}
+
+
+
 /* @include media-breakpoint-up(sm) {
 .flip-slogant {
     font-size: 1.2rem;

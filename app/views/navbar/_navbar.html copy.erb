@@ -1,29 +1,27 @@
 <!-- Main navbar -->
 <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-dark bg-dark" id="navbar-main">
 	<div class="container">
-
-			<!-- LOGO WITH CSS -->
-			<%= link_to root_path do %>
-				<div class='navbar-brand'>
-				</div>
-			<% end %>
-			<!-- LOGO WITH CSS -->
+			<div class="col-3 d-flex justify-content-center">
+				<%= link_to root_path do %>
+					<div class='navbar-brand'>
+					</div>
+				<% end %>
+			</div>
 
 			<!-- BURGER BUTTON FOR RESPONSIVE -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<!-- BURGER BUTTON FOR RESPONSIVE -->
-
+			<!-- BURGER BUTTON FOR RESPONSIVE -->	
 
 			<div class="col-9">
-				<div class="row justify-content-center" id="full-screen-slogant">
+				<div class="row justify-content-center ">
 					<h2><em>une assurance à échelle humaine</em></h2>
 				</div>
 				<div class="row">				
 					<!-- navbar-collapse.// -->
 					<div class="collapse navbar-collapse" id="navbar-main-collapse">
-						<ul class="navbar-nav flip-dropdown-menu w-100 d-flex justify-content-between mx-auto">
+						<ul class="navbar-nav flip-dropdown-menu w-75 d-flex justify-content-between mx-auto">
 
 							<li class="nav-item dropdown flip-border">
 								<div class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">PARTICULIER</div>
