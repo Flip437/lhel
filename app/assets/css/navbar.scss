@@ -1,0 +1,99 @@
+
+/*
+.navbar > .container,
+.navbar > .container-fluid {
+    display: flex;
+}
+*/
+
+/* ***********************NAVBAR BACKGROUND COLOR FOR STICKY AND HOVER*********************** */
+.sticky {
+    background: white;
+}
+.bg-dark {
+    background-color: white !important;
+}
+/* ***********************NAVBAR BACKGROUND COLOR FOR STICKY AND HOVER*********************** */
+
+
+/* ***********************CSS FOR H2 DIV IN HEADER*********************** */
+.navbar-dark h2 {
+    color : white;
+    font-size: 1.2em;
+}
+.navbar-dark:hover h2 {
+    color:var(--secondary);
+    font-size: 1.2em;
+}
+.sticky h2 {
+    color:var(--secondary);
+    font-size: 1.2em;
+}
+/* ***********************CSS FOR H2 DIV IN HEADER*********************** */
+
+
+
+
+/* ***********************CSS FOR NAV-LINK IN HEADER*********************** */
+.navbar-dark .nav-link {
+    color : white;
+    font-size: 1.2em;
+}
+.navbar-dark:hover .nav-link {
+    color:var(--secondary);
+    font-size: 1.2em;
+}
+.sticky .nav-link {
+    color: var(--secondary);
+    font-size: 1.2em;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    text-decoration: underline;
+    color: var(--secondary);
+}
+/* ***********************CSS FOR NAV-LINK IN HEADER*********************** */
+
+
+
+/* ***********************CSS FOR NAV-LINK IN HEADER*********************** */
+/* .navbar-dark:hover h2 {
+    color:var(--secondary);
+    font-size: 1.2em;
+} */
+
+.flip-logo {
+    background:no-repeat url(asset-path('logo_space.png'));
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+    width: 200px;
+}
+/* ***********************CSS FOR NAV-LINK IN HEADER*********************** */
+
+
+
+
+
+
+
+
+
+  
+/* @include media-breakpoint-up(sm) {
+.flip-slogant {
+    font-size: 1.2rem;
+}
+}
+
+@include media-breakpoint-up(md) {
+.flip-slogant {
+    font-size: 1.4rem;
+}
+}
+
+@include media-breakpoint-up(lg) {
+.flip-slogant {
+    font-size: 1.6rem;
+}
+} */
