@@ -57,12 +57,22 @@
 
 
 /* ***********************CSS FOR NAV-LINK IN HEADER*********************** */
-/* .navbar-dark:hover h2 {
-    color:var(--secondary);
-    font-size: 1.2em;
-} */
+.navbar-brand {
+    background:no-repeat url(asset-path('logo_white.png'));
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+    width: 200px;
+}
 
-.flip-logo {
+.navbar-dark:hover .navbar-brand {
+    background:no-repeat url(asset-path('logo_space.png'));
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+    width: 200px;
+}
+.sticky .navbar-brand {
     background:no-repeat url(asset-path('logo_space.png'));
     background-size: contain;
     background-position: center;
@@ -71,13 +81,19 @@
 }
 /* ***********************CSS FOR NAV-LINK IN HEADER*********************** */
 
-
-
-
-
-
-
-
+@media only screen and (max-width:768px) {
+    .navbar-brand {
+      max-width: 100px;
+      margin-left: 10px;
+    }
+    /* below is for the demo but might help you position 
+    the hamburger menu on mobile */
+    // .navbar-toggler {
+    //   right: 0;
+    //   position: absolute;
+    //   margin: 10px;
+    // }
+  }
 
   
 /* @include media-breakpoint-up(sm) {

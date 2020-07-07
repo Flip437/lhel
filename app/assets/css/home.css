@@ -7,16 +7,18 @@
     background: linear-gradient(#AACEE9, #DBEBF6);
     /*height: 600px;*/
 }
-
-
-@media only screen and (max-width: 767px) {
-  .flip-banner {
-    /* The file size of this background image is 93% smaller
-        to improve page load speed on mobile internet connections */
-    /*background-image: url(/assets/backgrounds/img-1-1920x800-01f27f7760e7f781f40e58bad110ae60cf62212717cef53c052958ed853651bf.jpg);*/
-  }
-}
     
 .flip-circle-button {
   padding-right: 0px;
+}
+
+
+.banner-circle {
+  height: 400px;
+}
+@media only screen and (max-width:768px) {
+  .banner-circle {
+    height: 300px;
+    margin-right: 50px;
+  }
 }
