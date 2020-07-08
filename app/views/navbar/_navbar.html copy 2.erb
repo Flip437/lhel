@@ -1,0 +1,137 @@
+<!-- Main navbar -->
+<nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-dark bg-dark" id="navbar-main">
+	<div class="container bg-yellow">
+		<div class="row bg-red">
+
+				<!-- LOGO WITH CSS -->
+				<div class="col bg-blue">
+					<%= link_to root_path do %>
+						<div class='navbar-brand'>
+						</div>
+					<% end %>
+				</div>
+				<!-- LOGO WITH CSS -->
+
+				<!-- BURGER BUTTON FOR RESPONSIVE -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- BURGER BUTTON FOR RESPONSIVE -->
+
+				<div class="col bg-green">
+					<div class="row justify-content-center w-100" id="full-screen-slogant">
+						<h2><em>une assurance à échelle humaine</em></h2>
+					</div>
+					<div class="row w-100">				
+						<!-- navbar-collapse.// -->
+						<div class="collapse navbar-collapse" id="navbar-main-collapse">
+							<ul class="navbar-nav flip-dropdown-menu w-100 d-flex justify-content-between mx-auto">
+
+								<li class="nav-item dropdown flip-border">
+									<div class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">PARTICULIER</div>
+									<ul class="flip-submenu dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
+
+										<!-- LIST ITEM MUTEULLE SANTE START-->
+										<li>
+											<%= link_to contrats_mutuelle_path, class:"dropdown-item list-group-item" do %>
+												<div class="media d-flex align-items-center">
+													<%= image_tag("medical.svg", width: '50', alt: "Image placeholder", class: "img-saturate", style:"max-height: none;") %>
+													<div class="media-body ml-3">
+														<h6 class="mb-1">Mutuelle Santé</h6>
+														<p class="mb-0"></p>
+													</div>
+												</div>
+											<% end %>						
+											
+											<ul class="submenu dropdown-menu">
+												<li><a class="dropdown-item" href=""> Individuelle</a></li>
+												<li><a class="dropdown-item" href=""> Sénior</a></li>
+												<li><a class="dropdown-item" href=""> Fémiliale</a></li>
+												<li><a class="dropdown-item" href=""> Blabla</a></li>
+											</ul>
+										</li>
+										<!-- LIST ITEM MUTEULLE SANTE END-->
+
+										<!-- LIST ITEM ASSURANCE PREVOYANCE START-->
+										<li>
+											<%= link_to contrats_mutuelle_path, class:"dropdown-item list-group-item" do %>
+												<div class="media d-flex align-items-center">
+													<%= image_tag("privacy.svg", width: '50', alt: "Image placeholder", class: "img-saturate", style:"max-height: none;") %>
+													<div class="media-body ml-3">
+														<h6 class="mb-1">Assurance Prévoyance</h6>
+														<p class="mb-0"></p>
+													</div>
+												</div>
+											<% end %>						
+											
+											<ul class="submenu dropdown-menu">
+												<li><a class="dropdown-item" href=""> Individuelle</a></li>
+												<li><a class="dropdown-item" href=""> Sénior</a></li>
+												<li><a class="dropdown-item" href=""> Fémiliale</a></li>
+												<li><a class="dropdown-item" href=""> Blabla</a></li>
+											</ul>
+										</li>
+										<!-- LIST ITEM ASSURANCE PREVOYANCE END-->
+
+									</ul>
+								</li>
+
+								<li class="nav-item dropdown flip-border">
+									<div class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">PROFESSIONNEL</div>
+									<ul class="flip-submenu dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
+
+										<!-- LIST ITEM MUTEULLE SANTE START-->
+										<li>
+											<%= link_to contrats_mutuelle_path, class:"dropdown-item list-group-item" do %>
+												<div class="media d-flex align-items-center">
+													<%= image_tag("craftsman.svg", width: '50', alt: "Image placeholder", class: "img-saturate", style:"max-height: none;") %>
+													<div class="media-body ml-3">
+														<h6 class="mb-1">Complémentaire Santé</h6>
+														<p class="mb-0"></p>
+													</div>
+												</div>
+											<% end %>						
+											
+											<ul class="submenu dropdown-menu">
+												<li><a class="dropdown-item" href=""> Individuelle</a></li>
+												<li><a class="dropdown-item" href=""> Sénior</a></li>
+												<li><a class="dropdown-item" href=""> Fémiliale</a></li>
+												<li><a class="dropdown-item" href=""> Blabla</a></li>
+											</ul>
+										</li>
+										<!-- LIST ITEM MUTEULLE SANTE END-->
+
+										<!-- LIST ITEM ASSURANCE PREVOYANCE START-->
+										<li>
+											<%= link_to contrats_mutuelle_path, class:"dropdown-item list-group-item" do %>
+												<div class="media d-flex align-items-center">
+													<%= image_tag("healthcare.svg", width: '50', alt: "Image placeholder", class: "img-saturate", style:"max-height: none;") %>
+													<div class="media-body ml-3">
+														<h6 class="mb-1">Prévoyance</h6>
+														<p class="mb-0"></p>
+													</div>
+												</div>
+											<% end %>						
+											
+											<ul class="submenu dropdown-menu">
+												<li><a class="dropdown-item" href=""> Individuelle</a></li>
+												<li><a class="dropdown-item" href=""> Sénior</a></li>
+												<li><a class="dropdown-item" href=""> Fémiliale</a></li>
+												<li><a class="dropdown-item" href=""> Blabla</a></li>
+											</ul>
+										</li>
+										<!-- LIST ITEM ASSURANCE PREVOYANCE END-->
+
+									</ul>
+								</li>
+
+							</ul>
+
+						</div>
+						<!-- navbar-collapse.// -->
+					</div>
+
+				</div>
+		</div>
+	</div>
+</nav>

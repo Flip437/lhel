@@ -1,11 +1,3 @@
-
-/*
-.navbar > .container,
-.navbar > .container-fluid {
-    display: flex;
-}
-*/
-
 /* ***********************NAVBAR BACKGROUND COLOR FOR STICKY AND HOVER*********************** */
 .sticky {
     background: white;
@@ -32,8 +24,6 @@
 /* ***********************CSS FOR H2 DIV IN HEADER*********************** */
 
 
-
-
 /* ***********************CSS FOR NAV-LINK IN HEADER*********************** */
 .navbar-dark .nav-link {
     color : white;
@@ -56,7 +46,6 @@
     color: var(--secondary);
 }
 /* ***********************CSS FOR NAV-LINK IN HEADER*********************** */
-
 
 
 /* ***********************CSS FOR NAVBRAND LOGO *********************** */
@@ -82,27 +71,63 @@
     height: 100px;
     width: 200px;
 }
-/* ***********************CSS FOR NAVBRAND LOGO *********************** */
-
 @media only screen and (max-width:768px) {
     .navbar-brand {
       max-width: 100px;
       margin-left: 10px;
     }
-    /* below is for the demo but might help you position 
-    the hamburger menu on mobile */
-    // .navbar-toggler {
-    //   right: 0;
-    //   position: absolute;
-    //   margin: 10px;
-    // }
   }
+/* ***********************CSS FOR NAVBRAND LOGO *********************** */
 
-  
 
+/* ***********************NAVLINKS TAKE FULL SCREEN WIDTH ON SMARTPHONES*********************** */
+@media only screen and (max-width:768px) {
+    .w-75 {
+        width: 100% !important;
+    }
+}
+/* ***********************NAVLINKS TAKE FULL SCREEN WIDTH ON SMARTPHONES*********************** */
+
+
+/* ***********************BACKGROUND COLOR FOR BURGER *********************** */
 .navbar-toggler{
     background-color: var(--secondary);
 }
+/* ***********************BACKGROUND COLOR FOR BURGER *********************** */
+
+
+
+
+
+
+/* ***********************NAVBAR CONTAINER SIZING*********************** */
+/* NavBar Container is set to inline istead of flex as in theme.css file for conatiner to take all the screen size */
+.navbar > .container,
+.navbar > .container-fluid {
+    /*display: inline;*/
+}
+/* ***********************NAVBAR CONTAINER SIZING*********************** */
+
+
+
+
+
+
+/* ***********************CSS FOR SLOGGANT ON RESPONSIVE SCREENS*********************** */
+/*@media only screen and (max-width:768px) {
+.responsive-nopadding {
+    padding: 0 !important;
+    margin: 0 ;
+ }
+.responsive-center{
+    margin-top: 15%;
+}
+}*/
+/* ***********************CSS FOR SLOGGANT ON RESPONSIVE SCREENS*********************** */
+
+
+
+
 
 
 
