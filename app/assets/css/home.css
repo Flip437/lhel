@@ -7,11 +7,6 @@
     background: linear-gradient(#AACEE9, #DBEBF6);
     /*height: 600px;*/
 }
-    
-.flip-circle-button {
-  padding-right: 0px;
-}
-
 
 .banner-circle {
   height: 400px;
@@ -19,6 +14,15 @@
 @media only screen and (max-width:768px) {
   .banner-circle {
     height: 300px;
-    margin-right: 50px;
+  }
+}
+
+.map {
+  height: 450px;
+  width: 100%;
+}
+@media only screen and (max-width:768px) {
+  .map {
+    height: 300px;
   }
 }

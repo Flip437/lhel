@@ -1,0 +1,17 @@
+.footer-dark .list-unstyled li a {
+    color: white;
+}
+
+.footer-dark {
+    color: white;
+    background-color: #020b13;
+}
+
+.footer-dark .nav .nav-item .nav-link {
+    color: white
+}
+
+.delimiter-top:before,
+.delimiter-bottom:after {
+    background: radial-gradient(ellipse at center, rgb(251, 251, 251) 0, rgba(255, 255, 255, 0) 75%);
+}
