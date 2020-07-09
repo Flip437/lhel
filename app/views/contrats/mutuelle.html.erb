@@ -2,15 +2,7 @@
 <main>
 
     <!-- Spotlight -->
-    <section class="slice slice-xl pb-200 bg-secondary">
-        <div class="container pt-lg">
-            <div class="row row-grid justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="h2 mb-4">Mutuelle santé</h2>
-                </div>
-            </div>
-        </div>
-    </section>
+    <%= render "contrats/pagebanner", page_title: @title %>
 
     <section class="slice slice-lg bg-primary">
         <div class="container">
@@ -41,7 +33,7 @@
                         <div class="card-body px-lg-5 py-lg-5">
                             <h4 class="mb-4">Quelques éléments pour choisir sa mutuelle santé</h4>
                             <p>Pour choisir la mutuelle la plus adapté à son profil (âge, profession et situation personnelle), il faut bien identifier ses besoins en optique, dentaire, hospitalisation ainsi que ses habitudes médicales.</p>
-                            <p>Nous entendons souvent parler de <%= link_to 'mutuelle moins chère', root_path %>, cette expression n’est pas réellement adaptée, il est évident que chez LHEL Assurances nous trouverons la complémentaire santé qui sera répondre à vos besoins au meilleur prix. Généralement les moins chères, sont les mutuelles étudiantes car forcément, elles demandent moins de garanties et de besoins.</p>
+                            <p>Nous entendons souvent parler de mutuelle moins chère cette expression n’est pas réellement adaptée, il est évident que chez LHEL Assurances nous trouverons la complémentaire santé qui sera répondre à vos besoins au meilleur prix. Généralement les moins chères, sont les mutuelles étudiantes car forcément, elles demandent moins de garanties et de besoins.</p>
                             <p>Il est important de comprendre que le prix ne fera pas tout, pour comprendre mieux il faut mettre en concurrence certains paramètres :</p>
                             <ul>
                                 <li>Les radiations de garanties</li>
@@ -67,25 +59,7 @@
     </section>
 
     <!-- Call to action -->
-    <section class="slice slice-lg">
-
-        <span class="tongue tongue-top tongue-primary"><i class="fas fa-angle-up"></i></span>
-
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-8 text-center">
-                    <h3 class="font-weight-400">Demandez votre devis pour votre mutelle <span class="font-weight-700">seniors</span></h3>
-                    <div class="mt-5">
-                        <%= link_to root_path, target:"blank", class:'btn btn-primary btn-circle btn-translate--hover px-4' do %>
-                            Demandez votre devis
-                            <span class="badge badge-pill badge-danger text-sm">à partir de 50€</span>
-                        <%end%>
-                        <%= link_to "Contactez-nous", root_path, class:"btn btn-link" %>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <%= render 'contrats/calltoaction'%>
 
 </main>
 <% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>
