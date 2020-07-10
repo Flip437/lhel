@@ -1,0 +1,55 @@
+
+<main>
+    <!-- Spotlight -->
+    <section class="slice slice-lg pb-250 bg-gradient-primary">
+        <div class="container pt-lg">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h1 class="display-4 text-white lh-110">Choisissez votre statut</h1>
+                    <p class="lead mb-4 text-white mt-4">Nous receuillons des informations propres au professionnels et aux particuliers</p>
+                </div>
+            </div>
+        </div>
+        <div class="shape-container" data-shape-style="curve" data-shape-position="bottom">
+            <svg class="shape-fill-white" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path d="M 0 0 c 0 0 200 50 500 50 s 500 -50 500 -50 v 101 h -1000 v -100 z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="slice slice-lg pt-lg-sm bg-white">
+        <div class="container">
+            <div class="row row-grid justify-content-center">
+                <div class="col-lg-4 mt--150">
+                 <%= link_to contrats_formulaire_path do %>
+                    <div data-animate-hover="1">
+                        <div class="card shadow-sm animate-this">
+                            <div class="card-body py-5 px-lg-5">
+                                <%= image_tag('paint-palette.png', alt:"Image placeholder", width:"70") %>
+                                <h5 class="h5 mt-4">Particuliers</h5>
+                                <p class="my-4">Remplissez le formulaire dédié aux particuliers en cliquant ici</p>
+                            </div>
+                        </div>
+                    </div>
+                <% end %>
+                </div>
+                <div class="col-lg-4 mt--150">
+                <%= link_to contrats_formulaire_path do %>
+                    <div data-animate-hover="1">
+                        <div class="card shadow-sm animate-this">
+                            <div class="card-body py-5 px-lg-5">
+                                <%= image_tag("accounting.png", alt:"Image placeholder", width:"70") %>
+                                <h5 class="h5 mt-4">Professionnels</h5>
+                                <p class="my-4">Remplissez le formulaire dédié aux professionnels en cliquant ici</p>
+                            </div>
+                        </div>
+                    </div>
+                <% end %>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br>
+    </section>
+
+</main>
+<% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>
