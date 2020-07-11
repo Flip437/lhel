@@ -47,5 +47,9 @@ class ContratsController < ApplicationController
   def formulaire
     @title = "Formulaire de demande"
   end
+
+  def partenaires
+    @title = "Tous nos partenaires"
+  end
   
 end

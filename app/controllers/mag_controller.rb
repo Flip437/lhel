@@ -1,4 +1,4 @@
-class BlogController < ApplicationController
+class MagController < ApplicationController
     def index
     end
 
