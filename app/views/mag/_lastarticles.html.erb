@@ -8,19 +8,19 @@
         </div>
         <div class="row row-grid">
             <div class="col-lg-4">
-            <a href="/blog/article">
-                </a><div class="card shadow-sm shadow--hover"><a href="/blog/article">
-                    <img alt="Image placeholder" class="card-img-top" src="/assets/prv/img-1-800x600-5c1720b53539145daa8b1c3f7527d39917130c2734f278585416bbd850574d1e.jpg">
+            <%= link_to mag_article_path do %>
+                <div class="card shadow-sm shadow--hover">
+                    <%= image_tag("img-1-800x600.jpg", alt: "Image placeholder", class:"card-img-top") %>
                     <div class="card-body py-5 text-center">
                         <h5 class="lh-150">Choose the best solution for your business</h5>
                         <h6 class="text-muted mt-4 mb-0">25 April, 2018</h6>
                     </div>
-                    </a><div class="card-footer"><a href="/blog/article">
-                        </a><div class="row"><a href="/blog/article">
-                            </a><div class="col text-center"><a href="/blog/article">
-                                </a><ul class="list-inline mb-0"><a href="/blog/article">
-                                    </a><li class="list-inline-item pr-4"><a href="/blog/article">
-                                        </a><a class="nav-link" href="https://facebook.com/webpixels" target="_blank">
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col text-center">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item pr-4">
+                                        <a class="nav-link" href="https://facebook.com/webpixels" target="_blank">
                                             <i class="fab fa-facebook"></i>
                                         </a>
                                     </li>
@@ -39,21 +39,22 @@
                         </div>
                     </div>
                 </div>
+            <% end %>
             </div>
             <div class="col-lg-4">
-            <a href="/blog/article">
-                </a><div class="card shadow-sm shadow--hover"><a href="/blog/article">
-                    <img alt="Image placeholder" class="card-img-top" src="/assets/prv/img-2-800x600-c21510bce6aca455afee5cd0f044547a148f12ac944cefe48f40fcd794d8b98c.jpg">
+            <%= link_to mag_article_path do %>
+                <div class="card shadow-sm shadow--hover">
+                    <%= image_tag("img-2-800x600.jpg", alt: "Image placeholder", class:"card-img-top") %>
                     <div class="card-body py-5 text-center">
                         <h5 class="lh-150">How to find the right design for your specific product</h5>
                         <h6 class="text-muted mt-4 mb-0">25 April, 2018</h6>
                     </div>
-                    </a><div class="card-footer"><a href="/blog/article">
-                        </a><div class="row"><a href="/blog/article">
-                            </a><div class="col text-center"><a href="/blog/article">
-                                </a><ul class="list-inline mb-0"><a href="/blog/article">
-                                    </a><li class="list-inline-item pr-4"><a href="/blog/article">
-                                        </a><a class="nav-link" href="https://facebook.com/webpixels" target="_blank">
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col text-center">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item pr-4">
+                                        <a class="nav-link" href="https://facebook.com/webpixels" target="_blank">
                                             <i class="fab fa-facebook"></i>
                                         </a>
                                     </li>
@@ -72,21 +73,22 @@
                         </div>
                     </div>
                 </div>
+            <% end %>
             </div>
             <div class="col-lg-4">
-            <a href="/blog/article">
-                </a><div class="card shadow-sm shadow--hover"><a href="/blog/article">
-                    <img alt="Image placeholder" class="card-img-top" src="/assets/prv/img-3-800x600-8f32cee4629a6f632e63ee7dfc618aa0f9572a0ae9e05e5effd2ed5d37e2c03c.jpg">
+            <%= link_to mag_article_path do %>
+                <div class="card shadow-sm shadow--hover">
+                    <%= image_tag("img-3-800x600.jpg", alt: "Image placeholder", class:"card-img-top") %>
                     <div class="card-body py-5 text-center">
                         <h5 class="lh-150">How to win buyers and influence sales with marketing</h5>
                         <h6 class="text-muted mt-4 mb-0">25 April, 2018</h6>
                     </div>
-                    </a><div class="card-footer"><a href="/blog/article">
-                        </a><div class="row"><a href="/blog/article">
-                            </a><div class="col text-center"><a href="/blog/article">
-                                </a><ul class="list-inline mb-0"><a href="/blog/article">
-                                    </a><li class="list-inline-item pr-4"><a href="/blog/article">
-                                        </a><a class="nav-link" href="https://facebook.com/webpixels" target="_blank">
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col text-center">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item pr-4">
+                                        <a class="nav-link" href="https://facebook.com/webpixels" target="_blank">
                                             <i class="fab fa-facebook"></i>
                                         </a>
                                     </li>
@@ -105,11 +107,12 @@
                         </div>
                     </div>
                 </div>
+            <% end %>
             </div>
         </div>
     </div>
     <!-- Blog Index Path -->
     <div class="mt-lg text-center">
-        <a class="btn btn-dark btn-circle shadow" href="/blog/index">Blog</a> 
+        <%= link_to 'Blog', mag_index_path, class:"btn btn-dark btn-circle shadow" %> 
     </div>
 </section>
