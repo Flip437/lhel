@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'mag/index'
   get 'mag/article'
   get 'contrats/formulaire'
+  post 'contrats/formulaire'
   get 'contrats/selection'
   get 'contrats/partenaires'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

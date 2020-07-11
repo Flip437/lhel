@@ -46,6 +46,7 @@ class ContratsController < ApplicationController
 
   def formulaire
     @title = "Formulaire de demande"
+    puts params
   end
 
   def partenaires
