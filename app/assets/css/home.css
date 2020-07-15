@@ -4,7 +4,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background: linear-gradient(#AACEE9, #DBEBF6);
+    /*background: linear-gradient(#AACEE9, #DBEBF6);*/
+    background: linear-gradient(80deg, var(--primary), #b2d6ee 100%) !important;
     /*height: 600px;*/
 }
 

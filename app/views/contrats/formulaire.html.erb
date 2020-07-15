@@ -10,16 +10,13 @@
                     <div class="row">
                         <div class="col-md-12 mx-0">
                             <!-- <form id="msform"> -->
-
                             <%= form_with :html => { :id => "msform" } do |f| %>
-
-                            
                                 <!-- progressbar -->
                                 <ul id="progressbar">
-                                    <li class="active fas fa-user-circle" id="account"><strong>Coordonnées</strong></li>
-                                    <li class="fas fa-cog" id="personal"><strong>Informations</strong></li>
-                                    <li class="far fa-sliders-h" id="payment"><strong>Besoins</strong></li>
-                                    <li class="fas fa-check-circle" id="confirm"><strong>Terminé</strong></li>
+                                    <li class="active fas fa-user-circle col-4" id="account"><strong>Coordonnées</strong></li>
+                                    <li class="fas fa-cog col-4" id="personal"><strong>Informations</strong></li>
+                                    <!-- <li class="far fa-sliders-h" id="payment"><strong>Besoins</strong></li> -->
+                                    <li class="fas fa-check-circle col-4" id="confirm"><strong>Terminé</strong></li>
                                 </ul>
 
                                 <!-- FIELDSETS -->
@@ -150,30 +147,20 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <input type="button" name="previous" class="previous action-button-previous btn btn-warning btn-circle btn-translate--hover px-4" value="Précédent" />
-                                    <input type="button" name="next" class="next action-button btn btn-success btn-circle btn-translate--hover px-4" value="Suivant" />
-                                    <!-- INFORMATIONS SUR LE CONTRAT -->
-                                </fieldset>
-                                
-                                <fieldset>
-                                    <!-- INFORMATIONS SUR LES OPTIONS -->
-                                    <div class="form-card mx-3">
-                       
 
-                                        <div class="pt-5 delimiter-top">
-                                            <div class="page-inner-header mb-4">
-                                                <h3 class="mb-1">Informations complémentaires</h3>
-                                                <p class="text-muted mb-0">Vous pouvez ajouter un paragrpahe ci-dessous pour nous donner des informations que vous trouvez pertinentes.</p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col">
+                                        <!-- INFORMATIONS SUR LES OPTIONS -->
+                                        <div class="page-inner-header mb-4">
+                                            <h2 class="fs-title">Informations complémentaires</h2>
+                                            <p class="text-muted mb-0">Vous pouvez ajouter un paragrpahe ci-dessous pour nous donner des informations que vous trouvez pertinentes.</p>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
                                                     <div class="form-group">
-                                                        <div class="form-group">
-                                                            <label class="form-control-label">Informations</label>
-                                                            <textarea class="form-control" placeholder="Écrivez votre paragraphe ici" rows="3"></textarea>
-                                                            <small class="form-text text-muted mt-2"></small>
-                                                        </div>
+                                                        <label class="form-control-label">Informations</label>
+                                                        <textarea class="form-control" placeholder="Écrivez votre paragraphe ici" rows="3"></textarea>
+                                                        <small class="form-text text-muted mt-2"></small>
                                                     </div>
                                                 </div>
                                             </div>
@@ -182,8 +169,6 @@
                                     <input type="button" name="previous" class="previous action-button-previous btn btn-warning btn-circle btn-translate--hover px-4" value="Précédent" />
                                     <%= f.submit 'Valider en ruby', :name=>"make_payment", :class=>"next action-button btn btn-success btn-circle btn-translate--hover px-4" %>
                                     <!-- <input type="button" name="make_payment" class="next action-button btn btn-success btn-circle btn-translate--hover px-4" value="Valider" /> -->
-
-                                <!-- INFORMATIONS SUR LES OPTIONS -->
                                 </fieldset>
 
                                 <fieldset>
