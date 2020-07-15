@@ -32,15 +32,15 @@
                                         </div>
                                         <div class="row mx-1">
                                             <div class="col-md-4 custom-control custom-radio mb-3">
-                                                <input type="radio" name="custom-radio-1"  class="custom-control-input" id="customRadio1">
+                                                <%= f.radio_button "custom-radio-1", "Madame", :id=>"customRadio1", :class=>"custom-control-input" %>
                                                 <label class="custom-control-label" for="customRadio1">Madame</label>
                                             </div>
                                             <div class="col-md-4 custom-control custom-radio mb-3">
-                                                <input type="radio" name="custom-radio-1"  class="custom-control-input" id="customRadio2">
+                                                <%= f.radio_button "custom-radio-1", "Monsieur", :id=>"customRadio2", :class=>"custom-control-input" %>
                                                 <label class="custom-control-label" for="customRadio2">Monsieur</label>
                                             </div>
                                             <div class="col-md-4 custom-control custom-radio mb-3">
-                                                <input type="radio" name="custom-radio-1"  class="custom-control-input" id="customRadio3">
+                                                <%= f.radio_button "custom-radio-1", "Autre", :id=>"customRadio3", :class=>"custom-control-input" %>
                                                 <label class="custom-control-label" for="customRadio3">Autre</label>
                                             </div>
                                         </div>
@@ -48,13 +48,13 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="form-control-label">Prénom</label>
-                                                    <input class="form-control" type="text" placeholder="Saisissez votre prénom">
+                                                    <%= f.text_field "Prénom", placeholder: 'Saisissez votre prénom', :class=>"form-control" %>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="form-control-label">Nom</label>
-                                                    <input class="form-control" type="text" placeholder="Et votre nom">
+                                                    <%= f.text_field "Nom", placeholder: 'Et votre nom', :class=>"form-control" %>
                                                 </div>
                                             </div>
                                         </div>
@@ -62,13 +62,13 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="form-control-label">Date anniversaire</label>
-                                                    <input type="text" class="form-control" data-toggle="date" placeholder="Selectionnez votre date anniversaire">
+                                                    <%= f.text_field "Anniversaire", { :class => 'form-control', 'data-toggle' => 'date', 'placeholder' => 'Selectionnez votre date anniversaire'} %>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="form-control-label">Ville</label>
-                                                    <input type="text" class="form-control" placeholder="Votre ville">
+                                                    <%= f.text_field "Ville", class: "form-control", placeholder: "Votre ville" %>
                                                 </div>
                                             </div>
                                         </div>
@@ -76,14 +76,14 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="form-control-label">Email</label>
-                                                    <input class="form-control" type="email" placeholder="nomprénom@exemple.com">
+                                                    <%= f.email_field "email", class: "form-control", placeholder: "nomprénom@exemple.com" %>
                                                     <small class="form-text text-muted mt-2">Nous vous contacterons à cette adresse pour la suite du traitement de votre dossier. Merci de vérifier l'exactitude de votre adresse</small>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="form-control-label">Téléphone</label>
-                                                    <input class="form-control" type="text" placeholder="+33 6 36 65 65 65">
+                                                    <%= f.text_field 'name' "email", class: "form-control", placeholder: "+33 6 36 65 65 65" %>
                                                     <small class="form-text text-muted mt-2">Nous vous contacterons sur ce numéro de téléphone pour la suite du traitement de votre dossier. Merci de vérifier l'exactitude de votre numéro</small>
                                                 </div>
                                             </div>
@@ -105,19 +105,25 @@
                                             <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <label class="form-control-label">Régime sociale</label>
-                                                    <select class="form-control form-control-sm">
-                                                        <option>Salarié</option>
-                                                        <option>Sans emploi</option>
-                                                        <option>Autre, vous pouvez préciser votre situation dans le paragraphe en bas de page</option>
-                                                    </select>
+
+                                                    <%= select_tag "Régime", raw("<option>Salarié du privé</option>
+                                                            <option>Salarié du public</option>
+                                                            <option>Profession libérale</option>
+                                                            <option>Agriculteur</option>
+                                                            <option>Chef d'entreprise</option>
+                                                            <option>Artisant/Commerçant</option>
+                                                            <option>Intermittent</option>
+                                                            <option>Retraité</option>
+                                                            <option>Sans profession</option>
+                                                            <option>Autre</option>"),
+                                                        multiple: true, class: 'form-control form-control-sm' %>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="form-control-label">Quand souhaitez-vous que votre contrat débute ?</label>
-                                                    <input type="text" class="form-control" data-toggle="date" placeholder="Selectionnez la date">
+                                                    <%= f.text_field "Début", { :class => 'form-control', 'data-toggle' => 'date', 'placeholder' => 'Quand souhaitez-vous que votre contrat débute ?'} %>
                                                 </div>
                                             </div>
                                         </div>
@@ -126,19 +132,19 @@
                                                 <div class="form-group">
                                                     <label class="form-control-label">Qui souhaitez-vous assurer ?</label>
                                                     <div class="custom-control custom-radio mb-3">
-                                                        <input type="radio" name="custom-radio-2" class="custom-control-input" id="customRadio4" checked="">
+                                                        <%= f.radio_button "custom-radio-2", "Vous", :id=>"customRadio4", :class=>"custom-control-input" %>
                                                         <label class="custom-control-label" for="customRadio4">Vous</label>
                                                     </div>
                                                     <div class="custom-control custom-radio mb-3">
-                                                        <input type="radio" name="custom-radio-2"  class="custom-control-input" id="customRadio5">
+                                                        <%= f.radio_button "custom-radio-2", "Vous et votre conjoint", :id=>"customRadio5", :class=>"custom-control-input" %>
                                                         <label class="custom-control-label" for="customRadio5">Vous et votre conjoint</label>
                                                     </div>
                                                     <div class="custom-control custom-radio mb-3">
-                                                        <input type="radio" name="custom-radio-2"  class="custom-control-input" id="customRadio6">
+                                                        <%= f.radio_button "custom-radio-2", "Vous et votre famille", :id=>"customRadio6", :class=>"custom-control-input" %>
                                                         <label class="custom-control-label" for="customRadio6">Vous et votre famille</label>
                                                     </div>
                                                     <div class="custom-control custom-radio mb-3">
-                                                        <input type="radio" name="custom-radio-2"  class="custom-control-input" id="customRadio7">
+                                                        <%= f.radio_button "custom-radio-2", "Vous et vos enfants", :id=>"customRadio7", :class=>"custom-control-input" %>
                                                         <label class="custom-control-label" for="customRadio7">Vous et vos enfants</label>
                                                     </div>
                                                 </div>
@@ -153,60 +159,7 @@
                                 <fieldset>
                                     <!-- INFORMATIONS SUR LES OPTIONS -->
                                     <div class="form-card mx-3">
-                                        <div class="page-inner-header mb-4">
-                                            <h3 class="mb-1">Vos besoins</h3>
-                                            <p class="text-muted mb-0">Quel niveau de remboursement souhaitez-vous ?</p>
-                                        </div>
-
-
-                                        <div class="row">
-                                            <div class="col-lg-9">
-                                                <!-- Default input slider -->
-                                                <div class="input-slider-container mb-5">
-                                                    <label class="form-control-label">Soins courants: médecine générale, pharmacie, radios ...</label>
-                                                    <div id="input-slider" class="input-slider" data-range-value-min="1" data-range-value-max="10"></div>
-                                                    <!-- Input slider values -->
-                                                    <div class="row mt-3">
-                                                        <div class="col-6">
-                                                            <span id="input-slider-value" class="range-slider-value" data-range-value-low="2"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Red input slider -->
-                                                <div class="input-slider-container mb-5">
-                                                    <label class="form-control-label">Dentaire: dentiste, prothèse, sans (j'arrive pas à relire ce que tu as écris là ^^), etc ...</label>
-                                                    <div id="input-slider-red" class="input-slider input-slider--red" data-range-value-min="1" data-range-value-max="10"></div>
-                                                    <!-- Input slider values -->
-                                                    <div class="row mt-3">
-                                                        <div class="col-6">
-                                                            <span id="input-slider-red-value" class="range-slider-value" data-range-value-low="2"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Yellow input slider -->
-                                                <div class="input-slider-container mb-5">
-                                                    <label class="form-control-label">Optique: lentilles, lunettes, chirugie ofta, refractaire, etc ...</label>
-                                                    <div id="input-slider-yellow" class="input-slider input-slider--yellow" data-range-value-min="1" data-range-value-max="10"></div>
-                                                    <!-- Input slider values -->
-                                                    <div class="row mt-3">
-                                                        <div class="col-6">
-                                                            <span id="input-slider-yellow-value" class="range-slider-value" data-range-value-low="2"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Yellow input slider -->
-                                                <div class="input-slider-container mb-5">
-                                                    <label class="form-control-label">Hospitalisation: frais de séjour, frais de transport, chirurgie, etc ...</label>
-                                                    <div id="input-slider-cyan" class="input-slider input-slider--cyan" data-range-value-min="1" data-range-value-max="10"></div>
-                                                    <!-- Input slider values -->
-                                                    <div class="row mt-3">
-                                                        <div class="col-6">
-                                                            <span id="input-slider-cyan-value" class="range-slider-value" data-range-value-low="2"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                       
 
                                         <div class="pt-5 delimiter-top">
                                             <div class="page-inner-header mb-4">
