@@ -5,10 +5,22 @@ class FormulaireMailer < ApplicationMailer
   #
   #   en.formulaire_mailer.demande.subject
   #
-  def demande
-    @greeting = "Hi"
+  def demande(params)
+    puts "IN FORMULAIRE MAILER METHODEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"
+    @params = params
+    @firstname = params[:firstname]
+    @lastname = params[:lastname]
+    @birthday = params[:birthday]
+    @city = params[:city]
+    @email = params[:email]
+    @phone = params[:phone]
+    @begin = params[:begin]
+    @gender = params[:gender]
+    @forwho = params[:forwho]
+    @informations = params[:informations]
 
-    #mail to: "to@example.org"
-    @contact = contact  mail(to: @contact.email, subject: "Bienvenue chez Nous")
+    
+    mail(to: @email, subject: "[NOUVELLE DEMANDE LHEL] de #{@firstname} #{@lastname}")
   end
+
 end

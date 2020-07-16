@@ -1,5 +1,14 @@
-<h1>Formulaire#demande</h1>
+<h1> <%= @firstname %> <%= @lastname %> vous fait une nouvelle demande de devis <h1>
+<h2> Voici les informations le concernant </h2>
 
-<p>
-  <%= @greeting %>, find me in app/views/formulaire_mailer/demande.html.erb
-</p>
+
+<p> Nom : <%= @firstname %></p>
+<p> Prénom : <%= @lastname %></p>
+<p> Date de naissance : <%= @birthday %></p>
+<p> Ville : <%= @city %></p>
+<p> email : <%= @email %></p>
+<p> Téléphone : <%= @phone %></p>
+<p> Date de début : <%= @begin %></p>
+<p> Sex : <%= @gender %></p>
+<p> Qui souhaitez-vous assurer ? <%= @forwho %></p>
+<p> Informations complémentaires: <%= @informations %></p>

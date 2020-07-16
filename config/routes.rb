@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'formulaire/demande'
+  post 'formulaire/demande', to: 'formulaire#email'
   get 'contrats/senior'
   get 'contrats/familiale'
   get 'contrats/etudiants'
@@ -14,7 +16,7 @@ Rails.application.routes.draw do
   get 'mag/index'
   get 'mag/article'
   get 'contrats/formulaire'
-  post 'contrats/formulaire'
+  post 'contrats/demande'
   get 'contrats/selection'
   get 'contrats/partenaires'
   get 'contrats/assuranceprevoyance'
@@ -22,6 +24,11 @@ Rails.application.routes.draw do
   get 'contrats/obseques'
   get 'contrats/dependance'
   get 'contrats/accidentsdelavie'
+
+
+
+
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'home#index'
 
