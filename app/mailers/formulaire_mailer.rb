@@ -6,7 +6,7 @@ class FormulaireMailer < ApplicationMailer
   #   en.formulaire_mailer.demande.subject
   #
   def demande(params)
-    puts "IN FORMULAIRE MAILER METHODEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"
+    @mail = "lhel.vacheyroux@gmail.com"
     @params = params
     @firstname = params[:firstname]
     @lastname = params[:lastname]
@@ -20,7 +20,7 @@ class FormulaireMailer < ApplicationMailer
     @informations = params[:informations]
 
     
-    mail(to: @email, subject: "[NOUVELLE DEMANDE LHEL] de #{@firstname} #{@lastname}")
+    mail(to: @mail, subject: "[NOUVELLE DEMANDE LHEL] de #{@firstname} #{@lastname}")
   end
 
 end

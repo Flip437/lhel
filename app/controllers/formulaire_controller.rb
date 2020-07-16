@@ -4,7 +4,6 @@ class FormulaireController < ApplicationController
   end
 
   def email
-    puts "IN FORMULAIRE CONTROLLER METHODEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"
     FormulaireMailer.demande(form_params).deliver
   end
 
