@@ -17,6 +17,11 @@ Rails.application.routes.draw do
   post 'contrats/formulaire'
   get 'contrats/selection'
   get 'contrats/partenaires'
+  get 'contrats/assuranceprevoyance'
+  get 'contrats/deces'
+  get 'contrats/obseques'
+  get 'contrats/dependance'
+  get 'contrats/accidentsdelavie'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'home#index'
 

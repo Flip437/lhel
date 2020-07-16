@@ -54,5 +54,26 @@ class ContratsController < ApplicationController
   def partenaires
     @title = "Tous nos partenaires"
   end
+
+  def assuranceprevoyance
+    @title = "Assurance Prévoyance"
+  end
+
+  def deces
+    @title = "Garantie décès"
+  end
+
+  def obseques
+    @title = "Garantie obsèques"
+  end
+
+  def dependance
+    @title = "Dépendances"
+  end
+
+  def accidentsdelavie
+    @title = "Accidents de la vie"  
+  end
+
   
 end

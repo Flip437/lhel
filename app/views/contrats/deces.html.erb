@@ -1,0 +1,84 @@
+<!-- Purpose-website-ui-kit-v1.1.3/pages/careers-single.html -->
+<main>
+
+    <!-- Spotlight -->
+    <%= render "contrats/pagebanner", page_title: @title %>
+
+    <section class="slice slice-lg bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow mt--200">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <p>Gardez votre famille en toute sécurité, à l’abri du besoin est souvent essentiel pour s’assurer d’une certaine tranquillité.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">A quoi sert l’assurance décès ?</h4>
+                            <p>La garantie en cas de décès est un contrat qui vise à protéger votre famille des conséquences financières et matérielles de votre disparition.
+                            Plus précisément, l’assurance décès permet de couvrir la perte de revenus et les frais liés au décès (funérailles, droits de succession…) ainsi
+                            que les charges courantes comme le loyer, crédit immobilier...</p>
+                            <p>Le but étant de laisser son conjoint et ses enfants dans les meilleures conditions possibles.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Les modalités de souscription</h4>
+                            <p>Pour souscrire à un contrat d’assurance santé à titre individuel, il faut avoir entre 18 ans et 80ans. Ce contrat garantira le versement d’un capital
+                            décès ou d’une rente, en échange d’une cotisation. Vous serez le seul décisionnaire de la somme qui sera transmise à vos proches et des modalités de versements.</p>
+                            <p>Le coût de l’assurance décès dépend de l’âge, du capital garanti et de votre état de santé qui peut être justifié par une déclaration sur l’honneur ou par
+                            une visite médicale en fonction de la somme engagée.</p>
+                            <p>L’assurance santé ne concerne pas que les seniors, car elle peut répondre à des besoins spécifiques comme assurer le financement des études de vos enfants.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Quel est le meilleur moment pour souscrire une garantie décès ?</h4>
+                            <p>Il n’y pas réellement de bon moment, mais selon nous, plus l’assurance est prescrite tôt, plus les cotisations sont faibles. En effet, l’âge lors de la souscription
+                            influe énormément sur le montant des cotisations.</p>
+                            <p>Au final, le mieux étant généralement à l’entrée dans la vie professionnel ou au moment de fonder une famille.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Comment et auprès de qui souscrire une assurance santé ?</h4>
+                            <p>Pour souscrire une assurance santé, vous pouvez vous adresser à un assureur, une mutuelle ou un groupe de protection social. Comme la
+                            <%= link_to 'surcomplémentaire', contrats_surcomplementaire_path %> santé qui vient généralement compléter la complémentaire collective, l’assurance décès peut venir en complément
+                            de l’assurance collective souscrite par l’employeur.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Qui seront les bénéficiaires ?</h4>
+                            <p>Les bénéficiaires doivent apparaitre lors de la signature du contrat, aucune loi n’exige un lien de parenté entre le prescripteur et le ou les bénéficiaires,
+                            donc vous pouvez designer n’importe quelle personne de votre entourage ou famille.</p>
+                            <p>Toutefois, il est conseillé de rédiger la clause bénéficiaire ultérieurement pour éviter tous litiges en fonction du rang de priorité
+                            ou de la quote part (part qui revient à chacun).</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Comment est fixé le capital décès ?</h4>
+                            <p>Pour déterminer la valeur du capital garanti, il faut analyser ses besoins en évaluant les revenus nécessaires à votre entourage ou famille pour assumer les
+                            dépenses immédiates (funérailles, obsèques…), les charges (loyer, crédit…) ainsi que parfois les éventuelles dépenses (études de vos enfants…). D’autres éléments
+                            peuvent venir compléter, comme la garantie d’invalidité.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Pourquoi choisir LHEL assurances ?</h4>
+                            <p>LHEL répondra gratuitement à toutes vos questions, en plus de vous conseiller pour trouver la meilleure assurance décès, elle vous suivra tout le long de
+                            votre dossier pour finaliser au mieux cette démarche importante dans votre vie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <%= render 'contrats/calltoaction'%>
+
+</main>
+<% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>

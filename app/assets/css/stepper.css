@@ -254,3 +254,17 @@ select.list-dt:focus {
     width: 100%;
     object-fit: cover
 }
+
+
+
+@media only screen and (max-width:414px) {
+    li strong {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width:321px) {
+    li strong {
+        font-size: 68%;
+    }
+}

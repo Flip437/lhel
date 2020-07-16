@@ -1,0 +1,59 @@
+<!-- Purpose-website-ui-kit-v1.1.3/pages/careers-single.html -->
+<main>
+
+    <!-- Spotlight -->
+    <%= render "contrats/pagebanner", page_title: @title %>
+
+    <section class="slice slice-lg bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow mt--200">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <p>Les funérailles est un moment délicat dans la vie, en anticipant cette épisode sombre, on permet de soulager sa famille et son entourage.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Qu’est-ce qu’une assurance obsèques ?</h4>
+                            <p>Une assurance obsèques est tout simplement une garantie qui se limite aux funérailles. Le choix de la sépulture, les procédures administratives,
+                            la cérémonie sont des choix dures et onéreux à prendre sur le moment, c’est pourquoi cette garantie existe pour éviter à vos proches de se préoccuper de tous ses problèmes.</p>
+                            <p>Deux contrats existent pour couvrir les funérailles, un contrat d’assurance obsèques en capital ou un contrat d’assurance obsèques en prestations.</p>
+                            <p>Le premier contrat versera une somme d’argent qui permettra de régler les frais liés aux funérailles. Lors de la signature du contrat, il faudra définir
+                            la somme accordée ainsi que le bénéficiaire qui pourra utiliser l’argent que pour cette raison. En effet, depuis Juillet 2013 la loi de séparation et de
+                            régulation des services bancaires dit que le versement du capital doit servir dans le seul but de régler les funérailles.</p>
+                            <p>Le second, le contrat de prestations funéraires permet de lier l’assuré à un entrepreneur de pompe funèbre qui se devra d’organiser la cérémonie. Au lieu
+                            de reverser l’argent à une personne de l’entourage, l’assureur se devra de reverser la somme directement à l’entreprise funéraires.
+                            Il existe deux formules pour souscrire à ce contrat :</p>
+                            <ul>
+                                <li>Contrat en prestations standardisées qui comprend le choix entre l’inhumation ou la crémation, la cérémonie religieuse ou civile.
+                                Attention, le problème de ce contrat réside dans le fait que le client n’a pas le choix sur la pierre tombale, le caveau, du cercueil...
+                                 et le détail des prestations entre l’assureur et l’opérateur funéraires est souvent flou.</li>
+                                <li>Contrat en prestations personnalisées qui permet de choisir tout dans les moindres détails (lieu, fleurs, musiques, textes…).
+                                Point important chaque année l’assureur doit vous faire parvenir le rachat de capital.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Quelques conseils avant de souscrire un contrat d’assurance obsèques ?</h4>
+                            <p>Les deux contrats ont leurs avantages et inconvénients, toutefois avant de souscrire à une assurance obsèques il faut vérifier certains éléments :</p>
+                            <ul>
+                                <li>L’opérateur funéraire doit faire apparaître le détail des prestations qu’il s’engage à réaliser ;</li>
+                                <li>Le contrat doit faire apparaître les mentions qui sont modifiables à tout moment (mode de sépulture, caveau…) ainsi que l’entreprise funéraires qui réalisera la cérémonie ;</li>
+                                <li>Le contrat doit bien stipuler ce qui n’est pas pris en charge : la pierre tombale, le caveau, le transport du corps, le salon funéraire, les frais de creusement...</li>
+                                <li>Le contrat doit faire apparaitre si le capital souscrit couvre intégralement les prestations funéraires, car parfois certains proches se voient dans l’obligation
+                                de verser un supplément pour s’assurer de la cérémonie.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <%= render 'contrats/calltoaction'%>
+
+</main>
+<% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>
