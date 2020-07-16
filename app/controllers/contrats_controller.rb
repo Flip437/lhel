@@ -44,16 +44,6 @@ class ContratsController < ApplicationController
     @title = "Complémentaire Santé"
   end
 
-  def formulaire
-
-   
-  end
-
-  def demande
-    FormulaireMailer.demande(params).deliver
-  end
-
-
   def
 
   def partenaires

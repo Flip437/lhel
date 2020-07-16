@@ -1,3 +1,13 @@
-Formulaire#demande
+<%= @firstname %> <%= @lastname %> vous fait une nouvelle demande de devis
+Voici les informations le concernant
 
-<%= @greeting %>, find me in app/views/formulaire_mailer/demande.text.erb
+Nom : <%= @firstname %>
+Prénom : <%= @lastname %>
+Date de naissance : <%= @birthday %>
+Ville : <%= @city %>
+email : <%= @email %>
+Téléphone : <%= @phone %>
+Date de début : <%= @begin %>
+Sex : <%= @gender %>
+Qui souhaitez-vous assurer ? <%= @forwho %>
+Informations complémentaires: <%= @informations %>
