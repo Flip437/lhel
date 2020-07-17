@@ -42,10 +42,14 @@
 									<% end %>						
 									
 									<ul class="submenu dropdown-menu">
-										<li><a class="dropdown-item" href=""> Individuelle</a></li>
-										<li><a class="dropdown-item" href=""> Sénior</a></li>
-										<li><a class="dropdown-item" href=""> Fémiliale</a></li>
-										<li><a class="dropdown-item" href=""> Blabla</a></li>
+										<li><%= link_to 'Individuelle', contrats_mutuelle_path, class: "dropdown-item" %>
+										</li>
+										<li><%= link_to 'Séniors', contrats_senior_path, class: "dropdown-item"  %>
+										</li>
+										<li><%= link_to 'Familiale', contrats_familiale_path, class: "dropdown-item"  %>
+										</li>
+										<li><%= link_to 'Etudiant', contrats_etudiants_path, class: "dropdown-item"  %>
+										</li>
 									</ul>
 								</li>
 								<!-- LIST ITEM MUTEULLE SANTE END-->

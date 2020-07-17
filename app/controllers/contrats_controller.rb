@@ -28,6 +28,10 @@ class ContratsController < ApplicationController
     @title = "Mutuelle Optique"
   end
 
+  def auditive
+    @title = "Mutuelle Auditive"
+  end
+
   def resiliation
     @title = "Résiliation mutuelle santé"
   end
@@ -69,6 +73,11 @@ class ContratsController < ApplicationController
   def accidentsdelavie
     @title = "Accidents de la vie"  
   end
+
+  def hospitalisation
+    @title = "Hospitalisation"
+  end
+
 
   
 end

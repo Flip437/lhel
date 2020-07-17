@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'contrats/medecinedouce'
   get 'contrats/dentaire'
   get 'contrats/optique'
+  get 'contrats/auditive'
   get 'contrats/mutuelle'
   get 'contrats/resiliation'
   get 'contrats/surcomplementaire'
@@ -18,12 +19,13 @@ Rails.application.routes.draw do
   get 'contrats/formulaire'
   post 'contrats/demande'
   get 'contrats/selection'
-  get 'contrats/partenaires'
+  get 'home/partenaires'
   get 'contrats/assuranceprevoyance'
   get 'contrats/deces'
   get 'contrats/obseques'
   get 'contrats/dependance'
   get 'contrats/accidentsdelavie'
+  get 'contrats/hospitalisation'
 
 
 
