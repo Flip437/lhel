@@ -26,6 +26,8 @@ Rails.application.routes.draw do
   get 'contrats/dependance'
   get 'contrats/accidentsdelavie'
   get 'contrats/hospitalisation'
+  get 'contrats/reformesante'
+  get 'contrats/tierspayant'
 
 
 

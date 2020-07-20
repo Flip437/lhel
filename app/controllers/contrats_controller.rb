@@ -78,6 +78,12 @@ class ContratsController < ApplicationController
     @title = "Hospitalisation"
   end
 
+  def reformesante
+    @title = "Réforme 100% Santé"
+  end
 
+  def tierspayant
+    @title = "Tiers Payant"  
+  end
   
 end
