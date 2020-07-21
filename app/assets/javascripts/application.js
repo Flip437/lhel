@@ -25,6 +25,7 @@
 //= require bootstrap-datepicker.min.js
 //= require nouislider.min.js
 //= require stepper
+//= require validate
 // FORMUAIRE
 //= require navbar
 //= require banner
