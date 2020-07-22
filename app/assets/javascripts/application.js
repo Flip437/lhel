@@ -26,20 +26,8 @@
 //= require nouislider.min.js
 //= require stepper
 // FORMUAIRE
+//= require navbar
+//= require banner
 
 //= require theme
 //= require_tree .
-
-$(document).ready(function(){
-    AOS.init();
-});
-
-$('header').on("mouseover",function(){ 
-    $('header').removeClass("header-transparent");
-    $('header').addClass("header-visible");
-});
-
-$('header').on("mouseout",function(){ 
-    $('header').removeClass("header-visible");
-    $('header').addClass("header-transparent");
-});

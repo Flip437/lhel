@@ -1,0 +1,37 @@
+<!-- Purpose-website-ui-kit-v1.1.3/pages/careers-single.html -->
+<main>
+    <!-- Spotlight -->
+    <%= render "contrats/pagebanner", page_title: @title %>
+
+    <section class="slice slice-lg bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow mt--200">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4"></h4>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">L’aide d’une complémentaire ACS devient la complémentaire santé solidaire</h4>
+                            <p>L’aide au paiement d’une complémentaire santé est tout simplement une aide qui réduira le montant de votre cotisation à une complémentaire santé.</p>
+                            <p>Depuis le 1er novembre 2019, ACS et la couverture maladie universelle (CMU-C) changent progressivement pour devenir la complémentaire santé solidaire (CSS).</p>
+                            <p>Tout comme l’ACS, la complémentaire santé solidaire permettra aux bénéficiaires de ne pas payer les dépenses de santé chez le dentiste, le médecin, en pharmacie, à l’hôpital car l’Assurance maladie assurera le relaie. Elle permettra de bénéficier de tarifs sans dépassements chez le médecin et de ne plus payer la plupart des prothèses dentaires, auditives et les lunettes.</p>
+                            <p>Les foyers paieront une participation financière à la place de l’attestation chèque qu’il fallait jusqu’à présent pour obtenir une réduction. Toutefois, les chèques restent encore valables s’ils n’ont pas été utilisé avant le 1er novembre, ils donnent droit à la complémentaire santé solidaire.</p>
+                            <p>Vous pouvez conserver votre contrat ACS souscrit avant le 1er novembre 2019 jusqu’à la fin définitive.</p>
+                            <p>Enfin, vous pouvez demander si votre mutuelle santé figure sur la liste des organismes complémentaire gérant la complémentaire santé solidaire, cela vous permettra de demander cette aide sans attendre la fin de l’ACS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <%= render 'contrats/calltoaction'%>
+
+</main>
+<% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>

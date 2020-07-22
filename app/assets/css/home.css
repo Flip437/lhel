@@ -1,0 +1,39 @@
+.flip-banner {
+    /*background-image: url(/assets/backgrounds/img-1-1920x800-01f27f7760e7f781f40e58bad110ae60cf62212717cef53c052958ed853651bf.jpg);*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /*background: linear-gradient(#AACEE9, #DBEBF6);*/
+    background: linear-gradient(80deg, var(--primary), #b2d6ee 100%) !important;
+    /*height: 600px;*/
+}
+
+.banner-circle {
+  height: 400px;
+}
+@media only screen and (max-width:768px) {
+  .banner-circle {
+    height: 300px;
+  }
+}
+
+.map {
+  height: 450px;
+  width: 100%;
+}
+@media only screen and (max-width:768px) {
+  .map {
+    height: 300px;
+  }
+}
+
+
+.margin-left {
+  margin-left: 140px !important;
+}
+@media only screen and (max-width:1199px) {
+  .margin-left {
+    margin-left: 49px !important;
+  }
+}

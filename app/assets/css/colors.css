@@ -1,0 +1,65 @@
+:root
+{
+    --blue: #007aff;
+    --indigo: #5603ad;
+    --purple: #510fa8;
+    --pink: #f074ad;
+    --red: #ff3b30;
+    --orange: #ff9500;
+    --yellow: #fc0;
+    --green: #4cd964;
+    --teal: #24b7fa;
+    --cyan: #4bd6e5;
+    --white: #fff;
+    --gray: #6c7686;
+    --gray-dark: #343a40;
+    --light: #ced4da;
+    --lighter: #f5f9fb;
+    --primary: #75ADDB; 
+    --secondary: #71AEDB;
+    --success: #4cd964;
+    --info: #24b7fa;
+    --warning: #ff9500;
+    --danger: #ff3b30;
+    --light: #ced4da;
+    --dark: #05172a;
+    --white: #fff;
+    --darker: #020b13;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+
+.tongue-primary{
+    color: #fff; 
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'138\' height=\'35\' viewBox=\'0 0 138 35\'%3E%3Cpath fill=\'%23AACEE9\' d=\'M 3.15027 34.4375C 1.74207 34.6025 0.68396 34.7266 0 35L 68.9982 35C 68.9982 35 68.9998 28.6387 69 19.5132C 69 20.7261 69.0001 21.8892 69.0001 22.9956L 69.0018 35L 138 35C 137.316 34.7266 136.258 34.6025 134.85 34.4375C 131.11 33.9995 124.903 33.2729 116.678 28.6875C 111.015 25.3901 106.523 20.9771 102.07 16.6025C 93.5474 8.23096 85.1685 -1.97984e-15 69.0018 3.55056e-31C 69.0006 5.271 69 10.4292 69 15.0952C 69 10.4287 68.9994 5.27148 68.9982 3.55056e-31C 52.8314 1.97986e-15 44.4526 8.23096 35.9302 16.6025C 31.4772 20.9771 26.985 25.3901 21.3221 28.6875C 13.0974 33.2729 6.88965 33.9995 3.15027 34.4375Z\'/%3E%3C/svg%3E');
+    /*background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%5C%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%27%20width%3D%5C%27138%5C%27%20height%3D%5C%2735%5C%27%20viewBox%3D%5C%270%200%20138%2035%5C%27%3E%3Cpath%20fill%3D%5C%27%23AACEE9%5C%27%20d%3D%5C%27M%203.15027%2034.4375C%201.74207%2034.6025%200.68396%2034.7266%200%2035L%2068.9982%2035C%2068.9982%2035%2068.9998%2028.6387%2069%2019.5132C%2069%2020.7261%2069.0001%2021.8892%2069.0001%2022.9956L%2069.0018%2035L%20138%2035C%20137.316%2034.7266%20136.258%2034.6025%20134.85%2034.4375C%20131.11%2033.9995%20124.903%2033.2729%20116.678%2028.6875C%20111.015%2025.3901%20106.523%2020.9771%20102.07%2016.6025C%2093.5474%208.23096%2085.1685%20-1.97984e-15%2069.0018%203.55056e-31C%2069.0006%205.271%2069%2010.4292%2069%2015.0952C%2069%2010.4287%2068.9994%205.27148%2068.9982%203.55056e-31C%2052.8314%201.97986e-15%2044.4526%208.23096%2035.9302%2016.6025C%2031.4772%2020.9771%2026.985%2025.3901%2021.3221%2028.6875C%2013.0974%2033.2729%206.88965%2033.9995%203.15027%2034.4375Z%5C%27%2F%3E%3C%2Fsvg%3E');*/
+}
+
+.bg-gradient-primary{
+    background: linear-gradient(80deg, var(--primary), var(--secondary) 100%) !important;
+}
+
+.bg-gradient-secondary{
+    background: linear-gradient(80deg, var(--secondary), #4f94c5 100%) !important;
+}
+.btn-primary{
+    border-color: var(--primary);
+    background-color: var(--primary);
+}
+.btn-primary:hover{
+    color: #fff;
+    border-color: var(--secondary); 
+    background-color: var(--secondary);
+}
+.btn-link {
+    color: var(--secondary)
+}

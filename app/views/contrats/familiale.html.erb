@@ -2,15 +2,7 @@
 <main>
 
     <!-- Spotlight -->
-    <section class="slice slice-xl pb-200 bg-secondary">
-        <div class="container pt-lg">
-            <div class="row row-grid justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="h2 mb-4">Mutuelle Familiale</h2>
-                </div>
-            </div>
-        </div>
-    </section>
+    <%= render "contrats/pagebanner", page_title: @title %>
 
     <section class="slice slice-lg bg-primary">
         <div class="container">
@@ -27,7 +19,7 @@
                         <div class="card-body px-lg-5 py-lg-5">
                             <h4 class="mb-4">Comment choisir sa complémentaire santé famille ?</h4>
                             <p>En premier, il est essentiel de définir les besoins de chacun en termes de santé, pour cela il faut bien prendre son temps. Cela aura pour objectif de bien définir les garanties santés adaptées à chacun des membres de sa famille.</p>
-                            <p>Frais dentaires ou d’optiques, frais d’hospitalisation, frais de séjours liés a la maternité, orthodontie, <%= link_to 'mutuelle sans carence', root_path %> sont des point qu’il ne faut surtout pas épargner. C’est pourquoi, certaines mutuelles sont plus avantageuses que d’autres sur la situation familiale car tout simplement plus adapté aux besoins.</p> 
+                            <p>Frais dentaires ou d’optiques, frais d’hospitalisation, frais de séjours liés a la maternité, orthodontie, mutuelle sans carence sont des point qu’il ne faut surtout pas épargner. C’est pourquoi, certaines mutuelles sont plus avantageuses que d’autres sur la situation familiale car tout simplement plus adapté aux besoins.</p> 
                             <p>Un petit récapitulatif des points à ne pas négliger lorsque vous choisirez votre mutuelle au niveau des garanties :</p>
                             <ul>
                                 <li>Frais d’orthodontie et orthophonie pour les enfants à partir de 10ans</li>
@@ -63,25 +55,7 @@
     </section>
 
     <!-- Call to action -->
-    <section class="slice slice-lg">
-
-        <span class="tongue tongue-top tongue-primary"><i class="fas fa-angle-up"></i></span>
-
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-8 text-center">
-                    <h3 class="font-weight-400">Demandez votre devis pour votre mutelle <span class="font-weight-700">seniors</span></h3>
-                    <div class="mt-5">
-                        <%= link_to root_path, target:"blank", class:'btn btn-primary btn-circle btn-translate--hover px-4' do %>
-                            Demandez votre devis
-                            <span class="badge badge-pill badge-danger text-sm">à partir de 50€</span>
-                        <%end%>
-                        <%= link_to "Contactez-nous", root_path, class:"btn btn-link" %>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <%= render 'contrats/calltoaction'%>
 
 </main>
 <% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>

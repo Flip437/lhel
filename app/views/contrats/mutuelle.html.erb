@@ -2,15 +2,7 @@
 <main>
 
     <!-- Spotlight -->
-    <section class="slice slice-xl pb-200 bg-secondary">
-        <div class="container pt-lg">
-            <div class="row row-grid justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="h2 mb-4">Mutuelle santé</h2>
-                </div>
-            </div>
-        </div>
-    </section>
+    <%= render "contrats/pagebanner", page_title: @title %>
 
     <section class="slice slice-lg bg-primary">
         <div class="container">
@@ -19,18 +11,24 @@
                     <div class="card shadow mt--200">
                         <div class="card-body px-lg-5 py-lg-5">
                             <h4 class="mb-4">L’importance d’adhérer à une mutuelle santé</h4>
-                            <p>La souscription à une mutuelle connu aussi sous le nom de complémentaire santé individuelle n’est pas obligatoire, toutefois si vous désirez un bon remboursement de vos soins, elle devient indispensable.</p>
-                            <p>Effectivement, la sécurité sociale ne prend pas en charge la totalité des frais de santé, en particulier lorsqu’il s’agit de soins spécialisés comme les soins dentaires ou d’optiques. La partie non remboursée, connu sous le nom de « ticket modérateur » est à votre charge, c’est votre assurance santé qui viendra compléter une partie ou l’ensemble selon votre contrat.</p>
+                            <p>La souscription à une mutuelle connu aussi sous le nom de complémentaire santé individuelle n’est pas obligatoire, toutefois si vous désirez un bon
+                            remboursement de vos soins, elle devient indispensable.</p>
+                            <p>Effectivement, la sécurité sociale ne prend pas en charge la totalité des frais de santé, en particulier lorsqu’il s’agit de soins spécialisés
+                            comme les soins dentaires ou d’optiques. La partie non remboursée, connu sous le nom de « ticket modérateur » est à votre charge, c’est votre assurance
+                            santé qui viendra compléter une partie ou l’ensemble selon votre contrat.</p>
                         </div>
                     </div>
                     <div class="card shadow mt-5">
                         <div class="card-body px-lg-5 py-lg-5">
                             <h4 class="mb-4">Qui peut souscrire à une mutuelle santé ?</h4>
                             <p>Les différentes mutuelles santé peuvent être souscrite à titre individuel ou collectif.</p>
-                            <p>Depuis le 1er janvier 2016, les salariés d’entreprises privées doivent contracter une mutuelle via leurs entreprises, connu sous le nom de mutuelle santé collective. Cette complémentaire santé a pour but que l’employeur prenne en charge les cotisations à hauteur minimum de 50%. Néanmoins, cette situation ne concerne pas tous les profils, dont les personnes retraitées et les demandeurs d’emploi mais aussi les personnes qui souhaitent compléter mieux la mutuelle collective par rapport à leurs besoins (<%= link_to 'surcomplémentaire santé', root_path %>)</p>
+                            <p>Depuis le 1er janvier 2016, les salariés d’entreprises privées doivent contracter une mutuelle via leurs entreprises, connu sous le nom de mutuelle santé collective.
+                            Cette complémentaire santé a pour but que l’employeur prenne en charge les cotisations à hauteur minimum de 50%. Néanmoins, cette situation ne concerne pas tous les
+                            profils, dont les personnes retraitées et les demandeurs d’emploi mais aussi les personnes qui souhaitent compléter mieux la mutuelle collective par rapport à
+                            leurs besoins (<%= link_to 'surcomplémentaire santé', contrats_surcomplementaire_path %>)</p>
                             <p>Nous pouvons simplifier cela en 4 grands groupes qui sont :</p>
                             <ul>
-                                <li>La <%= link_to 'mutuelle santé individuelle', root_path %> concerne toutes personnes seules majeures qui désire se couvrir ou assurer un ou plusieurs membres de sa famille</li>
+                                <li>La <%= link_to 'mutuelle santé individuelle', contrats_mutuelle_path %> concerne toutes personnes seules majeures qui désire se couvrir ou assurer un ou plusieurs membres de sa famille</li>
                                 <li>La <%= link_to 'mutuelle santé jeune', contrats_etudiants_path %> qui comprend la complémentaire santé étudiante.</li>
                                 <li>La <%= link_to 'mutuelle santé familiale', contrats_familiale_path %></li>
                                 <li>La <%= link_to 'mutuelle santé sénior', contrats_senior_path %></li>
@@ -41,13 +39,13 @@
                         <div class="card-body px-lg-5 py-lg-5">
                             <h4 class="mb-4">Quelques éléments pour choisir sa mutuelle santé</h4>
                             <p>Pour choisir la mutuelle la plus adapté à son profil (âge, profession et situation personnelle), il faut bien identifier ses besoins en optique, dentaire, hospitalisation ainsi que ses habitudes médicales.</p>
-                            <p>Nous entendons souvent parler de <%= link_to 'mutuelle moins chère', root_path %>, cette expression n’est pas réellement adaptée, il est évident que chez LHEL Assurances nous trouverons la complémentaire santé qui sera répondre à vos besoins au meilleur prix. Généralement les moins chères, sont les mutuelles étudiantes car forcément, elles demandent moins de garanties et de besoins.</p>
+                            <p>Nous entendons souvent parler de mutuelle moins chère cette expression n’est pas réellement adaptée, il est évident que chez LHEL Assurances nous trouverons la complémentaire santé qui sera répondre à vos besoins au meilleur prix. Généralement les moins chères, sont les mutuelles étudiantes car forcément, elles demandent moins de garanties et de besoins.</p>
                             <p>Il est important de comprendre que le prix ne fera pas tout, pour comprendre mieux il faut mettre en concurrence certains paramètres :</p>
                             <ul>
                                 <li>Les radiations de garanties</li>
                                 <li>Les garanties</li>
                                 <li>Les franchises</li>
-                                <li>La forme de <%= link_to 'tiers payants', root_path %> conseillé</li>
+                                <li>La forme de tiers payants conseillé</li>
                                 <li>Les soins pris en charge</li>
                                 <li>Les contrats sans délais de carence</li>
                             </ul>
@@ -67,25 +65,7 @@
     </section>
 
     <!-- Call to action -->
-    <section class="slice slice-lg">
-
-        <span class="tongue tongue-top tongue-primary"><i class="fas fa-angle-up"></i></span>
-
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-8 text-center">
-                    <h3 class="font-weight-400">Demandez votre devis pour votre mutelle <span class="font-weight-700">seniors</span></h3>
-                    <div class="mt-5">
-                        <%= link_to root_path, target:"blank", class:'btn btn-primary btn-circle btn-translate--hover px-4' do %>
-                            Demandez votre devis
-                            <span class="badge badge-pill badge-danger text-sm">à partir de 50€</span>
-                        <%end%>
-                        <%= link_to "Contactez-nous", root_path, class:"btn btn-link" %>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <%= render 'contrats/calltoaction'%>
 
 </main>
 <% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>

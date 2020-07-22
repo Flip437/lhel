@@ -1,0 +1,63 @@
+<!-- Purpose-website-ui-kit-v1.1.3/pages/careers-single.html -->
+<main>
+
+    <!-- Spotlight -->
+    <%= render "contrats/pagebanner", page_title: @title %>
+
+    <section class="slice slice-lg bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow mt--200">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <p>Ce dispositif permet de ne pas avancer chez un professionnel de la santé, médecin, pharmacien ou spécialiste les frais de santé comme les médicaments
+                            ou les consultations, le zéro avance de frais.</p>
+                            <p>En effet pour ce faire, nous pouvons distinguer deux types ; le tiers payant partiel qui comme son nom l’indique remboursera une partie des frais et le tiers
+                            payant total (intégral) qui lui rembourse la totalité des frais.</p>
+                            <p>Pour être rapidement rembourser sans passer par l’envoie des feuilles de santé, il faut être muni de la carte vitale qui est accordée à partir de 16 ans.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Qui bénéficie du tiers payant ?</h4>
+                            <p>Initialement, le tiers payant existe pour les ménages à revenus modestes dans le but de rendre plus facile l’accès aux soins de santé.</p>
+                            <p>Pour appliquer le tiers payant, il faut que certaines conditions soient réunies, la situation économique du patient, le cout des frais médicaux,
+                            la nature de l’acte médical, l’établissement de soin conventionné et les complications médicales liées au travail du patient.</p>
+                            <p>Depuis le 1er janvier 2017, tous les français bénéficient du tiers payant, donnant aux femmes enceintes et aux affections longue durée (ALD) la possibilité d’utiliser ce droit.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Comment faire pour être bien remboursé ?</h4>
+                            <p>Pour bénéficier du tiers payant au maximum, il faudra suivre le parcours de soins coordonnés. En clair, si vous consultez un médecin traitant diffèrent de celui de d’habitude,
+                            ou tout simplement vous n’avez pas déclaré de médecin, vous êtes hors parcours. Cela entraine un remboursement moins important. Il est important de déclarer son médecin et de le
+                            suivre.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Tiers payant VS Ticket modérateur</h4>
+                            <p>Le tiers payant, c’est le zéro avance de frais sur par des soins remboursés par l’Assurance maladie. Toutefois, cela ne veut pas dire qu’il ne reste plus rien à payer,
+                            bien au contraire.</p>
+                            <p>Ce qui reste à payer, une fois la part prise par l’Assurance maladie, s’appelle le ticket modérateur.</p>
+                            <p>Le ticket modérateur est une partie du tarif conventionnel d’une prestation médicale. Trois éléments peuvent faire varier le pourcentage : nature du risque,
+                            l’acte ou le traitement et parcours coordonné ou pas.</p>
+                            <p>Il peut être remboursé de deux manières :</p>
+                            <ul>
+                                <li>Complémentaire santé solidaire (CMU-C) si vous êtes bénéficiaires</li>
+                                <li>Vous bénéficiez d’une complémentaire santé avec ou sans ACS</li>
+                            </ul>
+                            <p>Exemple : Une consultation chez votre médecin généraliste de secteur 1, c’est-à-dire conventionné coutera 25 euros. Sur ce montant, l’Assurance maladie rembourse 70%, donc 17,50E.
+                            Le ticket modérateur est de 30%, soit 7,50E, et un 1E de participation forfaitaire (sert à préserver notre système de santé). Au final, 8,50E sont à votre charge.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <%= render 'contrats/calltoaction'%>
+
+</main>
+<% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>
