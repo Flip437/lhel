@@ -20,7 +20,7 @@
                                 </ul>
 
                                 <!-- FIELDSETS -->
-                                <fieldset>
+                                <fieldset id="first_fieldset">
                                     <!-- COORDONNEES -->
                                     <div class="form-card mx-3">
                                         <div class="page-inner-header mb-4">
@@ -98,7 +98,7 @@
                                     <!-- COORDONNEES -->
                                 </fieldset>
 
-                                <fieldset>
+                                <fieldset id="second_fieldset">
                                     <!-- INFORMATIONS SUR LE CONTRAT -->
                                     <div class="form-card mx-3">
                                         <div class="page-inner-header mb-4">
@@ -110,6 +110,7 @@
                                             <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <label class="form-control-label">Type de contrat</label>
+                                                    <small class="form-text text-danger mt-2" id="ty_validation">** Merci de compléter ce champ **</small>
                                                     <%= select_tag "type", raw("<option>Ce que vous recherchez</option>
                                                             <option>Mutuelle Santé</option>
                                                             <option>Assurance Obsèques</option>
@@ -126,7 +127,7 @@
                                             <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <label class="form-control-label">Régime sociale</label>
-
+                                                    <small class="form-text text-danger mt-2" id="rg_validation">** Merci de compléter ce champ **</small>
                                                     <%= select_tag "social", raw("<option>Salarié du privé</option>
                                                             <option>Salarié du public</option>
                                                             <option>Profession libérale</option>
@@ -145,6 +146,7 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="form-control-label">Quand souhaitez-vous que votre contrat débute ?</label>
+                                                    <small class="form-text text-danger mt-2" id="dt_validation">** Merci de compléter ce champ **</small>
                                                     <%= f.text_field "begin", { :class => 'form-control', 'data-toggle' => 'date', 'placeholder' => 'Date de début'} %>
                                                 </div>
                                             </div>
@@ -153,6 +155,7 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="form-control-label">Qui souhaitez-vous assurer ?</label>
+                                                    <small class="form-text text-danger mt-2" id="who_validation">** Merci de compléter ce champ **</small>
                                                     <div class="custom-control custom-radio mb-3">
                                                         <%= f.radio_button "forwho", "Vous", :id=>"customRadio4", :class=>"custom-control-input" %>
                                                         <label class="custom-control-label" for="customRadio4">Vous</label>
@@ -176,6 +179,7 @@
                                         <!-- INFORMATIONS SUR LES OPTIONS -->
                                         <div class="page-inner-header mb-4">
                                             <h2 class="fs-title">Informations complémentaires</h2>
+                                            <small class="form-text text-danger mt-2" id="in_validation">** Merci de compléter ce champ **</small>
                                             <p class="text-muted mb-0">Vous pouvez ajouter un paragrpahe ci-dessous pour nous donner des informations que vous trouvez pertinentes.</p>
                                         </div>
 
@@ -196,7 +200,7 @@
                                     <!-- <input type="button" name="make_payment" class="next action-button btn btn-success btn-circle btn-translate--hover px-4" value="Valider" /> -->
                                 </fieldset>
 
-                                <fieldset>
+                                <fieldset id="third_fieldset">
                                 <!-- REMERCIEMENTS -->
                                     <div class="form-card">
                                         <h2 class="fs-title text-center">Merci !</h2> <br><br>
