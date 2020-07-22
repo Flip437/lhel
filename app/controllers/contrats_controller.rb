@@ -48,8 +48,6 @@ class ContratsController < ApplicationController
     @title = "Complémentaire Santé"
   end
 
-  def
-
   def partenaires
     @title = "Tous nos partenaires"
   end
@@ -85,5 +83,20 @@ class ContratsController < ApplicationController
   def tierspayant
     @title = "Tiers Payant"  
   end
-  
+
+  def TNS
+    @title = "Assurance Prévoyance TNS Artisans Commerçants"
+  end
+
+  def professionsliberales
+    @title = "Assurance Prévoyance Professions Libérales"
+  end
+
+  def professionsmedicales
+    @title = "Assurance Prévoyance Professions Médicales"
+  end
+
+  def personnescles
+    @title = "Assurance de la personne clé de l’entreprise"
+  end
 end

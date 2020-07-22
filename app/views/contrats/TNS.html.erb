@@ -1,0 +1,66 @@
+<!-- Purpose-website-ui-kit-v1.1.3/pages/careers-single.html -->
+<main>
+    <!-- Spotlight -->
+    <%= render "contrats/pagebanner", page_title: @title %>
+
+    <section class="slice slice-lg bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow mt--200">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <p>Une assurance prévoyance personnalisé grâce à LHEL permettra de compléter l’impact financier d’un accident, d’un arrêt de travail, d’une invalidité ou d’un décès.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Qu’est-ce qu’on appelle TNS ?</h4>
+                            <p>La définition de TNS c’est tous les travailleurs non-salariés qui ne possèdent tout simplement pas le statut de salariés.
+                            Cette catégorie englobe soit les artisans, soit les commerçants ou les professions libérales.</p>
+                            <p>Pour les gérants d’entreprise, il faut qu’ils aient 50% des parts pour être majoritaire et donc être considéré comme TNS. Le statut d EURL
+                            est d’office considère comme TNS car le gérant est forcément majoritaire.</p>
+                            <p>Chaque TNS (artisans, commerçants, <%= link_to 'professions libérales', root_path %>) est rattaché à sa propre caisse de retraite et prévoyance, pour la plupart
+                            d’entre eux ça sera le RSI (régime social des indépendants).</p>
+                            <p>Cependant, un TNS peut avoir le RSI comme gestionnaire de remboursement des frais de santé sans pour autant que ça soit sa caisse de
+                            retraite et prévoyance comme par exemple les médecins qui sont rattachés à la caisse CARMF, les notaires à la CRN, les avocats à la CNBF...</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Pourquoi souscrire à une prévoyance quand on est indépendant ?</h4>
+                            <p>La souscription à un contrat d’assurance prévoyance permet d’affronter plus sereinement certains problèmes qui pourrait subvenir dans la vie.
+                            Grâce à l’assurance prévoyance, vous vous protégez mais vous mettez à l’abri votre famille aussi, car l’assurance prendra le relai financièrement dans les moments difficiles.</p>
+                            <p>Il existe trois catégories pour souscrire à une assurance prévoyance :</p>
+                            <ul>
+                                <li>Cas d’arrêt de travail : un accident ou une maladie ne vous permette pas de continuer temporairement votre activité. Des indemnités peuvent être versé pour
+                                compenser la perte de revenus, le montant et la durée de l’indemnisation est calculé au moment de la signature du contrat (de 1an à 3ans généralement).
+                                Les indemnités journalières peuvent couvrir les charges fixe et les frais généraux (salaires, loyer...)</li>
+                                <li>Cas d’invalidité : Votre état de santé relève de l’invalidité permanente ou partielle causée par une maladie ou un accident. Nous vous versons une rente à partir
+                                du moment où le taux d’invalidité dépasse le seuil choisi le lors de la signature. Le taux d’invalidité est calculé en fonction de votre capacité à exercer
+                                votre activité. Cette garantie est calculée en fonction des 10 meilleures années.</li>
+                                <li>Cas de décès : un accident ou une maladie entraine un décès, les proches peuvent être à l’abri grâce à cette garantie qui viendra compléter votre régime
+                                obligatoire par une rente ou un capital, versés aux bénéficiaires marquer sur le contrat. Cette garantie marche en cas de décès mais aussi de perte totale
+                                irréversible d’autonomie (PTIA). D’autres éléments peuvent intervenir comme la rente étudiante qui permet de financer les études des enfants mais aussi la
+                                rente viagère conjoint qui aidera aux besoins du foyer ce dernier jusqu’à la fin de sa vie.</li>
+                            <ul>
+                            <p>Des garanties optionnelles peuvent se rejouter à ses cas comme les I.J hospitalisation ou les I.J relais professionnel. </p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Pourquoi choisir LHEL pour votre assurance prévoyance ?</h4>
+                            <p>L’agence LHEL prendra vos besoins en compte et pourra vous faire bénéficier grâce à son large portefeuille d’assurance prévoyance des meilleurs contrats.</p>
+                            <p>Il est important de vous faire conseiller car chaque statut est spécifique, donnant droit forcement à des solutions sur mesure comme la <%= link_to 'loi Madelin', root_path %>
+                            qui permet de déduire de votre bénéfice imposable une partie de vos cotisations d’assurance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <%= render 'contrats/calltoaction'%>
+
+</main>
+<% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>
