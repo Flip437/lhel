@@ -1,0 +1,50 @@
+<!-- Purpose-website-ui-kit-v1.1.3/pages/careers-single.html -->
+<main>
+
+    <!-- Spotlight -->
+    <%= render "contrats/pagebanner", page_title: @title %>
+
+    <section class="slice slice-lg bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow mt--200">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <p>L’hospitalisation peut vite devenir coûteuse dans une clinique, un hôpital ou à domicile avec une aide. Et malheureusement, l’Assurance maladie
+                            rembourse souvent peu ce genre de soins. Il est important alors de souscrire à une mutuelle santé ou à une assurance hospitalisation seule.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Définition d’une hospitalisation seule</h4>
+                            <p>Comme son nom l’indique une mutuelle hospitalisation seule ne prendra en charge que les frais d’hospitalisation. C’est une bonne alternative pour
+                            des personnes qui n’utilisent pas toutes les garanties, car forcément moins protégé, ils paieront moins qu’une mutuelle classique.</p>
+                            <p>Toutefois, il faut faire attention car une hospitalisation seule ne couvre pas les autres soins qui peuvent s’avérer onéreux comme le dentaire ou l’optique.</p>
+                            <p>A savoir, à partir de 60 ans certaines mutuelles demanderont un examen médical au moment de la souscription de la <%= link_to 'complémentaire santé', contrats_complementaire_path %>.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Que prend en charge l’assurance hospitalisation ?</h4>
+                            <p>L’assurance hospitalisation rembourse selon le contrat l’intégralité des frais liés à l’hospitalisation. Il faut tout de même bien vérifier avant de souscrire, car certains
+                            points sont importants comme le forfait hospitalier ou encore l’assistance garde d’enfants.</p>
+                            <p>L’Assurance maladie prend en charge à hauteur de 80% du tarif de convention de la Sécurité sociale pour un séjour classique et 100% dès que la durée d’hospitalisation
+                            dépasse les 30 jours. Par conséquent, des frais restent à la charge du patient et nécessitent le remboursement complémentaire d’une mutuelle :</p>
+                            <ul>
+                                <li>Le ticket modérateur (20%) ;</li>
+                                <li>Le forfait hospitalier journalier ;</li>
+                                <li>Les frais d’honoraires qui dépassent ;</li>
+                                <li>Le confort du patient (chambre particulière, téléphone, télévision…) ;</li>
+                            <ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <%= render 'contrats/calltoaction'%>
+
+</main>
+<% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>

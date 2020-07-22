@@ -33,7 +33,7 @@
 								<li>
 									<%= link_to contrats_mutuelle_path, class:"dropdown-item list-group-item" do %>
 										<div class="media d-flex align-items-center">
-											<%= image_tag("medical.svg", width: '50', alt: "Image placeholder", class: "img-saturate", style:"max-height: none;") %>
+											<%= image_tag("heart.svg", width: '50', alt: "Image placeholder", class: "img-saturate", style:"max-height: none;") %>
 											<div class="media-body ml-3">
 												<h6 class="mb-1">Mutuelle Santé</h6>
 												<p class="mb-0"></p>
@@ -42,19 +42,23 @@
 									<% end %>						
 									
 									<ul class="submenu dropdown-menu">
-										<li><a class="dropdown-item" href=""> Individuelle</a></li>
-										<li><a class="dropdown-item" href=""> Sénior</a></li>
-										<li><a class="dropdown-item" href=""> Fémiliale</a></li>
-										<li><a class="dropdown-item" href=""> Blabla</a></li>
+										<li><%= link_to 'Individuelle', contrats_mutuelle_path, class: "dropdown-item" %>
+										</li>
+										<li><%= link_to 'Séniors', contrats_senior_path, class: "dropdown-item"  %>
+										</li>
+										<li><%= link_to 'Familiale', contrats_familiale_path, class: "dropdown-item"  %>
+										</li>
+										<li><%= link_to 'Etudiant', contrats_etudiants_path, class: "dropdown-item"  %>
+										</li>
 									</ul>
 								</li>
 								<!-- LIST ITEM MUTEULLE SANTE END-->
 
 								<!-- LIST ITEM ASSURANCE PREVOYANCE START-->
 								<li>
-									<%= link_to contrats_mutuelle_path, class:"dropdown-item list-group-item" do %>
+									<%= link_to contrats_assuranceprevoyance_path, class:"dropdown-item list-group-item" do %>
 										<div class="media d-flex align-items-center">
-											<%= image_tag("privacy.svg", width: '50', alt: "Image placeholder", class: "img-saturate", style:"max-height: none;") %>
+											<%= image_tag("insurance.svg", width: '50', alt: "Image placeholder", class: "img-saturate", style:"max-height: none;") %>
 											<div class="media-body ml-3">
 												<h6 class="mb-1">Assurance Prévoyance</h6>
 												<p class="mb-0"></p>
@@ -63,10 +67,10 @@
 									<% end %>						
 									
 									<ul class="submenu dropdown-menu">
-										<li><a class="dropdown-item" href=""> Individuelle</a></li>
-										<li><a class="dropdown-item" href=""> Sénior</a></li>
-										<li><a class="dropdown-item" href=""> Fémiliale</a></li>
-										<li><a class="dropdown-item" href=""> Blabla</a></li>
+										<li><%= link_to 'Garantie décès', contrats_deces_path, class:"dropdown-item" %></li>
+										<li><%= link_to 'Garantie obsèques', contrats_obseques_path, class:"dropdown-item" %></li>
+										<li><%= link_to 'Garantie accidents de la vie', contrats_accidentsdelavie_path, class:"dropdown-item" %></li>
+										<li><%= link_to 'Garantie dépendance', contrats_dependance_path, class:"dropdown-item" %></li>
 									</ul>
 								</li>
 								<!-- LIST ITEM ASSURANCE PREVOYANCE END-->
@@ -90,7 +94,7 @@
 										</div>
 									<% end %>						
 									
-									<ul class="submenu dropdown-menu">
+									<ul class="submenu dropdown-menu left">
 										<li><a class="dropdown-item" href=""> Complémentaire Santé</a></li>
 										<li><a class="dropdown-item" href=""> Prévoyance</a></li>
 										<li><a class="dropdown-item" href=""> Protection de l'activité</a></li>
@@ -110,7 +114,7 @@
 										</div>
 									<% end %>						
 									
-									<ul class="submenu dropdown-menu">
+									<ul class="submenu dropdown-menu left">
 										<li><a class="dropdown-item" href=""> Complémentaire Santé</a></li>
 										<li><a class="dropdown-item" href=""> Prévoyance</a></li>
 										<li><a class="dropdown-item" href=""> Protection de l'activité</a></li>
@@ -130,7 +134,7 @@
 										</div>
 									<% end %>						
 									
-									<ul class="submenu dropdown-menu">
+									<ul class="submenu dropdown-menu left">
 										<li><a class="dropdown-item" href=""> Complémentaire Santé</a></li>
 										<li><a class="dropdown-item" href=""> Prévoyance</a></li>
 										<li><a class="dropdown-item" href=""> Protection de l'activité</a></li>

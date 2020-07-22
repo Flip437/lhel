@@ -4,7 +4,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background: linear-gradient(#AACEE9, #DBEBF6);
+    /*background: linear-gradient(#AACEE9, #DBEBF6);*/
+    background: linear-gradient(80deg, var(--primary), #b2d6ee 100%) !important;
     /*height: 600px;*/
 }
 
@@ -24,5 +25,15 @@
 @media only screen and (max-width:768px) {
   .map {
     height: 300px;
+  }
+}
+
+
+.margin-left {
+  margin-left: 140px !important;
+}
+@media only screen and (max-width:1199px) {
+  .margin-left {
+    margin-left: 49px !important;
   }
 }

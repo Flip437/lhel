@@ -27,6 +27,7 @@
 //= require stepper
 // FORMUAIRE
 //= require navbar
+//= require banner
 
 //= require theme
 //= require_tree .
