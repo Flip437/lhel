@@ -55,6 +55,8 @@ Rails.application.routes.draw do
   get 'contrats/resiliation'
   get 'contrats/surcomplementaire'
   get 'contrats/devis'
+  get 'contrats/loimadelin'
+  get 'contrats/mutuellesanteTNS'
  
   get 'mag/index'
   get 'mag/article'

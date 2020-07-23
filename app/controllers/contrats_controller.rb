@@ -99,4 +99,14 @@ class ContratsController < ApplicationController
   def personnescles
     @title = "Assurance de la personne clé de l’entreprise"
   end
+
+  def loimadelin
+    @title = "Loi Madelin"
+  end
+
+  def mutuellesanteTNS
+    @title = "Mutuelle santé TNS"
+  end
+
+
 end
