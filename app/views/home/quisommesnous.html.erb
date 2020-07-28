@@ -1,0 +1,70 @@
+<!-- Purpose-website-ui-kit-v1.1.3/pages/careers-single.html -->
+<main>
+
+    <!-- Spotlight -->
+    <%= render "contrats/pagebanner", page_title: @title %>
+
+    <section class="slice slice-lg bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow mt--200">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <p>Créée en 2019 par Hélène Vacheyroux, LHEL est une agence de courtage spécialisé dans le conseil en mutuelle et prévoyance santé.</p>
+                            <p>Sa vocation : rendre la mutuelle et prévoyance santé plus simple et plus accessible pour chaque particulier et professionnel en réunissant toutes les
+                            solutions pour votre projet santé.</p>
+                            <p>L’objectif de LHEL, répondre à toutes vos interrogations pour trouver la meilleure mutuelle ou assurance prévoyance en fonction votre profil.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Le but de LHEL assurances</h4>
+                            <p>Multiplication des mutuelles et prévoyance, aspects juridiques compliqués, question sur la performance des contrats…. Si on ne dispose pas de l’aide d’un professionnel
+                            des mutuelles santé, il faut du temps, de la patience et de sérieuses connaissances dans de nombreux domaines.
+                            <p>Pour pratiquer le métier de courtier dans le système des mutuelles et assurances prévoyance, il faut développer et maintenir une large expertise et un vaste réseau
+                            de partenaires et de compétences afin de proposer les meilleures conditions pour votre projet santé.</p>
+                            <p>Être courtier en contrat santé, c’est aussi s’informer régulièrement sur les différents types de contrats, sur les formules possibles, sur l’état du marché de la
+                            santé tant sur l’aspect juridique que financier.</p>
+                            <p>Tout courtier en assurance santé doit construire et développer un large réseau de partenaires. Il est l’interlocuteur unique et effectue les démarches de votre dossier.
+                            Il apporte en permanence un maximum de conseils pendant la création du dossier mais aussi après en vous assistant et en prenant souvent de vos nouvelles.</p>
+                            <p>Avec LHEL, vous pouvez envisager sereinement de conclure le meilleur contrat du marché santé.</p>
+                            <p>L’agence LHEL est dans une démarche de recherche permanente d’informations sur les environnements mutualistes, fiscal, juridique et le système de santé.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Le métier de LHEL</h4>
+                            <p>Des solutions sur mesure, une prise en charge complète de vos démarches, des contrats compétitifs et un service de qualité, telle est l'offre experte que LHEL
+                            vous propose à travers son métier, pour que vous disposiez d'une réponse adaptée à vos besoins, et ce, pour l'ensemble de votre contrat.</p>
+                            <p>En choisissant LHEL vous optez pour la meilleure offre du marché :</p>
+                            <ul>
+                                <li>Des contrats négociés au plus bas ;</li>
+                                <li>Un accompagnement personnalisé ;</li>
+                                <li>Des conseils d'experts ;</li>
+                                <li>Une prise en charge de A à Z de votre dossier ;</li>
+                                <li>Suivi après le dossier.</li>
+                            </ul>
+                            <p>Que vous soyez jeunes, étudiants, séniors, seul ou en famille, LHEL fort de son expertise et de sa technicité sur tous les types de formules santé existants et
+                            leurs aspects juridiques, vous donne l'accès à une information claire et compréhensible.</p>
+                            <%= link_to 'Faites votre demande de devis personnalisée en ligne', formulaire_demande_path %>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Assurances santé, LHEL vous aide à optimiser votre contrat</h4>
+                            <p>Une complémentaire santé bien maîtrisée, c'est avant tout un remboursement bien assuré. Pour vous permettre d'obtenir un contrat santé optimisé à votre
+                            situation, LHEL vous propose son savoir-faire et compétences.</p>
+                            <p>L’objectif est simple : vous faire réaliser un maximum d'économies, en comparant toutes les assurances et mutuelle en fonction de votre profil. LHEL Assurances
+                            vous propose toutes les garanties et assurances indispensables pour votre projet santé : garanties perte d'emploi, complémentaire santé, prévoyance santé...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <%= render 'contrats/calltoaction'%>
+
+</main>
+<% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>
