@@ -4,5 +4,4 @@ class MagController < ApplicationController
 
     def article
     end
-
 end
