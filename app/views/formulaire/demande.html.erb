@@ -3,6 +3,11 @@
     <section class="container-fluid bg-primary" id="grad1">
         <br><br><br><br><br><br><br><br>
         <div class="row justify-content-center mt-0">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-6 p-0 mt-3 mb-2">
+                <h1 class="text-white lh-150 mb-4">Un conseil de qualité en mutuelle et prévoyance santé</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-0">
             <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
                 <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
                     <h2><strong><%= @title %></strong></h2>
@@ -203,7 +208,9 @@
                                 <fieldset id="third_fieldset">
                                 <!-- REMERCIEMENTS -->
                                     <div class="form-card">
-                                        <h2 class="fs-title text-center">Merci !</h2> <br><br>
+                                    <br><br><br>
+                                        <h2 class="fs-title text-center">C'est fait !</h2> 
+                                        <h3 class="text-center">Nous avons bien enregistré les informations que vous avez transmises</h3><br>
                                         <div class="row justify-content-center">
                                             <div class="col-3">
                                                 <%= image_tag("approval", alt: "Image placeholder", class:"fit-image") %>   
@@ -211,7 +218,9 @@
                                         </div> <br><br>
                                         <div class="row justify-content-center">
                                             <div class="col-7 text-center">
-                                                <h5>Nous avons toutes les informations nécessaires, nous vous répondrons rapidement :)</h5>
+                                                <h5>Un conseiller LHEL, proche de chez vous, vous rencontactera prochainement pour vous proposer un devis personnalisé :)</h5>
+                                                <br><br><br>
+                                                <%= link_to "Revenir à la page d'accueil", root_path, class:"btn btn-warning btn-circle btn-translate--hover px-4" %>
                                             </div>
                                         </div>
                                     </div>

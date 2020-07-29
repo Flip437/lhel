@@ -1,0 +1,59 @@
+<!-- Purpose-website-ui-kit-v1.1.3/pages/careers-single.html -->
+<main>
+    <!-- Spotlight -->
+    <% content_for :pagebanner_class, 'slice slice-xl pb-200 opacity-6 professionnal-pagebanner-bg' %>
+    <%= render "contrats/pagebanner", page_title: @title %>
+
+    <section class="slice slice-lg bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow mt--200">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <p>Les travailleurs non-salariés ont généralement besoin d’avoir une bonne mutuelle santé pour éviter tous problèmes qui pourrait subvenir et arrêter l’activité.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Comment choisir sa mutuelle santé TNS ?</h4>
+                            <p>En premier, il est essentiel de définir les besoins de chacun en termes de santé, pour cela il faut bien prendre son temps. Cela aura pour objectif de bien définir
+                            les garanties santés adaptées à chacun des membres de sa famille.</p>
+                            <p>Frais dentaires ou d’optiques, frais d’hospitalisation, mutuelle sans carence sont des points qu’il ne faut surtout pas épargner. C’est pourquoi, certaines
+                            mutuelles sont plus avantageuses que d’autres sur la situation des TNS car tout simplement plus adapté aux besoins.</p>
+                            <p>De nombreuses mutuelles proposent différents niveaux de protection permettant de bénéficier d’une couverture santé au plus près de vos besoins.</p>
+                            <p>En effet, vous pouvez adapter vos garanties en fonction de vos besoins et ceux de vos proches.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Des critères à voir avant de souscrire à une mutuelle étudiante</h4>
+                            <p>Avant de vous engager avec une mutuelle TNS, il est important de vérifier de nombreux points :</p>
+                            <ul>
+                                <li>Les garanties ;</li>
+                                <li>Les garanties d’exclusions ;</li>
+                                <li>Remboursement sur les dépassements d’honoraires ;</li>
+                                <li>Délai de carence</li>
+                                <li>Remboursements consultations...</li>
+                                <p>Ses nombreux points permettront de déterminer si la mutuelle correspond à vos besoins.</p>
+                                <p>De nombreuses mutuelles proposent différents niveaux de protection permettant de bénéficier d’une couverture santé au plus près de vos besoins.</p>
+                                <p>En effet, vous pouvez adapter vos garanties en fonction de vos besoins et ceux de vos proches.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Des cotisations déductibles des impôts </h4>
+                            <p>Chaque année le montant de vos cotisations sont déductibles du bénéfice imposable, que ce soit pour vous, votre conjoint et même vos enfants s’ils sont
+                            rattachés à votre numéro de sécurité sociale.</p>
+                            <p>En effet, la <%= link_to 'loi Madelin', contrats_loimadelin_path %> permet de déduire l’ensemble de vos cotisations en respectant un certain plafond.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <%= render 'contrats/calltoaction'%>
+
+</main>
+<% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>

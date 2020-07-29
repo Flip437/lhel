@@ -4,5 +4,9 @@ class HomeController < ApplicationController
 
   def partenaires
       @title = "Tous nos partenaires"
-  end  
+  end
+
+  def quisommesnous
+    @title = "Qui sommes nous ?"
+  end
 end

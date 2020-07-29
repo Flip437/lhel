@@ -1,0 +1,72 @@
+<!-- Purpose-website-ui-kit-v1.1.3/pages/careers-single.html -->
+<main>
+    <!-- Spotlight -->
+    <% content_for :pagebanner_class, 'slice slice-xl pb-200 opacity-6 professionnal-pagebanner-bg' %>
+    <%= render "contrats/pagebanner", page_title: @title %>
+
+    <section class="slice slice-lg bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow mt--200">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <p>La loi Madelin a été créé en 1994, elle permet aux travailleurs non-salariés (TNS) de déduire leurs cotisations santé de leur revenu imposable dans la limite du plafond fiscal.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">A qui s’adresse la loi Madelin ?</h4>
+                            <p>La loi Madelin est destinée au bénéfice industriel commercial (BIC), artisans, commerçants ou au bénéfice non commercial (BNC) comme les professions libérales et affiliés au
+                            régime obligatoire maladie et vieillesse TNS (sauf agricole) ainsi que le gérant non salarié avec le statut SARL, SERAL et EURL. Depuis 1995, le statut de conjoint collaborateur
+                            peut renter dans le cadre de la loi Madelin.</p>
+                            <p>Certains Auteurs Affiliés a l’AGESSA ou professions affiliées au régime général de la sécurité sociale peuvent rentrer dans le cadre du contrat d’assurance Madelin, des lors que
+                            l’activité est déclarée dans la catégorie BNC.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Pourquoi souscrire à un contrat Madelin ?</h4>
+                            <p>La souscription à un contrat Madelin permet déduire de leur revenu professionnel imposable, les cotisations d’un contrat de prévoyance et de santé Madelin dans la
+                            limite de leur plafond de déduction fiscale.
+                            <p>Le plafond de déductibilité est différent selon le type de contrat Madelin, il existe trois catégories de contrats :</p>
+                            <ul>
+                                <li>Contrat Madelin retraite</li>
+                                <li>Contrat Madelin prévoyance et santé</li>
+                                <li>Contrat Madelin perte d’emploi</li>
+                            </ul>
+                            <p>Le but principal de la loi Madelin, se trouve dans la qualité d’être un avantage fiscal puisque les cotisations sont déductibles du revenu imposable. Cette mesure permet
+                            de pallier des carences des régimes généraux en mettant au même niveau les salariés du privé et les travailleurs non-salariés.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Quelques conseils pour la souscription d’un contrat prévoyance Madelin</h4>
+                            <p>Ce contrat s’adresse au TNS qui s’assurer d’un maintien de revenus en cas de décès, d’invalidité ou d’arrêt de travail.</p>
+                            <p>Tout d’abord, il faut vérifier l’avantage fiscal du contrat Madelin car les cotisations sont déductibles mais les prestations sont imposables. Ensuite il faut
+                            déterminer ses besoins en fonction des revenus, des charges et des garanties assurés par le régime obligatoire. Et enfin, il faut regarder les points suivants :</p>
+                            <ul>
+                                <li>Tarif fixe ou évolutif en fonction de l’âge</li>
+                                <li>Les délais d’attente</li>
+                                <li>Le taux d’invalidité</li>
+                                <li>Les franchises</li>
+                                <li>Les exclusions</li>
+                            </ul>
+                            <p>Il faut prendre le temps d’analyser tous ces points, le contrat le moins cher ne répondra pas au mieux à vos besoins.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow mt-5">
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <h4 class="mb-4">Est-ce que notre famille peut bénéficier de la loi ?</h4>
+                            <p>Si votre famille est affiliée au régime des TNS, c’est-à-dire le RSI, elle pourra jouir des mêmes avantages que vous, donc déduire toutes les cotisations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <%= render 'contrats/calltoaction'%>
+
+</main>
+<% content_for :footer_class, 'footer footer-dark bg-gradient-primary' %>
