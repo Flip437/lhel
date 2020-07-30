@@ -7,17 +7,19 @@
                 <h1 class="text-white lh-150 mb-4"><b>Les meilleures mutuelles et prévoyance pour votre projet santé</b></h1>
             </div>
 
-            <div class="col-md-6 col-lg-6">
-                <div class="banner-circle" id="circlecontainer">
-                    <div class="circleitem text-center">
+            <div>
+                <div class="banner-circle">
+                    <%= link_to contrats_selection_path, class:"circleitem text-center" do %>
                         <h2 class="circletext text-primary"><b>OBTENEZ VOTRE DEVIS PERSONNALISÉ</b></h2>
-                    </div>
+                    <% end %>
                     <div class="circle" style="animation-delay: -3s"></div>
                     <div class="circle" style="animation-delay: -2s"></div>
                     <div class="circle" style="animation-delay: -1s"></div>
                     <div class="circle" style="animation-delay: 0s"></div>
                 </div>
             </div>
+
+
         </div>
     </div>
 

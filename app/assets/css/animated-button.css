@@ -8,31 +8,40 @@
     animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
   }
 
-  @keyframes scaleIn {
-    from {
-      transform: scale(.5, .5);
-      opacity: .5;
-    }
-    to {
-      transform: scale(2.5, 2.5);
-      opacity: 0;
-    }
+@media only screen and (max-width:768px) {
+  .circle {
+    width: 150px;
+    height: 150px;
   }
+}
 
+@keyframes scaleIn {
+  from {
+    transform: scale(.5, .5);
+    opacity: .5;
+  }
+  to {
+    transform: scale(2.5, 2.5);
+    opacity: 0;
+  }
+}
 
-#circlecontainer {
-    width: 600px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: visible;
-    position: relative;
-    }
+.banner-circle {
+  height: 400px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+@media only screen and (max-width:768px) {
+  .banner-circle {
+    height: 300px;
+  }
+}
 
 .circleitem {
     z-index: 100;
-    padding: 5px;
     }
 
 .circletext {
@@ -44,7 +53,10 @@
     justify-content: center;
     align-items: center;
 }
-
-  /* .circleitem img {
-    width: 150px;
-  } */
+@media only screen and (max-width:768px) {
+  .circletext {
+    width: 200px;
+    height: 200px;
+    font-size: 1rem;
+  }
+}
