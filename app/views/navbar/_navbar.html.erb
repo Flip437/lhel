@@ -23,15 +23,15 @@
 			<div>
 				<!-- navbar-collapse.// -->
 				<div class="collapse navbar-collapse" id="navbar-main-collapse">		
-					<ul class="navbar-nav flip-dropdown-menu w-75 d-flex justify-content-between mx-auto ">
+					<ul class="navbar-nav flip-dropdown-menu w-75 d-flex justify-content-between mx-auto">
 
 						<li class="nav-item dropdown flip-border">
-							<div class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">PARTICULIER</div>
-							<ul class="flip-submenu dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
-														<%= link_to 'Individuelle', contrats_mutuelle_path %>
+
+							<div class="nav-link dropdown-toggle" data-toggle="dropdown">PARTICULIER</div>
+							<ul class="flip-submenu dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0 stop">
 								<!-- LIST ITEM MUTEULLE SANTE START-->
-								<li>
-									<%= link_to contrats_mutuelle_path, class:"dropdown-item list-group-item" do %>
+								<li id="target">
+									<%= link_to contrats_mutuelle_path, class:"dropdown-item list-group-item", id:"target" do %>
 										<div class="media d-flex align-items-center">
 											<%= image_tag("heart.svg", width: '50', alt: "Image placeholder", class: "img-saturate", style:"max-height: none;") %>
 											<div class="media-body ml-3">
@@ -79,7 +79,7 @@
 						</li>
 
 						<li class="nav-item dropdown flip-border">
-							<div class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">PROFESSIONNEL</div>
+							<div class="nav-link dropdown-toggle" data-toggle="dropdown">PROFESSIONNEL</div>
 							<ul class="flip-submenu dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
 
 								<!-- LIST ITEM START-->
