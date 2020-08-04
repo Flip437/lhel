@@ -28,10 +28,10 @@
 						<li class="nav-item dropdown flip-border">
 
 							<div class="nav-link dropdown-toggle" data-toggle="dropdown">PARTICULIER</div>
-							<ul class="flip-submenu dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0 stop">
+							<ul class="flip-submenu dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
 								<!-- LIST ITEM MUTEULLE SANTE START-->
-								<li id="target">
-									<%= link_to contrats_mutuelle_path, class:"dropdown-item list-group-item", id:"target" do %>
+								<li>
+									<%= link_to contrats_mutuelle_path, class:"dropdown-item list-group-item preventdefault" do %>
 										<div class="media d-flex align-items-center">
 											<%= image_tag("heart.svg", width: '50', alt: "Image placeholder", class: "img-saturate", style:"max-height: none;") %>
 											<div class="media-body ml-3">
@@ -56,7 +56,7 @@
 
 								<!-- LIST ITEM ASSURANCE PREVOYANCE START-->
 								<li>
-									<%= link_to contrats_assuranceprevoyance_path, class:"dropdown-item list-group-item" do %>
+									<%= link_to contrats_assuranceprevoyance_path, class:"dropdown-item list-group-item preventdefault" do %>
 										<div class="media d-flex align-items-center">
 											<%= image_tag("insurance.svg", width: '50', alt: "Image placeholder", class: "img-saturate", style:"max-height: none;") %>
 											<div class="media-body ml-3">
