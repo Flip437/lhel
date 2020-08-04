@@ -14,8 +14,13 @@ if ($(window).width() < 992) {
 
     // to hide previously dropdowned submenus when moving beetwen dropdown button in navbar
     $('.dropdown').on('hide.bs.dropdown', function () {
-    $(this).find('.submenu').hide();
-  })
+      $(this).find('.submenu').hide();
+    })
+  });
 
+  $('.fakelink').click(function(e){
+    if($(this).next('.submenu').length){    
+      $(this).next('.submenu').toggle();
+    }
   });
 }
