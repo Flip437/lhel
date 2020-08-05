@@ -56,3 +56,26 @@
   color: black;
   transform: rotateY(180deg);
 }
+
+/*====================================== DIMENSIONS CLASS =======================================*/
+/* dimensions class is monitoring global front an d back cards container for responsive*/
+.dimensions {
+  height: 400px;
+  width: 244px;
+}
+
+@media only screen and (max-width:1199px) {
+  .dimensions {
+    height: 340px;
+    width: 210px;
+  }
+}
+
+@media only screen and (max-width:991px) {
+  .dimensions {
+    height: 400px;
+    width: 300px;
+  }
+}
+/* dimensions class is monitoring global front an d back cards container for responsive*/
+/*====================================== DIMENSIONS CLASS =======================================*/
