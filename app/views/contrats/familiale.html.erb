@@ -2,7 +2,7 @@
 <main>
 
     <!-- Spotlight -->
-    <% content_for :pagebanner_class, 'slice slice-xl pb-200 opacity-6 particular-pagebanner-bg' %>
+    <% content_for :pagebanner_class, 'slice slice-xl opacity-6 particular-pagebanner-bg' %>
     <%= render "contrats/pagebanner", page_title: @title %>
 
     <section class="slice slice-lg bg-primary">
@@ -46,7 +46,7 @@
                     <div class="card shadow mt-5">
                         <div class="card-body px-lg-5 py-lg-5">
                             <h4 class="mb-4">Le 100% santé sera-t-il disponible pour les familles ?</h4>
-                            <p>La reforme <%= link_to '100% santé adoptée', root_path %> en 2018 à pour but de donner accès à tous les Français à des soins de qualité dans les domaines de l’optique, du dentaire et de l’audiologie. </p>
+                            <p>La reforme <%= link_to '100% santé adoptée', contrats_reformesante_path %> en 2018 à pour but de donner accès à tous les Français à des soins de qualité dans les domaines de l’optique, du dentaire et de l’audiologie. </p>
                             <p>Il est donc par conséquent normal que les familles soient éligibles à ce plan qui concerne l’assurance maladie ainsi que les mutuelles.</p> 
                         </div>
                     </div>
