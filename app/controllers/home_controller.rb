@@ -9,4 +9,8 @@ class HomeController < ApplicationController
   def quisommesnous
     @title = "Qui sommes nous ?"
   end
+
+  def sitemap
+    @title = "Plan du site"
+  end
 end
